@@ -1,0 +1,11 @@
+#startLoadingImg {
+    margin-bottom: 0;
+    width: fit-content;
+    height: fit-content;
+}
+
+#startLoadingMessage {
+    margin-top: 0;
+    font-size: 3.75rem;
+    color: #161619;
+}
