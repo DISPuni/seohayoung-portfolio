@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="605" height="605" viewBox="0 0 605 605">
+  <g id="그룹_274" data-name="그룹 274" transform="translate(-644.5 -237.5)">
+    <path id="패스_25" data-name="패스 25" d="M1162.942,439.637c-167.066,0-302.5,135.435-302.5,302.5,0-167.066-135.433-302.5-302.5-302.5,167.066,0,302.5-135.433,302.5-302.5C860.441,304.2,995.876,439.637,1162.942,439.637Z" transform="translate(86.558 100.362)" fill="#db3633"/>
+    <path id="패스_26" data-name="패스 26" d="M776.739,337.965l31.309,17.381L766.3,401.775l54.79,15.654,49.574,15.655L766.3,446.284s31.309,41.083,39.137,33.511c5.631-5.448,55.8-.877,83.531.9,10.822.692,18.224.957,18.224.036,0-3.287-52.183,22.8-52.183,22.8H710.433" transform="translate(193.783 241.574)" fill="none" stroke="#161619" stroke-miterlimit="10" stroke-width="3"/>
+    <g id="그룹_26" data-name="그룹 26" transform="translate(816.872 462.302)">
+      <g id="타원_4" data-name="타원 4" transform="translate(0 0)" fill="#fff" stroke="#161619" stroke-miterlimit="10" stroke-width="3">
+        <ellipse cx="60.07" cy="60.07" rx="60.07" ry="60.07" stroke="none"/>
+        <ellipse cx="60.07" cy="60.07" rx="58.57" ry="58.57" fill="none"/>
+      </g>
+      <line id="선_25" data-name="선 25" x1="84.951" y2="84.951" transform="translate(17.594 17.594)" fill="#fff" stroke="#161619" stroke-miterlimit="10" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

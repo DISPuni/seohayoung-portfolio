@@ -1,14 +1,20 @@
 {
   "files": {
-    "main.css": "/seohayoung-portfolio/static/css/main.2aef779a.css",
-    "main.js": "/seohayoung-portfolio/static/js/main.c0fd73c3.js",
-    "static/media/start_loading.gif": "/seohayoung-portfolio/static/media/start_loading.de2e665b75ab537ca147.gif",
-    "index.html": "/seohayoung-portfolio/index.html",
-    "main.2aef779a.css.map": "/seohayoung-portfolio/static/css/main.2aef779a.css.map",
-    "main.c0fd73c3.js.map": "/seohayoung-portfolio/static/js/main.c0fd73c3.js.map"
+    "main.css": "./static/css/main.5f1211a3.css",
+    "main.js": "./static/js/main.e254dc6b.js",
+    "static/media/visual.gif": "./static/media/visual.533c31f321d636e85d09.gif",
+    "static/media/media.gif": "./static/media/media.925f6d1b697045f15be6.gif",
+    "static/media/loading.gif": "./static/media/loading.de2e665b75ab537ca147.gif",
+    "static/media/main_bg.png": "./static/media/main_bg.ce9f6bfd2bc4587d1ffd.png",
+    "static/media/fashion_icon.svg": "./static/media/fashion_icon.68afc76668bab02f3b68e4a51532390a.svg",
+    "static/media/blog.svg": "./static/media/blog.6e710e87c323945c7c741f234526ecac.svg",
+    "static/media/disp_mainlogo.svg": "./static/media/disp_mainlogo.0e53f56c7729ae4985c115d8d005593c.svg",
+    "index.html": "./index.html",
+    "main.5f1211a3.css.map": "./static/css/main.5f1211a3.css.map",
+    "main.e254dc6b.js.map": "./static/js/main.e254dc6b.js.map"
   },
   "entrypoints": [
-    "static/css/main.2aef779a.css",
-    "static/js/main.c0fd73c3.js"
+    "static/css/main.5f1211a3.css",
+    "static/js/main.e254dc6b.js"
   ]
 }
