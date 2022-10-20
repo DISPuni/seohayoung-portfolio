@@ -1,17 +1,21 @@
 html,
 body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 ul,
 ol {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none
+  text-decoration: none
+}
+
+.flex {
+  display: flex;
 }
 
 .flex-col {
@@ -27,11 +31,11 @@ a {
   height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-logo {
+  width: 31rem;
+  height: auto;
+}
+
+.logo {
+  width: 31rem;
 }
