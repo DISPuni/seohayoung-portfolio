@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "./static/css/main.5f1211a3.css",
-    "main.js": "./static/js/main.e254dc6b.js",
-    "static/media/visual.gif": "./static/media/visual.533c31f321d636e85d09.gif",
-    "static/media/media.gif": "./static/media/media.925f6d1b697045f15be6.gif",
-    "static/media/loading.gif": "./static/media/loading.de2e665b75ab537ca147.gif",
-    "static/media/main_bg.png": "./static/media/main_bg.ce9f6bfd2bc4587d1ffd.png",
-    "static/media/fashion_icon.svg": "./static/media/fashion_icon.68afc76668bab02f3b68e4a51532390a.svg",
-    "static/media/blog.svg": "./static/media/blog.6e710e87c323945c7c741f234526ecac.svg",
-    "static/media/disp_mainlogo.svg": "./static/media/disp_mainlogo.0e53f56c7729ae4985c115d8d005593c.svg",
-    "index.html": "./index.html",
-    "main.5f1211a3.css.map": "./static/css/main.5f1211a3.css.map",
-    "main.e254dc6b.js.map": "./static/js/main.e254dc6b.js.map"
+    "main.css": "/seohayoung-portfolio/static/css/main.af2977fd.css",
+    "main.js": "/seohayoung-portfolio/static/js/main.a0e107b0.js",
+    "static/media/visual.gif": "/seohayoung-portfolio/static/media/visual.533c31f321d636e85d09.gif",
+    "static/media/media.gif": "/seohayoung-portfolio/static/media/media.925f6d1b697045f15be6.gif",
+    "static/media/loading.gif": "/seohayoung-portfolio/static/media/loading.de2e665b75ab537ca147.gif",
+    "static/media/main_bg.png": "/seohayoung-portfolio/static/media/main_bg.ce9f6bfd2bc4587d1ffd.png",
+    "static/media/fashion_icon.svg": "/seohayoung-portfolio/static/media/fashion_icon.68afc76668bab02f3b68e4a51532390a.svg",
+    "static/media/blog.svg": "/seohayoung-portfolio/static/media/blog.6e710e87c323945c7c741f234526ecac.svg",
+    "static/media/disp_mainlogo.svg": "/seohayoung-portfolio/static/media/disp_mainlogo.0e53f56c7729ae4985c115d8d005593c.svg",
+    "index.html": "/seohayoung-portfolio/index.html",
+    "main.af2977fd.css.map": "/seohayoung-portfolio/static/css/main.af2977fd.css.map",
+    "main.a0e107b0.js.map": "/seohayoung-portfolio/static/js/main.a0e107b0.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f1211a3.css",
-    "static/js/main.e254dc6b.js"
+    "static/css/main.af2977fd.css",
+    "static/js/main.a0e107b0.js"
   ]
 }
