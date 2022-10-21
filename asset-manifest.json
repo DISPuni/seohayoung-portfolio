@@ -1,20 +1,25 @@
 {
   "files": {
-    "main.css": "/seohayoung-portfolio/static/css/main.af2977fd.css",
-    "main.js": "/seohayoung-portfolio/static/js/main.a0e107b0.js",
+    "main.css": "/seohayoung-portfolio/static/css/main.8f05a68f.css",
+    "main.js": "/seohayoung-portfolio/static/js/main.7ffd1d2d.js",
     "static/media/visual.gif": "/seohayoung-portfolio/static/media/visual.533c31f321d636e85d09.gif",
     "static/media/media.gif": "/seohayoung-portfolio/static/media/media.925f6d1b697045f15be6.gif",
     "static/media/loading.gif": "/seohayoung-portfolio/static/media/loading.de2e665b75ab537ca147.gif",
     "static/media/main_bg.png": "/seohayoung-portfolio/static/media/main_bg.ce9f6bfd2bc4587d1ffd.png",
+    "static/media/main_img_media_hover.png": "/seohayoung-portfolio/static/media/main_img_media_hover.fce9d913049b88310abf.png",
+    "static/media/main_img_video_auto play.png": "/seohayoung-portfolio/static/media/main_img_video_auto play.00a0287f76aad6b65db6.png",
+    "static/media/main_img_blog_hover.png": "/seohayoung-portfolio/static/media/main_img_blog_hover.b829c0bb136ae39b6a77.png",
+    "static/media/main_img_blog.png": "/seohayoung-portfolio/static/media/main_img_blog.0b878e15f0bccca16589.png",
+    "static/media/main_img_media.png": "/seohayoung-portfolio/static/media/main_img_media.6e95cde4159d2e09bc59.png",
     "static/media/fashion_icon.svg": "/seohayoung-portfolio/static/media/fashion_icon.68afc76668bab02f3b68e4a51532390a.svg",
     "static/media/blog.svg": "/seohayoung-portfolio/static/media/blog.6e710e87c323945c7c741f234526ecac.svg",
     "static/media/disp_mainlogo.svg": "/seohayoung-portfolio/static/media/disp_mainlogo.0e53f56c7729ae4985c115d8d005593c.svg",
     "index.html": "/seohayoung-portfolio/index.html",
-    "main.af2977fd.css.map": "/seohayoung-portfolio/static/css/main.af2977fd.css.map",
-    "main.a0e107b0.js.map": "/seohayoung-portfolio/static/js/main.a0e107b0.js.map"
+    "main.8f05a68f.css.map": "/seohayoung-portfolio/static/css/main.8f05a68f.css.map",
+    "main.7ffd1d2d.js.map": "/seohayoung-portfolio/static/js/main.7ffd1d2d.js.map"
   },
   "entrypoints": [
-    "static/css/main.af2977fd.css",
-    "static/js/main.a0e107b0.js"
+    "static/css/main.8f05a68f.css",
+    "static/js/main.7ffd1d2d.js"
   ]
 }
