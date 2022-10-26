@@ -1,0 +1,86 @@
+#home {
+    width: fit-content;
+}
+#homeBody {
+    background-image: url('../assets/main/main_bg.svg');
+    top: 3.3rem;
+    height: 65.781rem;
+    width: fit-content;
+    position: relative;
+}
+#draggableItem {
+    top: 13.375rem;
+    left: 82.438rem;
+    position:sticky;
+    font-size: 20px;
+    width: 537px;
+    height: 81px;
+    text-align: center;
+    cursor: move;
+}
+#draggableText {
+    color: #161619;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #43434C;
+}
+#draggableShadow {
+    height: 13px;
+    background: #43434C;
+    border: 1px solid #43434C;
+}
+#homeItems {
+    margin-left: 16.25rem;
+    margin-top: 15rem;
+}
+#player {
+    margin-right: 16.25rem;
+    /* margin-right: 260px; */
+}
+#videoPlayer {
+    /* left: 260px;
+    bottom: -20px;
+    position: absolute; */
+}
+#videoSection {
+    /* left: 270px;
+    bottom: -244px;
+    position: relative; */
+    width: 48.938rem;
+    height: 32.813rem;
+    background-color: aqua;
+    -webkit-clip-path: polygon(7% 17%, 96% 8%, 96% 84%, 7% 93%);
+    clip-path: polygon(7% 17%, 96% 8%, 96% 84%, 7% 93%);
+}
+#blogIcon {
+    /* width: 18rem;
+    height: 24.75rem; */
+    margin-top: auto;
+    margin-bottom: 1.188rem;
+    cursor: pointer;
+}
+#mediaIcon {
+    margin-left: 4.7rem;
+    margin-top: auto;
+    cursor: pointer;
+}
+/* #mediaIcon:hover {
+    margin-left: 11.875rem;
+} */
+#fashionIcon, #visualIcon {
+    margin-left: 0.75rem;
+    margin-top: auto;
+    cursor: pointer;
+}
+#pill {
+    margin-top: auto;
+    margin-left: 6.365rem;
+}
+#about {
+    margin-top: auto;
+    margin-right: 11rem;
+    margin-left: 18.093rem;
+    cursor: pointer;
+}
