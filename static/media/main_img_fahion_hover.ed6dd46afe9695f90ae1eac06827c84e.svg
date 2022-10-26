@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="272" height="418" viewBox="0 0 272 418">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_116" data-name="사각형 116" width="272" height="418" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="마스크_그룹_5" data-name="마스크 그룹 5" clip-path="url(#clip-path)">
+    <g id="그룹_328" data-name="그룹 328">
+      <rect id="사각형_113" data-name="사각형 113" width="272" height="418" fill="none"/>
+      <g id="그룹_327" data-name="그룹 327" transform="translate(5253.147 -2562.425)">
+        <ellipse id="타원_56" data-name="타원 56" cx="100.281" cy="19.211" rx="100.281" ry="19.211" transform="translate(-5181.71 2942.801)" fill="#db3633"/>
+        <g id="그룹_326" data-name="그룹 326" transform="matrix(0.966, -0.259, 0.259, 0.966, -1512.902, -131.789)">
+          <g id="그룹_325" data-name="그룹 325" transform="translate(-4323.355 1679.777)">
+            <g id="그룹_324" data-name="그룹 324" transform="translate(0)">
+              <path id="패스_184" data-name="패스 184" d="M453.419,413.783V390.392H348.827v23.391a53.22,53.22,0,0,0-39.065,51.273V678.287a29.663,29.663,0,0,0,29.663,29.663h123.4a29.663,29.663,0,0,0,29.663-29.663V465.056A53.219,53.219,0,0,0,453.419,413.783Z" transform="translate(-309.762 -334.946)" fill="#fff" stroke="#161619" stroke-miterlimit="10" stroke-width="2"/>
+              <rect id="사각형_114" data-name="사각형 114" width="182.722" height="199.191" transform="translate(0 137.895)" fill="#fff" stroke="#161619" stroke-miterlimit="10" stroke-width="2"/>
+              <rect id="사각형_115" data-name="사각형 115" width="146.178" height="65.528" rx="18.966" transform="translate(18.272)" fill="#fff" stroke="#161619" stroke-miterlimit="10" stroke-width="2"/>
+            </g>
+            <text id="FASION_DESIGN" data-name="FASION
+DESIGN" transform="translate(26.426 255.463)" fill="#161619" font-size="24" font-family="Orbitron-Bold, Orbitron" font-weight="700"><tspan x="0" y="0">FASION</tspan><tspan x="0" y="29">DESIGN</tspan></text>
+          </g>
+          <path id="패스_185" data-name="패스 185" d="M1675.522,996.372A23.519,23.519,0,0,0,1652,1019.891a23.518,23.518,0,0,0-23.518-23.518A23.519,23.519,0,0,0,1652,972.854,23.519,23.519,0,0,0,1675.522,996.372Z" transform="translate(-5832.479 867.928)" fill="#db3633"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

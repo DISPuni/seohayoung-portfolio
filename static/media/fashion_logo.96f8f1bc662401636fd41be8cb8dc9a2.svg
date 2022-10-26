@@ -1,0 +1,31 @@
+<svg id="그룹_78" data-name="그룹 78" xmlns="http://www.w3.org/2000/svg" width="180.045" height="179.307" viewBox="0 0 180.045 179.307">
+  <rect id="사각형_19" data-name="사각형 19" width="89.653" height="89.653" transform="translate(44.827 44.827)" fill="#db3633"/>
+  <g id="그룹_20" data-name="그룹 20" transform="translate(0 0)">
+    <g id="타원_6" data-name="타원 6" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="1">
+      <circle cx="44.827" cy="44.827" r="44.827" stroke="none"/>
+      <circle cx="44.827" cy="44.827" r="44.327" fill="none"/>
+    </g>
+    <line id="선_26" data-name="선 26" y2="89.653" transform="translate(44.827)" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+  <g id="그룹_21" data-name="그룹 21" transform="translate(90.392 0)">
+    <g id="타원_7" data-name="타원 7" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="1">
+      <circle cx="44.827" cy="44.827" r="44.827" stroke="none"/>
+      <circle cx="44.827" cy="44.827" r="44.327" fill="none"/>
+    </g>
+    <line id="선_27" data-name="선 27" y2="89.653" transform="translate(44.827)" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+  <g id="그룹_22" data-name="그룹 22" transform="translate(0 89.653)">
+    <g id="타원_8" data-name="타원 8" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="1">
+      <circle cx="44.827" cy="44.827" r="44.827" stroke="none"/>
+      <circle cx="44.827" cy="44.827" r="44.327" fill="none"/>
+    </g>
+    <line id="선_28" data-name="선 28" y2="89.653" transform="translate(44.827)" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+  <g id="그룹_23" data-name="그룹 23" transform="translate(90.392 89.653)">
+    <g id="타원_9" data-name="타원 9" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="1">
+      <circle cx="44.827" cy="44.827" r="44.827" stroke="none"/>
+      <circle cx="44.827" cy="44.827" r="44.327" fill="none"/>
+    </g>
+    <line id="선_29" data-name="선 29" y2="89.653" transform="translate(44.827)" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>
