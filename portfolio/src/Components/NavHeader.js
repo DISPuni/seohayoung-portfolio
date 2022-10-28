@@ -11,13 +11,16 @@ function NavHeader(props) {
     function toHome() {
         navigate('/home')
     }
+    function toBlog() {
+        navigate('/blog')
+    }
 
     return (
         <div id='navHeader'>
             <img id='headerLogo' src={logo} alt="main logo" onClick={() => toHome()}/>
             <span id='nav' style={{ display: props.isNav ? 'flex':'none'}}>
                 <span id='navAbout' style={{ color: props.isAbout ? '#7E7E86':'#161619' }}>ABOUT</span>
-                <span id='navBlog' style={{ color: props.isBlog ? '#7E7E86':'#161619' }}>BROG</span>
+                <span id='navBlog' style={{ color: props.isBlog ? '#7E7E86':'#161619' }}onClick={() => toBlog()}>BROG</span>
             </span>
         </div>
     )

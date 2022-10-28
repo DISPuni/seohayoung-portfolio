@@ -4,33 +4,26 @@ body {
   margin: 0;
   padding: 0;
 }
-
 ul,
 ol {
   list-style: none;
 }
-
 a {
   text-decoration: none
 }
-
 .flex {
   display: flex;
 }
-
 .flex-col {
   display: flex;
   flex-direction: column;
 }
-
 .margin-auto {
   margin: auto;
 }
-
 .page {
   height: 100%;
 }
-
 .text-logo {
   width: 31rem;
   height: auto;

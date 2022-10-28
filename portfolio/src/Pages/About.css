@@ -1,0 +1,181 @@
+table {
+    width: 82.5rem;
+    font-weight: 500;
+    font-size: 1.563rem;
+    border-collapse: collapse;
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    margin: auto;
+    margin-bottom: 13.61rem;
+}
+th {
+    text-align: left;
+    width: 50%;
+}
+th, td {
+    padding-top: 1.139rem;
+    padding-bottom: 1.139rem;
+    border-top: 1.5px solid black;
+}
+#topBtn {
+    position: fixed;
+    right: 6.25rem;
+    bottom: 7.438rem;
+    cursor: pointer;
+    z-index: 1;
+}
+#aboutBody {
+    display: flex;
+    flex-direction: column;
+    top: 3.3rem;
+    margin: auto;
+    margin-bottom: 7.88rem;
+}
+#aboutLogo {
+    margin: auto;
+    width: 16.188rem;
+    margin-top: 23.563rem;
+    margin-bottom: 10rem;
+}
+#aboutFashionLogo {
+    margin-left: 10.625rem;
+    margin-right: 10.625rem;
+}
+#triggerClosed {
+    transform: scaleY(-1);
+    margin-left: 840px;
+    cursor: pointer;
+}
+#triggerOpened {
+    margin-left: 840px;
+    cursor: pointer;
+}
+#availableToolText {
+    margin: auto;
+    width: fit-content;
+}
+#aboutFooter {
+    border-bottom: 1px solid #43434B;
+    padding-top: 3.679rem;
+    padding-bottom: 3.679rem;
+}
+.about-icon {
+    height: 12.059rem;
+    margin-bottom: 6.247rem;
+}
+.about-logo {
+    height: 11.125rem;
+    margin-bottom: 2.938rem;
+}
+.about-logo-text {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.vl {
+    min-height: 4.5rem;
+    position: relative;
+    width: 0;
+    margin: auto;
+    margin-top: -0.25rem;
+    border-left: 1px solid #43434B;
+}
+.collapse-title {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 25.188rem;
+    margin-left: 1rem;
+    /* margin-left: 1rem; */
+    /* margin-right: 19.33rem; */
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.about-timeline {
+    /* border-top: 1px solid #43434B; */
+    border-bottom: 1px solid #43434B;
+}
+.collapse-year {
+    display: flex;
+    width: 11.412rem;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 4.543rem;
+}
+.collapse-year-text {
+    font-family: 'Sans-serif';
+    color: #7E7E86;
+}
+.nodes {
+    margin-right: 3.784rem;
+}
+.circle {
+    height: 1.083rem;
+    width: 1.083rem;
+    background-color: #43434B;
+    border-radius: 50%;
+    display: inline-block;
+}
+.organization {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 7.315rem;
+    width: 10.8rem;
+}
+.organization-text {
+    font-weight: 600;
+    color: #43434B;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 10rem;
+}
+.description-text {
+    color: #7E7E86;
+}
+.tool {
+    height: 4.5rem;
+}
+.about-marquee {
+    display: flex;
+    font-weight: 600;
+    font-size: 1.25rem;
+    /* margin-top: 7.88rem; */
+    border-top: 1px solid #43434B;
+    border-bottom: 1px solid #43434B;
+    padding-top: 2.5rem;
+    padding-bottom: 9.3rem;
+    height: 7.313rem;
+    overflow: hidden;
+}
+.about-marquee-content {
+    flex-shrink: 0;
+    list-style: none;
+    min-width: 100%;
+    height: fit-content;
+    animation: marquee 30s linear infinite;
+}
+.about-marquee-item {
+    margin: auto;
+    margin-left: 2.306rem;
+    margin-right: 2.306rem;
+}
+.footer-component {
+    margin: auto;
+    position: relative;
+    cursor: pointer;
+}
+.footer-icon {
+    height: 3.018rem;
+    vertical-align: middle;
+}
+.about-footer-text {
+    font-size: 2.125rem;
+    font-weight: 600;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+	left: 50%;
+    transform: translate( -50%, -50% );
+}

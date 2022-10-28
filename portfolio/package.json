@@ -1,12 +1,14 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "cra-template": "1.2.0",
     "gh-pages": "^4.0.0",
+    "html-react-parser": "^3.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-draggable": "^4.4.5",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1"
   },
@@ -18,7 +20,7 @@
     "deploy": "gh-pages -d build",
     "predeploy": "yarn build"
   },
-  "homepage": "./", 
+  "homepage": "https://onmay16.github.io/seohayoung-portfolio/",
   "eslintConfig": {
     "extends": [
       "react-app",

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import media from '../assets/media.gif'
+import media from '../assets/gifs/media.gif'
 
 function MediaLoading() {
     return (

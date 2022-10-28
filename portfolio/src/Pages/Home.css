@@ -1,17 +1,19 @@
 #home {
     width: fit-content;
+    height: 71rem;
 }
 #homeBody {
     background-image: url('../assets/main/main_bg.svg');
-    top: 3.3rem;
+    margin-top: 3.25rem;
     height: 65.781rem;
     width: fit-content;
     position: relative;
+    overflow: hidden;
 }
 #draggableItem {
     top: 13.375rem;
     left: 82.438rem;
-    position:sticky;
+    position: sticky;
     font-size: 20px;
     width: 537px;
     height: 81px;

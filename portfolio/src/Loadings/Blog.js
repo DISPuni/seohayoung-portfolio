@@ -1,6 +1,6 @@
 import React from 'react'
 
-import blog from '../assets/blog.svg'
+import blog from '../assets/icons/blog.svg'
 
 function Blog() {
     return (

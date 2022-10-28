@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import './Start.css'
+import './StartLoading.css'
 
-import startLoading from '../assets/loading.gif';
+import startLoading from '../assets/gifs/loading.gif';
 
 function Start() {
 

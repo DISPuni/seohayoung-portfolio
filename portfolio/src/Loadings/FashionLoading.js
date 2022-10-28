@@ -2,7 +2,7 @@ import React from 'react'
 
 import './FashionLoading.css'
 
-import fashionLoading from '../assets/fashion_icon.svg'
+import fashionLoading from '../assets/icons/fashion_icon.svg'
 
 function FashionLoading() {
     return (

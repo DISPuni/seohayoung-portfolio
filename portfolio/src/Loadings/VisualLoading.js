@@ -1,6 +1,6 @@
 import React from 'react'
 
-import visual from '../assets/visual.gif'
+import visual from '../assets/gifs/visual.gif'
 
 function VisualLoading() {
     return (
