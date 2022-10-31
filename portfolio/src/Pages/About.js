@@ -5,6 +5,7 @@ import './About.css'
 
 import NavHeader from '../Components/NavHeader'
 import Accordion from '../Utils/Accordion'
+import SecondFooter from '../Components/SecondFooter'
 
 import logo from '../assets/icons/disp_mainlogo.svg'
 import topBtn from '../assets/about/top_botton.svg'
@@ -184,20 +185,7 @@ function About() {
                             <li className='about-marquee-item'><img className='tool' src={jsLogo} alt="js logo" /></li>
                         </ul>
                     </div>
-                    <div id='aboutFooter' className='flex'>
-                        <div className='footer-component' style={{ marginLeft:'auto',  marginRight:'7rem' }} onClick={() => toFashion()}>
-                            <img src={footerFashion} alt="fashion icon" className="footer-icon" />
-                            <div className="about-footer-text">Fashion</div>
-                        </div>
-                        <div className='footer-component' style={{ marginLeft:'7rem',  marginRight:'7rem' }} onClick={() => toVisual()}>
-                            <img src={footerVisual} alt="visual icon" className="footer-icon" />
-                            <div className="about-footer-text">Visual</div>
-                        </div>
-                        <div className='footer-component' style={{ marginLeft:'7rem',  marginRight:'auto' }} onClick={() => toMedia()}>
-                            <img src={footerMedia} alt="media icon" className="footer-icon" />
-                            <div className="about-footer-text">Media</div>
-                        </div>
-                    </div>
+                    <SecondFooter/>
                 </div>
             }
         </div>

@@ -1,0 +1,42 @@
+#circleCard {
+    cursor: pointer;
+    position: relative;
+    margin-left: 7.11rem;
+}
+#cardImg {
+    width: 15.271rem;
+    height: 15.271rem;
+    border-radius: 50%;
+}
+.circle-upper {
+    width: 15.271rem;
+    height: 7.6355rem;
+    border-radius: 7.6355rem 7.6355rem 0 0;
+    background-color: white;
+    border: 1px solid #000000;
+}
+.circle-bottom {
+    width: 15.271rem;
+    height: 7.6355rem;
+    border-radius: 0 0 7.6355rem 7.6355rem;
+    background-color: white;
+    border-bottom: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+.circle-text {
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    font-size: 1.25rem;
+}
+.circle-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+#circleCard:hover .circle-overlay {
+    opacity: 1;
+}

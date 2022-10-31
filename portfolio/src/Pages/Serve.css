@@ -1,0 +1,48 @@
+.serveBody {
+    background-image: url('../assets/serve_top_bg.png');
+    background-repeat: no-repeat;
+    margin-bottom: 15.248rem;
+}
+#fashionIcon {
+    width: 19.228rem;
+    margin: auto;
+    margin-top: 13.363rem;
+    margin-bottom: 1.472rem;
+}
+#visualIcon {
+    width: 15.271rem;
+    margin: auto;
+    margin-top: 13.363rem;
+    margin-bottom: 1.472rem;
+}
+#mediaIcon {
+    width: 10.349rem;
+    margin: auto;
+    margin-top: 13.363rem;
+    margin-bottom: 1.472rem;
+}
+.serveText {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: auto;
+    margin-bottom: 3.125rem;
+}
+.filter {
+    margin: auto;
+    margin-bottom: 7.401rem;
+}
+.filterItem {
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 2.938rem;
+}
+.cards {
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
+    overflow-x: scroll;
+}
+.cards::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
