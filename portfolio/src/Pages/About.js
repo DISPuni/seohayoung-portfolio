@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 
 import './About.css'
 
 import NavHeader from '../Components/NavHeader'
 import Accordion from '../Utils/Accordion'
 import SecondFooter from '../Components/SecondFooter'
+import TopBtn from '../Components/TopBtn'
 
 import logo from '../assets/icons/disp_mainlogo.svg'
-import topBtn from '../assets/about/top_botton.svg'
 
 import fashionLogo from '../assets/about/fashion_logo.svg'
 import mediaLogo from '../assets/about/media_logo.svg'
@@ -42,17 +41,6 @@ function About() {
 
     const [isLoading, setIsLoading] = useState(true)
 
-    let navigate = useNavigate();
-    function toFashion() {
-        navigate('/fashion')
-    }
-    function toVisual() {
-        navigate('/visual')
-    }
-    function toMedia() {
-        navigate('/media')
-    }
-
     useEffect(() => {
         setTimeout(() => {
             setIsLoading(false)
@@ -67,7 +55,7 @@ function About() {
                 </div> :
                 <div className='page flex-col'>
                     <NavHeader isNav={true} isAbout={true} isBlog={false} />
-                    <img id='topBtn' src={topBtn} alt="top button" />
+                    <TopBtn />
                     <div id='aboutBody'>
                         <img id='aboutLogo' src={logo} alt="about logo" />
                         <table>

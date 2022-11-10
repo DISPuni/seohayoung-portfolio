@@ -1,0 +1,32 @@
+.back-btn {
+    margin-top: 12.188rem;
+    margin-left: 6.25rem;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.blog-post-body {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.75rem;
+}
+.blog-post-logo {
+    width: 12.875rem;
+    margin: auto;
+    margin-top: 9.938rem;
+    margin-bottom: 4rem;
+}
+.blog-post-title {
+    font-size: 2rem;
+    margin: auto;
+    margin-bottom: 0.938rem;
+}
+.blog-post-subtitle {
+    font-size: 1.25rem;
+    margin: auto;
+    margin-bottom: 3.75rem;
+}
+.blog-content-body {
+    margin: auto;
+    width: 82.5rem;
+}

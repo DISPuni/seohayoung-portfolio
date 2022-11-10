@@ -1,0 +1,44 @@
+#servePostLogoFashion {
+    width: 13.099rem;
+    margin: auto;
+    margin-top: 9.938rem;
+    margin-bottom: 4rem;
+}
+.serve-post-body {
+    background-image: url('../../assets/serve_top_bg.png');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.75rem;
+}
+.serve-post-title {
+    font-size: 2rem;
+    margin: auto;
+    margin-bottom: 0.938rem;
+}
+.serve-post-subtitle {
+    font-size: 1.25rem;
+    margin: auto;
+    margin-bottom: 3.75rem;
+}
+.serve-post-btn-n-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12.188rem;
+    margin-left: 6.25rem;
+    margin-right: 6.25rem;
+}
+.serve-back-btn {
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.serve-filter {
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.serve-content-body {
+    margin: auto;
+    width: 82.5rem;
+}

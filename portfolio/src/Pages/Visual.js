@@ -18,13 +18,14 @@ import example6 from '../assets/examples/example6.jpeg'
 
 export default function Visual() {
 
+    const serveType = 'visual'
     const itemList = [
-        { title: 'PUUNI', type: 'BX', image:example1 },
-        { title: 'test1', type: 'BX', image:example2 },
-        { title: 'test2-1', type: 'Graphic', image:example3 },
-        { title: 'test2-2', type: 'Graphic', image:example4 },
-        { title: 'test3-1', type: 'Editorial', image:example5 },
-        { title: 'test3-2', type: 'Editorial', image:example6 },
+        { id:1, title: 'PUUNI', type: 'BX', image:example1 },
+        { id:2, title: 'test1', type: 'BX', image:example2 },
+        { id:3, title: 'test2-1', type: 'Graphic', image:example3 },
+        { id:4, title: 'test2-2', type: 'Graphic', image:example4 },
+        { id:5, title: 'test3-1', type: 'Editorial', image:example5 },
+        { id:6, title: 'test3-2', type: 'Editorial', image:example6 },
     ]
 
     const [isLoading, setIsLoading] = useState(true)
@@ -54,7 +55,7 @@ export default function Visual() {
                         <div className='cards'>
                         <div className='flex'>
                             {itemList.filter(item => item.type === filter || filter === 'all').map(filteredItem => (
-                                <CircleCard type={filteredItem.type} title={filteredItem.title} image={filteredItem.image}/>
+                                <CircleCard serveType={serveType} id={filteredItem.id} type={filteredItem.type} title={filteredItem.title} image={filteredItem.image}/>
                             ))}
                         </div>
                     </div>

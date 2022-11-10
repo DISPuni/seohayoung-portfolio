@@ -35,6 +35,15 @@ function Home() {
     function toBlog() {
         navigate('/blog')
     }
+    function toFashion() {
+        navigate('/fashion')
+    }
+    function toVisual() {
+        navigate('/visual')
+    }
+    function toMedia() {
+        navigate('/media')
+    }
 
     return (
         <div id='home' className='page flex-col'>
@@ -52,9 +61,9 @@ function Home() {
                         {/* <div id='videoSection'>dd</div> */}
                     </div>
                     <img id='mainBlogIcon' src={blogSrc} alt="blog icon" onMouseOver={() => setBlogSrc(blogHover)} onMouseLeave={() => setBlogSrc(blog)} onClick={() => toBlog()}/>
-                    <img id='mainMediaIcon' src={mediaSrc} alt="media design icon" onMouseOver={() => setMediaSrc(mediaHover)} onMouseLeave={() => setMediaSrc(media)} />
-                    <img id='mainFashionIcon' src={fashionSrc} alt="fashion design icon" onMouseOver={() => setFashionSrc(fashionHover)} onMouseLeave={() => setFashionSrc(fashion)} />
-                    <img id='mainVisualIcon' src={visualSrc} alt="visual design icon" onMouseOver={() => setVisualSrc(visualHover)} onMouseLeave={() => setVisualSrc(visual)} />
+                    <img id='mainMediaIcon' src={mediaSrc} alt="media design icon" onMouseOver={() => setMediaSrc(mediaHover)} onMouseLeave={() => setMediaSrc(media)} onClick={toMedia}/>
+                    <img id='mainFashionIcon' src={fashionSrc} alt="fashion design icon" onMouseOver={() => setFashionSrc(fashionHover)} onMouseLeave={() => setFashionSrc(fashion)} onClick={toFashion}/>
+                    <img id='mainVisualIcon' src={visualSrc} alt="visual design icon" onMouseOver={() => setVisualSrc(visualHover)} onMouseLeave={() => setVisualSrc(visual)} onClick={toVisual}/>
                     <img id='pill' src={pill} alt="main pill img"/>
                     <img id='about' src={aboutSrc} alt="main about img" onMouseOver={() => setAboutSrc(aboutHover)} onMouseLeave={() => setAboutSrc(about)} onClick={(() => toAbout())}/>
                 </div>

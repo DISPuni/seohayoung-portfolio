@@ -20,15 +20,16 @@ import example8 from '../assets/examples/example8.jpeg'
 
 function Media() {
 
+    const serveType = 'media'
     const itemList = [
-        { title: 'DD', type: 'UIUX', image:example1},
-        { title: 'test1', type: 'UIUX', image:example2 },
-        { title: 'test2-1', type: 'Motion', image:example3 },
-        { title: 'test2-2', type: 'Motion', image:example4 },
-        { title: 'test3-1', type: 'Interaction', image:example5 },
-        { title: 'test3-2', type: 'Interaction', image:example6 },
-        { title: 'test4-1', type: 'Animation', image:example7 },
-        { title: 'test4-2', type: 'Animation', image:example8 },
+        { id:1, title: 'DD', type: 'UIUX', image:example1},
+        { id:2, title: 'test1', type: 'UIUX', image:example2 },
+        { id:3, title: 'test2-1', type: 'Motion', image:example3 },
+        { id:4, title: 'test2-2', type: 'Motion', image:example4 },
+        { id:5, title: 'test3-1', type: 'Interaction', image:example5 },
+        { id:6, title: 'test3-2', type: 'Interaction', image:example6 },
+        { id:7, title: 'test4-1', type: 'Animation', image:example7 },
+        { id:8, title: 'test4-2', type: 'Animation', image:example8 },
     ]
 
     const [isLoading, setIsLoading] = useState(true)
@@ -59,7 +60,7 @@ function Media() {
                         <div className='cards'>
                             <div className='flex'>
                                 {itemList.filter(item => item.type === filter || filter === 'all').map(filteredItem => (
-                                    <CircleCard type={filteredItem.type} title={filteredItem.title} image={filteredItem.image}/>
+                                    <CircleCard serveType={serveType} id={filteredItem.id} type={filteredItem.type} title={filteredItem.title} image={filteredItem.image}/>
                                 ))}
                             </div>
                         </div>
