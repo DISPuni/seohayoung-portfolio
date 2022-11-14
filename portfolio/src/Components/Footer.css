@@ -1,12 +1,13 @@
 #footer {
-    /* width: 246.683rem; */
-    /* bottom: 0; */
     height: 3.125rem;
+    width: 228.014rem;
     border-bottom: 1px solid #707070;
     border-top: 1px solid #707070;
     background-color: white;
-    /* overflow: hidden; */
-    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    margin-bottom: -50px;
+    position: absolute;
 }
 .marquee {
     height: 3.125rem;
@@ -25,7 +26,7 @@
     animation: rotation2 6s infinite linear;
 }
 .footer-text {
-    font-family: 'Sans-serif';
+    /* font-family: 'Sans-serif'; */
     font-size: 1.25rem;
     width: fit-content;
 }

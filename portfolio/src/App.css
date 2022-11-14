@@ -3,6 +3,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  /* overflow: scroll; */
 }
 ul,
 ol {
@@ -29,12 +30,19 @@ img {
 }
 .page {
   height: 100%;
+  margin: 0;
 }
 .text-logo {
   width: 31rem;
   height: auto;
 }
-
 .logo {
   width: 31rem;
+}
+
+
+@media (min-width: 421px) {
+  .mobile {
+    display: none;
+  }
 }

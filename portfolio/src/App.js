@@ -12,6 +12,7 @@ import BlogPost from './Pages/BlogPost/BlogPostHeader';
 import FashionPost from './Pages/ServePost/FashionPostHeader'
 import MediaPost from './Pages/ServePost/MediaPostHeader'
 import VisualPost from './Pages/ServePost/VisualPostHeader';
+import MobileNavHeader from './Components/MobileNavHeader';
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
         <Route path="/fashion/:id" element={<FashionPost />} />
         <Route path="/media/:id" element={<MediaPost />} />
         <Route path="/visual/:id" element={<VisualPost />} />
+        <Route path="/mobile" element={<MobileNavHeader />} />
       </Routes>
     </Router>
   );

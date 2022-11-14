@@ -1,19 +1,30 @@
+@media (max-width: 420px) {
+    #mobileNavHeader {
+        display: none;
+    }
+}
+@media (min-width: 421px) {
+    #mobileNavHeader {
+        display: block;
+    }
+}
 #home {
     width: fit-content;
-    height: 71rem;
+    height: fit-content;
+    overflow-y: scroll;
 }
 #homeBody {
     background-image: url('../assets/main/main_bg.svg');
-    margin-top: 3.25rem;
-    height: 65.781rem;
-    width: fit-content;
+    background-repeat: no-repeat;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 #draggableItem {
     top: 13.375rem;
     left: 82.438rem;
-    position: sticky;
+    position: fixed;
     font-size: 20px;
     width: 537px;
     height: 81px;
@@ -35,7 +46,7 @@
 }
 #homeItems {
     margin-left: 16.25rem;
-    margin-top: 15rem;
+    margin-top: 20rem;
 }
 #player {
     margin-right: 16.25rem;
@@ -43,6 +54,12 @@
 #videoPlayer {
 }
 #videoSection {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 16.875rem;
+    margin-top: 20.125rem;
     width: 48.938rem;
     height: 32.813rem;
     background-color: aqua;

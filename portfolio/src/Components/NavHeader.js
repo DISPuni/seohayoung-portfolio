@@ -19,7 +19,7 @@ function NavHeader(props) {
     }
 
     return (
-        <div id='navHeader'>
+        <div id='navHeader' className='desktop'>
             <img id='headerLogo' src={logo} alt="main logo" onClick={() => toHome()}/>
             <span id='nav' style={{ display: props.isNav ? 'flex':'none'}}>
                 <span id='navAbout' style={{ color: props.isAbout ? '#7E7E86':'#161619' }} onClick={() => toAbout()}>ABOUT</span>

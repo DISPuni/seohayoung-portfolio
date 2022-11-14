@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Draggable from 'react-draggable'
 
 import './Home.css'
 
 import NavHeader from '../Components/NavHeader'
+import MobileNavHeader from '../Components/MobileNavHeader'
 import Footer from '../Components/Footer'
 
 import videoPlayer from '../assets/main/main_img_video_auto_play.svg'
@@ -20,7 +21,11 @@ import pill from '../assets/main/main_img_pill.svg'
 import about from '../assets/main/main_img_about.svg'
 import aboutHover from '../assets/main/main_img_about_hover.svg'
 
+import video from '../assets/intro_video.mp4'
+
 function Home() {
+
+    const videoRef = useRef(null);
 
     const [blogSrc, setBlogSrc] = useState(blog);
     const [mediaSrc, setMediaSrc] = useState(media);
@@ -45,9 +50,21 @@ function Home() {
         navigate('/media')
     }
 
+    function videoPause() {
+        console.log(videoRef.current);
+        if (videoRef.current.paused) {
+            console.log('puaused');
+            videoRef.current.play();
+        } else {
+            console.log('played');
+            videoRef.current.pause();
+        }
+    }
+
     return (
         <div id='home' className='page flex-col'>
             <NavHeader isNav={false} isAbout={false} isBlog={false}/>
+            <MobileNavHeader/>
             <div id='homeBody'>
                 <Draggable id='draggable'>
                     <div id='draggableItem'>
@@ -58,7 +75,9 @@ function Home() {
                 <div id='homeItems' className='flex'>
                     <div id='player'>
                         <img id='videoPlayer' src={videoPlayer} alt="video player"/>
-                        {/* <div id='videoSection'>dd</div> */}
+                        <video id='videoSection'autoPlay loop muted ref={videoRef} onClick={() => videoPause()}>
+                            <source src={video} type="video/mp4"/>
+                        </video>
                     </div>
                     <img id='mainBlogIcon' src={blogSrc} alt="blog icon" onMouseOver={() => setBlogSrc(blogHover)} onMouseLeave={() => setBlogSrc(blog)} onClick={() => toBlog()}/>
                     <img id='mainMediaIcon' src={mediaSrc} alt="media design icon" onMouseOver={() => setMediaSrc(mediaHover)} onMouseLeave={() => setMediaSrc(media)} onClick={toMedia}/>

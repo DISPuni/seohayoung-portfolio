@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import Matter from "matter-js";
 
 import './Serve.css'
-import './Pills.css'
 
 import FashionLoading from '../Loadings/FashionLoading'
 import NavHeader from '../Components/NavHeader'
@@ -19,16 +18,25 @@ import example4 from '../assets/examples/example4.jpeg'
 import example5 from '../assets/examples/example5.jpg'
 import example6 from '../assets/examples/example6.jpeg'
 
+const STATIC_DENSITY = 15;
+
 function Fashion() {
 
     const matterRef = useRef(null);
-    var Engine = Matter.Engine,
-        Render = Matter.Render,
-        Runner = Matter.Runner,
-        MouseConstraint = Matter.MouseConstraint,
-        Mouse = Matter.Mouse,
-        Composite = Matter.Composite,
-        Bodies = Matter.Bodies;
+
+    const [constraints, setContraints] = useState();
+    const [scene, setScene] = useState();
+
+    const handleResize = () => {
+        // scene.options.width = matterRef.current.getBoundingClientRect().width;
+        // scene.options.height = matterRef.current.getBoundingClientRect().height;
+        // scene.canvas.width = matterRef.current.getBoundingClientRect().width;
+        // scene.canvas.height = matterRef.current.getBoundingClientRect().height;
+        // setContraints(matterRef.current.getBoundingClientRect());
+        setMatterWidth(window.innerWidth)
+        setMatterHeight(document.getElementsByClassName('serveBody')[0].scrollHeight)
+    };
+    
     const [matterWidth, setMatterWidth] = useState(1680);
     const [matterHeight, setMatterHeight] = useState(1290);
 
@@ -46,75 +54,57 @@ function Fashion() {
     const [isLoading, setIsLoading] = useState(false);
     const [filter, setFilter] = useState('all');
 
+
     useEffect(() => {
-        // setTimeout(() => {
-        //     setIsLoading(false)
-        // }, 1500);
-        
-        var engine = Engine.create(),
-            world = engine.world;
+    var Engine = Matter.Engine,
+        Render = Matter.Render,
+        World = Matter.World,
+        // Runner = Matter.Runner,
+        MouseConstraint = Matter.MouseConstraint,
+        Mouse = Matter.Mouse,
+        // Composite = Matter.Composite,
+        Bodies = Matter.Bodies;
+    var engine = Engine.create()
+    var render = Render.create({
+        // element: matterWrapperRef.current,
+        element: matterRef.current,
+        // canvas: matterRef.current,
+        engine: engine,
+        options: {
+            width: window.innerWidth,
+            height: matterHeight,
+            wireframes: false,
+            background: 'transparent',
+            wireframeBackground: 'transparent'
+    }});
 
-        var render = Render.create({
-            element: matterRef.current,
-            engine: engine,
-            options: {
-                width: matterWidth,
-                height: matterHeight,
-                // showAngleIndicator: false,
-                wireframes: false,
-                background: 'transparent',
-                wireframeBackground: 'transparent'
-            }
-        });
-        Render.run(render);
-
-        // create runner
-        var runner = Runner.create();
-        Runner.run(runner, engine);
-
-        world.bodies = [];
-
-        const offset = 100;
-
-        // these static walls will not be rendered in this sprites example, see options
-        Composite.add(world, [
-            // Bodies.rectangle(400, -offset, 800.5 + 2 * offset, 10, {render: {
-            //     // isStatic: true,
-            //     fillStyle: 'transparent',
-            //     strokeStyle: 'transparent',
-            //     lineWidth: 1
-            // }}),
-
-            Bodies.rectangle(matterWidth/2 - 50, -50, matterWidth - 50, 50, { isStatic: true }),
-            Bodies.rectangle(matterWidth/2, matterHeight, matterWidth, 50, { isStatic: true, render: { fillStyle: "fff" } }),
-            Bodies.rectangle(matterWidth + 50, matterHeight/2, 50, matterHeight, { isStatic: true }),
-            Bodies.rectangle(-50, matterHeight/2, 50, matterHeight, { isStatic: true })
-        ]);
-
-        var pill1 = Bodies.circle(0, 0, 33, {
+    var topWall = Bodies.rectangle(window.innerWidth / 2 - 50, -50, window.innerWidth - 50, 50, { isStatic: true, render: { fillStyle: "fff" } }),
+        bottomWall = Bodies.rectangle(window.innerWidth / 2, matterHeight, window.innerWidth, 50, { isStatic: true, render: { fillStyle: "fff" } }),
+        leftWall = Bodies.rectangle(window.innerWidth + 50, matterHeight / 2, 50, matterHeight, { isStatic: true, render: { fillStyle: "fff" } }),
+        rightWall = Bodies.rectangle(-50, matterHeight / 2, 50, matterHeight, { isStatic: true, render: { fillStyle: "fff" } })
+    const pill1 = Bodies.circle(100, 300, 35, {
+        restitution: 0.5,
+        render: { sprite: { texture: pill } }
+        }),
+        pill2 = Bodies.circle(200, 400, 35, {
             restitution: 0.5,
             render: { sprite: { texture: pill } }
-        }, 0);
-        var pill2 = Bodies.circle(0, 0, 33, {
+        }),
+        pill3 = Bodies.circle(300, 200, 35, {
+            restitution: 0.5,
+            render: { sprite: { texture: pill } }
+        }),
+        pill4 = Bodies.circle(400, 500, 35, {
+            restitution: 0.5,
+            render: { sprite: { texture: pill } }
+        }),
+        pill5 = Bodies.circle(500, 100, 35, {
             restitution: 0.5,
             render: { sprite: { texture: pill } }
         });
-        var pill3 = Bodies.circle(0, 0, 33, {
-            restitution: 0.5,
-            render: { sprite: { texture: pill } }
-        });
-        var pill4 = Bodies.circle(0, 0, 33, {
-            restitution: 0.5,
-            render: { sprite: { texture: pill } }
-        });
-        var pill5 = Bodies.circle(0, 0, 33, {
-            restitution: 0.5,
-            render: { sprite: { texture: pill } }
-        });
+    
+        World.add(engine.world, [topWall, bottomWall, leftWall, rightWall, pill1, pill2, pill3, pill4, pill5]);
 
-        Composite.add(world, [pill1, pill2, pill3, pill4, pill5])
-
-        // add mouse control
         var mouse = Mouse.create(render.canvas),
             mouseConstraint = MouseConstraint.create(engine, {
                 mouse: mouse,
@@ -127,35 +117,74 @@ function Fashion() {
             });
         mouseConstraint.mouse.element.removeEventListener("mousewheel", mouseConstraint.mouse.mousewheel);
         mouseConstraint.mouse.element.removeEventListener("DOMMouseScroll", mouseConstraint.mouse.mousewheel);
-
-        Composite.add(world, mouseConstraint);
-
-        // keep the mouse in sync with rendering
         render.mouse = mouse;
 
+        World.add(engine.world, mouseConstraint);
         // fit the render viewport to the scene
         Render.lookAt(render, {
             min: { x: 0, y: 0 },
-            max: { x: matterWidth, y: matterHeight }
+            max: { x: window.innerWidth, y: document.getElementsByClassName('serveBody')[0].scrollHeight }
         });
 
-        // return {
-        //     engine: engine,
-        //     runner: runner,
-        //     render: render,
-        //     canvas: render.canvas,
-        //     stop: function () {
-        //         Matter.Render.stop(render);
-        //         Matter.Runner.stop(runner);
-        //     }
-        // };
-        // engine: engine,
-        // //     runner: runner,
-        // //     render: render,
-        // //     canvas: render.canvas,
-        Matter.Render.run(render);
-        Matter.Runner.run(engine)
+        Matter.Runner.run(engine);
+        Render.run(render);
+
+        setMatterWidth(window.innerWidth)
+        setMatterHeight(matterHeight)
+        // setContraints([document.getElementsByClassName('serveBody')[0].scrollHeight, window.innerHeight]);
+        // setScene(render);
+
+        // window.addEventListener('resize', handleResize);
     }, [])
+    
+    // useEffect(() => {
+    //     const Render = Matter.Render
+    //     Render.lookAt(scene, {
+    //         min: { x: 0, y: 0 },
+    //         max: { x: window.innerWidth, y: document.getElementsByClassName('serveBody')[0].scrollHeight }
+    //     });
+    //     if (constraints) {
+    //         // let { width, height } = constraints;
+            
+    //         // Dynamically update canvas and bounds
+    //         scene.bounds.max.x = matterWidth;
+    //         scene.bounds.max.y = matterHeight;
+    //         scene.options.width = matterWidth;
+    //         scene.options.height = matterHeight;
+    //         // scene.canvas.width = width;
+    //         // scene.canvas.height = height;
+
+    //         // Dynamically update floor
+    //         var topWall = scene.engine.world.bodies[0],
+    //             bottomWall = scene.engine.world.bodies[1];
+    //             // leftWall = scene.engine.world.bodies[2],
+    //             // rightWall = scene.engine.world.bodies[3];
+            
+    //         // Matter.Body.setPosition(topWall, {
+    //         //     x: width / 2 - 50, 
+    //         //     y: -50
+    //         // });
+    //         // Matter.Body.setPosition(bottomWall, {
+    //         //     x: width / 2, 
+    //         //     y: height
+    //         // });
+    //         // Matter.Body.setPosition(leftWall, {
+    //         //     x: width + 50, 
+    //         //     y: height / 2
+    //         // });
+    //         // Matter.Body.setPosition(rightWall, {
+    //         //     x: - 50, 
+    //         //     y: height / 2
+    //         // });
+
+    //         // Matter.Body.setVertices(bottomWall, [
+    //         //     { x: 0, y: height },
+    //         //     { x: width, y: height },
+    //         //     { x: width, y: height + STATIC_DENSITY },
+    //         //     { x: 0, y: height + STATIC_DENSITY }
+    //         // ]);
+    //     }
+    // }, [constraints, scene]);
 
     return (
         <div className='page'>
@@ -164,7 +193,7 @@ function Fashion() {
                 <div id='fashion' className='page'>
                     <NavHeader isNav={true} isAbout={false} isBlog={false} />
                     <div className='serveBody flex-col'>
-                        <div className='matter' ref={matterRef}/>
+                            <div className='matter' ref={matterRef} />
                         <img id='fashionIcon' src={fashion} alt="" />
                         <div className='serveText'>Fashion Design</div>
                         <div className='filter flex'>
