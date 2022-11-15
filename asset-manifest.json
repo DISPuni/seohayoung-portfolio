@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/seohayoung-portfolio/static/css/main.dfbf89c3.css",
-    "main.js": "/seohayoung-portfolio/static/js/main.627c62b1.js",
+    "main.css": "/seohayoung-portfolio/static/css/main.3b134b82.css",
+    "main.js": "/seohayoung-portfolio/static/js/main.7256e2e6.js",
     "static/media/intro_video.mp4": "/seohayoung-portfolio/static/media/intro_video.356c3e62c87a5ae08d56.mp4",
     "static/media/visual.gif": "/seohayoung-portfolio/static/media/visual.533c31f321d636e85d09.gif",
     "static/media/example2.png": "/seohayoung-portfolio/static/media/example2.56af0239210211683e0e.png",
@@ -49,6 +49,7 @@
     "static/media/illustrator.svg": "/seohayoung-portfolio/static/media/illustrator.5a78fd7a4c10143efbec24656469179e.svg",
     "static/media/indesign.svg": "/seohayoung-portfolio/static/media/indesign.e4d2c9f0a442624ed93ee3669e6c047c.svg",
     "static/media/disp_mainlogo.svg": "/seohayoung-portfolio/static/media/disp_mainlogo.0e53f56c7729ae4985c115d8d005593c.svg",
+    "static/media/mobilever_x.svg": "/seohayoung-portfolio/static/media/mobilever_x.e143667813193de4b067a9c8bb10948f.svg",
     "static/media/mobilever_menu.svg": "/seohayoung-portfolio/static/media/mobilever_menu.49d4a920f614f1b385fdbd1a4545e598.svg",
     "static/media/visual_logo.svg": "/seohayoung-portfolio/static/media/visual_logo.731e430858d09b9f8ed7172bdda9e951.svg",
     "index.html": "/seohayoung-portfolio/index.html",
@@ -62,11 +63,11 @@
     "static/media/servefooter_media.svg": "/seohayoung-portfolio/static/media/servefooter_media.6b061ffe7f9bb16a745d1a4fc1cce8e3.svg",
     "static/media/servefooter_media_inactivation.svg": "/seohayoung-portfolio/static/media/servefooter_media_inactivation.852ebed16c05507037864a43f303eac1.svg",
     "static/media/collapse.svg": "/seohayoung-portfolio/static/media/collapse.e54553e8402b773f96b1b430d974379d.svg",
-    "main.dfbf89c3.css.map": "/seohayoung-portfolio/static/css/main.dfbf89c3.css.map",
-    "main.627c62b1.js.map": "/seohayoung-portfolio/static/js/main.627c62b1.js.map"
+    "main.3b134b82.css.map": "/seohayoung-portfolio/static/css/main.3b134b82.css.map",
+    "main.7256e2e6.js.map": "/seohayoung-portfolio/static/js/main.7256e2e6.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfbf89c3.css",
-    "static/js/main.627c62b1.js"
+    "static/css/main.3b134b82.css",
+    "static/js/main.7256e2e6.js"
   ]
 }
