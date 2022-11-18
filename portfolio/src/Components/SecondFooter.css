@@ -1,3 +1,11 @@
+/* mobile */
+@media (max-width: 420px) {
+    
+}
+/* desktop */
+@media (min-width: 421px) {
+
+}
 #firstSection {
     border-top: 1px solid #43434B;
     border-bottom: 1px solid #43434B;

@@ -1,25 +1,96 @@
 @media (max-width: 420px) {
-    #mobileNavHeader {
+    #mainBlogIcon {
+        width: 10.438rem;
+    }
+    #videoPlayer {
+        width: 29.255rem;
+    }
+    #videoSection {
+        margin-left: 9.7rem;
+        margin-top: 11.6rem;
+        height: 19.2rem;
+        width: 28.7rem;
+    }
+    #mainMediaIcon, #mainFashionIcon, #mainVisualIcon {
+        width: 157.76px;
+    }
+    #pill {
+        width: 38.86px;
+    }
+    #about {
+        width: 282.00702px;
+        margin-right: 6.38rem;
+        margin-left: 10.49394rem;
+    }
+    #homeBody {
+        margin-top: 0;
+        background-size: contin;
+    }
+    #draggableItem {
         display: none;
+    }
+    #homeItems {
+        margin-left: 9.425rem;
+        margin-right: 0;
+        margin-top: 11.6rem;
+        margin-bottom: 116px;
+    }
+    #player {
+        margin-right: 9.425rem;
     }
 }
 @media (min-width: 421px) {
-    #mobileNavHeader {
+    #mainBlogIcon {
+        width: 17.956rem;
+    }
+    #videoPlayer {
+        width: 50.329rem;
+    }
+    #videoSection {
+        margin-left: 16.875rem;
+        margin-top: 20.125rem;
+        height: 32.813rem;
+        width: 48.938rem;
+    }
+    #mainMediaIcon, #mainFashionIcon, #mainVisualIcon {
+        width: 272px;
+    }
+    #pill {
+        width: 67px;
+    }
+    #about {
+        width: 486.219px;
+        margin-right: 11rem;
+        margin-left: 18.093rem;
+    }
+    #homeBody {
+        margin-top: 50px;
+        background-size: auto;
+    }
+    #draggableItem {
         display: block;
+    }
+    #homeItems {
+        margin-left: 16.25rem;
+        margin-right: 150px;
+        margin-top: 20rem;
+        margin-bottom: 200px;
+    }
+    #player {
+        margin-right: 16.25rem;
     }
 }
 #home {
     width: fit-content;
     height: fit-content;
-    overflow-y: scroll;
+    /* overflow-x: hidden; */
 }
 #homeBody {
     background-image: url('../assets/main/main_bg.svg');
     background-repeat: no-repeat;
+    background-size: contain;
     position: relative;
     overflow-x: hidden;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 #draggableItem {
     top: 13.375rem;
@@ -44,25 +115,12 @@
     background: #43434C;
     border: 1px solid #43434C;
 }
-#homeItems {
-    margin-left: 16.25rem;
-    margin-top: 20rem;
-}
-#player {
-    margin-right: 16.25rem;
-}
-#videoPlayer {
-}
 #videoSection {
     object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
-    margin-left: 16.875rem;
-    margin-top: 20.125rem;
-    width: 48.938rem;
-    height: 32.813rem;
-    background-color: aqua;
+    background-color: white;
     -webkit-clip-path: polygon(7% 17%, 96% 8%, 96% 84%, 7% 93%);
     clip-path: polygon(7% 17%, 96% 8%, 96% 84%, 7% 93%);
 }
@@ -87,7 +145,5 @@
 }
 #about {
     margin-top: auto;
-    margin-right: 11rem;
-    margin-left: 18.093rem;
     cursor: pointer;
 }

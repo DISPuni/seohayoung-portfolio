@@ -1,21 +1,44 @@
+/* mobile */
+@media (max-width: 420px) {
+    #blogLogo {
+        width: 155px;
+        margin-top: 185px;
+        margin-bottom: 85px
+    }
+    .cards-row {
+        flex-direction: column;
+        margin-bottom: 0px;
+        width: 435px;
+    }
+}
+/* desktop */
+@media (min-width: 421px) {
+    #blogLogo {
+        width: 310px;
+        margin-top: 377px;
+        margin-bottom: 170px;
+    }
+    .cards-row {
+        margin-bottom: 70px;
+        width: 1320px;
+    }
+}
 #blogBody {
     background-image: url('../assets/serve_top_bg.png');
     background-repeat: no-repeat;
+    background-size: contain;
     margin-bottom: 10.913rem;
 }
 #blogLogo {
-    width: 19.375rem;
-    margin: auto;
-    margin-top: 23.563rem;
-    margin-bottom: 10.625rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 #blogFooter {
     margin-top: 10.913rem;
 }
 .cards-row {
     display: flex;
-    margin: auto;
-    margin-bottom: 4.375rem;
-    width: 82.5rem;
+    margin-right: auto;
+    margin-left: auto;
     justify-content: space-between;
 }

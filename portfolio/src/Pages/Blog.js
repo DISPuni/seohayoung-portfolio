@@ -6,6 +6,8 @@ import './Blog.css'
 import blog from '../assets/icons/blog.svg'
 
 import NavHeader from '../Components/NavHeader'
+import MobileNavHeader from '../Components/MobileNavHeader'
+import MobileNav from '../Components/MobileNav'
 import Card from '../Components/Card'
 import SecondFooter from '../Components/SecondFooter'
 
@@ -19,6 +21,7 @@ import example6 from '../assets/examples/example6.jpeg'
 function Blog() {
 
     const [isLoading, setIsLoading] = useState(true)
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     let navigate = useNavigate();
     function toBlogPost(postId) {
@@ -35,10 +38,12 @@ function Blog() {
         <div className='page'>
             {isLoading ?
                 <div className='page flex'>
-                    <img className='text-logo margin-auto' src={blog} alt='blog logo' />
+                    <img id='blogLoading' className='text-logo margin-auto' src={blog} alt='blog logo' />
                 </div> :
                 <div id='blog' className='page'>
                     <NavHeader isNav={true} isAbout={false} isBlog={true} />
+                    <MobileNavHeader setIsModalOpen={setIsModalOpen} />
+                    {isModalOpen ? <MobileNav setIsModalOpen={setIsModalOpen} /> :null}
                     <div id="blogBody" className='flex-col'>
                         <img id='blogLogo' src={blog} alt="blog logo" />
                         <div className='flex-col'>

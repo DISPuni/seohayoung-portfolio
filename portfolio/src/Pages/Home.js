@@ -3,9 +3,11 @@ import { useNavigate } from 'react-router-dom'
 import Draggable from 'react-draggable'
 
 import './Home.css'
+import '../Components/MobileNav.css'
 
 import NavHeader from '../Components/NavHeader'
 import MobileNavHeader from '../Components/MobileNavHeader'
+import MobileNav from '../Components/MobileNav'
 import Footer from '../Components/Footer'
 
 import videoPlayer from '../assets/main/main_img_video_auto_play.svg'
@@ -32,6 +34,7 @@ function Home() {
     const [fashionSrc, setFashionSrc] = useState(fashion);
     const [visualSrc, setVisualSrc] = useState(visual);
     const [aboutSrc, setAboutSrc] = useState(about);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     let navigate = useNavigate();
     function toAbout() {
@@ -51,7 +54,6 @@ function Home() {
     }
 
     function videoPause() {
-        console.log(videoRef.current);
         if (videoRef.current.paused) {
             console.log('puaused');
             videoRef.current.play();
@@ -61,10 +63,20 @@ function Home() {
         }
     }
 
+    function handleModal() {
+        console.log('before: ', isModalOpen)
+        setIsModalOpen(isModalOpen)
+        console.log('after: ', isModalOpen)
+    }
+    function showModal() {
+        setIsModalOpen(true)
+    }
+
     return (
         <div id='home' className='page flex-col'>
-            <NavHeader isNav={false} isAbout={false} isBlog={false}/>
-            <MobileNavHeader/>
+            <NavHeader isNav={false} isAbout={false} isBlog={false} />
+            <MobileNavHeader setIsModalOpen={setIsModalOpen}/>
+            {isModalOpen ? <MobileNav setIsModalOpen={setIsModalOpen}/>:null}
             <div id='homeBody'>
                 <Draggable id='draggable'>
                     <div id='draggableItem'>
