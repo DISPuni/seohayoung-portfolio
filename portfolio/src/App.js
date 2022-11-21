@@ -14,6 +14,8 @@ import MediaPost from './Pages/ServePost/MediaPostHeader'
 import VisualPost from './Pages/ServePost/VisualPostHeader';
 import MobileNav from './Components/MobileNav';
 
+import AboutLoading from './Loadings/AboutLoading';
+
 export default function App() {
   return (
     <Router basename="/seohayoung-portfolio">
@@ -30,6 +32,7 @@ export default function App() {
         <Route path="/media/:id" element={<MediaPost />} />
         <Route path="/visual/:id" element={<VisualPost />} />
         <Route path="/mobile" element={<MobileNav />} />
+        <Route path="/testLoading" element={<AboutLoading />} />
       </Routes>
     </Router>
   );

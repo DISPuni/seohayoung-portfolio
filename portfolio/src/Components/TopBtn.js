@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './TopBtn.css'
+
 import topBtn from '../assets/about/top_botton.svg'
 
 function TopBtn() {
@@ -14,13 +16,7 @@ function TopBtn() {
     };
 
     return (
-        <img className='topBtn' src={topBtn} alt="" style={{
-            position: 'fixed',
-            right: '6.25rem',
-            bottom: '7.438rem',
-            cursor: 'pointer',
-            zIndex: 1
-        }} onClick={scrollToTop} />
+        <img className='topBtn' src={topBtn} alt="" onClick={scrollToTop} />
     )
 }
 

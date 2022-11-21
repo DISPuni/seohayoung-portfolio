@@ -1,20 +1,238 @@
+/* mobile */
+@media (max-width: 820px) {
+    #aboutBody {
+        margin-bottom: 5rem;
+    }
+    table {
+        width: 350px;
+        font-size: 0.75rem;
+        margin-bottom: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #aboutIconContainer {
+        margin-bottom: 4rem;
+    }
+    .about-icon {
+        height: 4rem;
+    }
+    .about-logo {
+        display: none;
+    }
+    .about-logo-text {
+        display: none;
+    }
+    #aboutFashionLogo {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    #aboutContainer {
+        width: 350px;
+    }
+    .collapse-title {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        width: 5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .collapse-year {
+        display: none;
+    }
+    .nodes {
+        display: none;
+    }
+    .organization-text, .description-text {
+        font-size: 9px;
+        margin-bottom: 15px;
+    }
+    .description-text {
+        /* margin-top: 20px; */
+    }
+    .about-marquee {
+        font-size: 0.625rem;
+        padding-bottom: 4.5rem;
+        height: 7.313rem;
+        overflow: hidden;
+    }
+    .about-marquee-item {
+        margin-left: 1.15rem;
+        margin-right: 1.15rem;
+    }
+    .tool {
+        height: 2.25rem;
+    }
+    .organization {
+        margin-right: 1.5rem;
+        width: 6rem;
+    }
+    .description {
+        width: 5rem;
+    }
+}
+/* tablet */
+@media (min-width: 821px) and (max-width: 1180px) {
+    #aboutBody {
+        margin-bottom: 5.5rem;
+    }
+    table {
+        width: 800px;
+        font-size: 1rem;
+        margin-bottom: 8rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #aboutIconContainer {
+        margin-bottom: 13.61rem;
+    }
+    .about-icon {
+        height: 9rem;
+        margin-bottom: 4.5rem;
+    }
+    .about-logo {
+        display: block;
+    }
+    .about-logo-text {
+        display: block;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    #aboutFashionLogo {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    #aboutContainer {
+        width: 800px;
+    }
+    .collapse-title {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+        width: 15rem;
+        margin-left: 1rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+    .collapse-year {
+        display: none;
+    }
+    .nodes {
+        display: none;
+    }
+    .organization-text, .description-text {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .about-marquee {
+        font-size: 1.25rem;
+        border-top: 1px solid #43434B;
+        padding-top: 2.5rem;
+        padding-bottom: 9.3rem;
+        height: 7.313rem;
+        overflow: hidden;
+    }
+    .about-marquee-item {
+        margin-left: 2.306rem;
+        margin-right: 2.306rem;
+    }
+    .tool {
+        height: 4.5rem;
+    }
+    .organization {
+        margin-right: 3rem;
+        width: 15rem;
+    }
+    .description {
+        width: 14rem;
+    }
+}
+/* desktop */
+@media (min-width: 1181px) {
+    #aboutBody {
+        margin-bottom: 7.88rem;
+    }
+    table {
+        width: 82.5rem;
+        font-size: 1.563rem;
+        margin-bottom: 13.61rem;
+    }
+    #aboutIconContainer {
+        margin-bottom: 13.61rem;
+    }
+    .about-icon {
+        height: 12.059rem;
+        margin-bottom: 6.247rem;
+    }
+    .about-logo {
+        display: block;
+    }
+    .about-logo-text {
+        display: block;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+    #aboutFashionLogo {
+        margin-left: 10.625rem;
+        margin-right: 10.625rem;
+    }
+    #aboutContainer {
+        width: 76rem;
+    }
+    .collapse-title {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        width: 25.188rem;
+        margin-left: 1rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+    .collapse-year {
+        display: flex;
+    }
+    .nodes {
+        display: flex;
+        flex-direction: column;
+    }
+    .organization-text, .description-text {
+        font-size: 15px;
+    }
+    .about-marquee {
+        font-size: 1.25rem;
+        border-top: 1px solid #43434B;
+        padding-top: 2.5rem;
+        padding-bottom: 9.3rem;
+        height: 7.313rem;
+        overflow: hidden;
+    }
+    .about-marquee-item {
+        margin-left: 2.306rem;
+        margin-right: 2.306rem;
+    }
+    .tool {
+        height: 4.5rem;
+    }
+    .organization {
+        margin-right: 7.315rem;
+        width: 10.8rem;
+    }
+    .description {
+        width: 10rem;
+    }
+}
 table {
-    width: 82.5rem;
     font-weight: 500;
-    font-size: 1.563rem;
     border-collapse: collapse;
     border-top: 1.5px solid black;
     border-bottom: 1.5px solid black;
-    margin: auto;
-    margin-bottom: 13.61rem;
 }
 th {
     text-align: left;
     width: 50%;
 }
 th, td {
-    padding-top: 1.139rem;
-    padding-bottom: 1.139rem;
+    padding-top: 1.4%;
+    padding-bottom: 1.4%;
     border-top: 1.5px solid black;
 }
 #topBtn {
@@ -28,18 +246,15 @@ th, td {
     display: flex;
     flex-direction: column;
     top: 3.3rem;
-    margin: auto;
-    margin-bottom: 7.88rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
 }
 #aboutLogo {
     margin: auto;
-    width: 16.188rem;
-    margin-top: 23.563rem;
-    margin-bottom: 10rem;
-}
-#aboutFashionLogo {
-    margin-left: 10.625rem;
-    margin-right: 10.625rem;
+    width: 19.6%;
+    margin-top: 28.5%;
+    margin-bottom: 12%;
 }
 #triggerClosed {
     transform: scaleY(-1);
@@ -54,17 +269,9 @@ th, td {
     margin: auto;
     width: fit-content;
 }
-.about-icon {
-    height: 12.059rem;
-    margin-bottom: 6.247rem;
-}
 .about-logo {
     height: 11.125rem;
     margin-bottom: 2.938rem;
-}
-.about-logo-text {
-    font-size: 1.25rem;
-    font-weight: 500;
 }
 .vl {
     min-height: 4.5rem;
@@ -74,22 +281,10 @@ th, td {
     margin-top: -0.25rem;
     border-left: 1px solid #43434B;
 }
-.collapse-title {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    width: 25.188rem;
-    margin-left: 1rem;
-    /* margin-left: 1rem; */
-    /* margin-right: 19.33rem; */
-    font-size: 1.25rem;
-    font-weight: 600;
-}
 .about-timeline {
-    /* border-top: 1px solid #43434B; */
     border-bottom: 1px solid #43434B;
 }
 .collapse-year {
-    display: flex;
     width: 11.412rem;
     flex-direction: column;
     justify-content: space-between;
@@ -113,8 +308,6 @@ th, td {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 7.315rem;
-    width: 10.8rem;
 }
 .organization-text {
     font-weight: 600;
@@ -124,22 +317,13 @@ th, td {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 10rem;
 }
 .description-text {
     color: #7E7E86;
 }
-.tool {
-    height: 4.5rem;
-}
 .about-marquee {
     display: flex;
     font-weight: 600;
-    font-size: 1.25rem;
-    border-top: 1px solid #43434B;
-    padding-top: 2.5rem;
-    padding-bottom: 9.3rem;
-    height: 7.313rem;
     overflow: hidden;
 }
 .about-marquee-content {
@@ -150,7 +334,6 @@ th, td {
     animation: marquee 30s linear infinite;
 }
 .about-marquee-item {
-    margin: auto;
-    margin-left: 2.306rem;
-    margin-right: 2.306rem;
+    margin-top: auto;
+    margin-bottom: auto;
 }

@@ -3,9 +3,12 @@ import React, { useEffect, useState } from 'react'
 import './About.css'
 
 import NavHeader from '../Components/NavHeader'
+import MobileNavHeader from '../Components/MobileNavHeader'
+import MobileNav from '../Components/MobileNav'
 import Accordion from '../Utils/Accordion'
 import SecondFooter from '../Components/SecondFooter'
 import TopBtn from '../Components/TopBtn'
+import MobileFooter from '../Components/MobileFooter'
 
 import logo from '../assets/icons/disp_mainlogo.svg'
 
@@ -33,13 +36,10 @@ import htmlLogo from '../assets/about/tools/HTML5.png'
 import cssLogo from '../assets/about/tools/css.png'
 import jsLogo from '../assets/about/tools/js.png'
 
-import footerFashion from '../assets/footerIcon/servefooter_fahion.svg'
-import footerMedia from '../assets/footerIcon/servefooter_media.svg'
-import footerVisual from '../assets/footerIcon/servefooter_visual.svg'
-
 function About() {
 
     const [isLoading, setIsLoading] = useState(true)
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     useEffect(() => {
         setTimeout(() => {
@@ -55,7 +55,9 @@ function About() {
                 </div> :
                 <div className='page flex-col'>
                     <NavHeader isNav={true} isAbout={true} isBlog={false} />
-                    <TopBtn />
+                    <MobileNavHeader setIsModalOpen={setIsModalOpen} />
+                    {isModalOpen ? <MobileNav setIsModalOpen={setIsModalOpen} /> :null}
+                    <TopBtn className='top-btn'/>
                     <div id='aboutBody'>
                         <img id='aboutLogo' src={logo} alt="about logo" />
                         <table>
@@ -74,7 +76,7 @@ function About() {
                                 <td colSpan={2}>puni929@naver.com</td>
                             </tr>
                         </table>
-                        <div className='flex margin-auto' style={{ marginBottom: '13.61rem' }}>
+                        <div id='aboutIconContainer' className='flex margin-auto'>
                             <div className='flex-col margin-auto'>
                                 <img className='about-icon' src={mediaIcon} alt="media icon" />
                                 <img className='about-logo' src={mediaLogo} alt="media logo" />
@@ -91,7 +93,7 @@ function About() {
                                 <div className='about-logo-text margin-auto'>Add felxibility.</div>
                             </div>
                         </div>
-                        <div className='flex-col margin-auto' style={{ width: '76rem' }}>
+                        <div id='aboutContainer' className='flex-col margin-auto'>
                             <div className='flex about-timeline' style={{ borderTop: '1px solid #43434B' }}>
                                 <div className='collapse-title'>Education</div>
                                 <Accordion years={['2020.03 ~ 2023.08 | 3Y', '2018.03 ~ 2020.02 | 2Y']} organizations={['Dounduk univ', 'Backseok art univ']} descriptions={[`Fashion Design<br/>Media Design`, 'Visual Design']} />
@@ -99,10 +101,6 @@ function About() {
                             <div className='flex about-timeline'>
                                 <div className='collapse-title'>Career</div>
                                 <Accordion years={['2021.12 ~ 2022.09 | 10M', '2021.07 ~ 2021.10 | 4M', '2020.12 ~ 2021.06 | 7M', '2020.04 ~ 2020.09 | 6M']} organizations={['CJ Oliveyoung', 'Amorepacific', 'UBIQUE KOREA', 'Hyundai AD']} descriptions={['Vcomerce design', 'Counseller Omni TF', 'Web design', 'design team Manager']} />
-                            </div>
-                            <div className='flex about-timeline'>
-                                <div className='collapse-title'>Experience</div>
-                                <Accordion years={['2021.12 ~ 2022.09 | 10M', '2021.07 ~ 2021.10 | 4M', '2022.05 ~ 2022.08 | 3M', '2022.05 ~ 2022.08 | 3M', '2022.03 ~ 2022.08 | 3M', '2021.04 ~ 2022.04 | 12M', '2021.06 ~ 2021.07 | 1M']} organizations={['Maple Super hackaton 2022', 'K-Digital Training Final project', 'Fastcampus UIUX megabyte school', 'SPARTA bootcamp chang', 'SPARTA Design membership', 'Student Fashion Association OFF', 'Sparta coding club K-Digital Cradit']} descriptions={['Graphic design', 'UIUX design', '3rd team', 'UIUX design', '1st team', '27th planner', 'Web Class']} />
                             </div>
                             <div className='flex about-timeline'>
                                 <div className='collapse-title'>Project</div>
@@ -174,6 +172,7 @@ function About() {
                         </ul>
                     </div>
                     <SecondFooter/>
+                    <MobileFooter/>
                 </div>
             }
         </div>

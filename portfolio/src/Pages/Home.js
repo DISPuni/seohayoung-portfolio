@@ -2,7 +2,8 @@ import React, { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Draggable from 'react-draggable'
 
-import './Home.css'
+// import './Home.css'
+import './Home copy.css'
 import '../Components/MobileNav.css'
 
 import NavHeader from '../Components/NavHeader'
@@ -78,7 +79,7 @@ function Home() {
             <MobileNavHeader setIsModalOpen={setIsModalOpen}/>
             {isModalOpen ? <MobileNav setIsModalOpen={setIsModalOpen}/>:null}
             <div id='homeBody'>
-                <Draggable id='draggable'>
+                <Draggable>
                     <div id='draggableItem'>
                         <p id='draggableText'>Choose the one you want and click</p>
                         <div id='draggableShadow' />

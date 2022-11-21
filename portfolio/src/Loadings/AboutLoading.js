@@ -10,11 +10,11 @@ function AboutLoading() {
         navigate('/about')
     }
 
-    useEffect(() => {
-        setTimeout(() => {
-            toAbout();
-        }, 3000);
-    }, [])
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         toAbout();
+    //     }, 3000);
+    // }, [])
 
     return (
         <div className='page flex'>

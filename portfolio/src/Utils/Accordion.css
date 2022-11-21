@@ -1,13 +1,46 @@
-.accordion {
-    margin-top: 5rem;
-    width: 100%;
+/* mobile */
+@media (max-width: 420px) {
+    .accordion {
+        margin-top: 1.6rem;
+    }
+    .accordion-content {
+        padding-bottom: 1rem;
+    }
+    .collapse {
+        width: 0.75rem;
+        margin-right: 0.9rem;
+    }
 }
-.accordion-content {
-    padding-bottom: 7.88rem;
+/* tablet */
+@media (min-width: 421px) and (max-width: 1180px) {
+    .accordion {
+        margin-top: 3rem;
+    }
+    .accordion-content {
+        padding-bottom: 2.5rem;
+    }
+    .collapse {
+        width: 0.75rem;
+        margin-right: 0.9rem;
+    }
+}
+/* desktop */
+@media (min-width: 1181px) {
+    .accordion {
+        margin-top: 5rem;
+    }
+    .accordion-content {
+        padding-bottom: 7.88rem;
+    }
+    .collapse {
+        width: 1.5rem;
+        margin-right: 1.875rem;
+    }
+}
+.accordion {
+    width: 100%;
 }
 .collapse {
     cursor: pointer;
-    width: 1.5rem;
     margin-left: auto;
-    margin-right: 1.875rem;
 }

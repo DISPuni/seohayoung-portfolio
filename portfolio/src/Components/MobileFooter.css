@@ -1,0 +1,27 @@
+/* mobile */
+@media (max-width: 820px) {
+    #mobileFooter {
+        display: flex;
+    }
+}
+/* desktop */
+@media (min-width: 821px) {
+    #mobileFooter {
+        display: none;
+    }
+}
+#mobileFooter {
+    border: 1px solid #161619;
+    text-align: center;
+}
+#mobileFooterIcon {
+    margin: auto;
+    width: 62px;
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+#mobileFooterText {
+    font-family: 'Sans-serif';
+    font-size: 16px;
+    margin-bottom: 21px;
+}

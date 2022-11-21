@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import './Blog.css'
+// import './Blog.css'
+import './Blog copy.css'
 
 import blog from '../assets/icons/blog.svg'
 
@@ -10,6 +11,7 @@ import MobileNavHeader from '../Components/MobileNavHeader'
 import MobileNav from '../Components/MobileNav'
 import Card from '../Components/Card'
 import SecondFooter from '../Components/SecondFooter'
+import MobileFooter from '../Components/MobileFooter'
 
 import example1 from '../assets/examples/example1.jpeg'
 import example2 from '../assets/examples/example2.png'
@@ -48,20 +50,21 @@ function Blog() {
                         <img id='blogLogo' src={blog} alt="blog logo" />
                         <div className='flex-col'>
                             <div className='cards-row'>
-                                <div onClick={() => toBlogPost(1)}><Card title='#1. 광고 플랫폼에 대하여' image={example1} /></div>
-                                <div onClick={() => toBlogPost(2)}><Card title='#2' image={example2} /></div>
+                                <div className='first-card' onClick={() => toBlogPost(1)}><Card title='#1. 광고 플랫폼에 대하여' image={example1} /></div>
+                                <div className="second-card" onClick={() => toBlogPost(2)}><Card title='#2' image={example2} /></div>
                             </div>
                             <div className='cards-row'>
-                                <Card title='#3' image={example3} />
-                                <Card title='#4' image={example4} />
+                                <div className="first-card"><Card title='#3' image={example3} /></div>
+                                <div className="second-card"><Card title='#4' image={example4} /></div>
                             </div>
                             <div className='cards-row'>
-                                <Card title='#5' image={example5} />
-                                <Card title='#6' image={example6} />
+                                <div className="first-card"><Card title='#5' image={example5} /></div>
+                                <div className="second-card"><Card title='#6' image={example6} /></div>
                             </div>
                         </div>
                     </div>
                     <SecondFooter/>
+                    <MobileFooter/>
                 </div>}
         </div>
     )

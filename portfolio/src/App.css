@@ -1,16 +1,13 @@
 /* mobile */
-@media (max-width: 420px) {
+/* @media (max-width: 420px) {
   .text-logo {
     width: 230px;
     height: auto;
   }
-}
+} */
 /* desktop */
 @media (min-width: 421px) {
-  .text-logo {
-    width: 31rem;
-    height: auto;
-  }
+
 }
 html,
 body {
@@ -48,4 +45,8 @@ img {
 }
 .logo {
   width: 31rem;
+}
+.text-logo {
+  width: 29.5%;
+  height: auto;
 }
