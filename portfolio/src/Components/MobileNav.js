@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import './MobileNav.css'
 
@@ -10,29 +11,46 @@ import media from '../assets/icons/media_icon.svg'
 
 function MobileNav(props) {
 
+    let navigate = useNavigate();
+    function toVisual() {
+        navigate('/visual')
+    }
+    function toFashion() {
+        navigate('/fashion')
+    }
+    function toMedia() {
+        navigate('/media')
+    }
+    function toAbout() {
+        navigate('/about')
+    }
+    function toBlog() {
+        navigate('/blog')
+    }
+
     function closeModal() {
         props.setIsModalOpen(false);
     }
 
     return (
         <div id='mobileNav' className='flex-col'>
-            <img id='mobileNavCloseBtn' src={closeBtn} alt="" onTouchStart={closeModal}/>
+            <img id='mobileNavCloseBtn' src={closeBtn} alt="" onClick={closeModal}/>
             <div id='iconTextSet1' className='iconTextSet flex-col'>
-                <img id='mobileNavVisual' className='mobileNavIcon' src={visual} alt="" />
-                <div className='mobileNavText'>Visual</div>
+                <img id='mobileNavVisual' className='mobileNavIcon' src={visual} alt="" onClick={toVisual}/>
+                <div className='mobileNavText' onClick={toVisual}>Visual</div>
             </div>
             <div className='iconTextSet flex-col'>
-                <img id='mobileNavFashion' className='mobileNavIcon' src={fashion} alt="" />
-                <div className='mobileNavText'>Fashion</div>
+                <img id='mobileNavFashion' className='mobileNavIcon' src={fashion} alt="" onClick={toFashion}/>
+                <div className='mobileNavText' onClick={toFashion}>Fashion</div>
             </div>
             <div className='iconTextSet flex-col'>
-                <img id='mobileNavMedia' className='mobileNavIcon' src={media} alt="" />
-                <div className='mobileNavText'>Media</div>
+                <img id='mobileNavMedia' className='mobileNavIcon' src={media} alt="" onClick={toMedia}/>
+                <div className='mobileNavText' onClick={toMedia}>Media</div>
             </div>
             <div id='mobileNavDivider'/>
             <div id='mobileNavBottomText' className='flex-col' >
-                <div id='mobileNavText2About' className='mobileNavText2'>ABOUT</div>
-                <div className='mobileNavText2'>BROG</div>
+                <div id='mobileNavText2About' className='mobileNavText2' onClick={toAbout}>ABOUT</div>
+                <div className='mobileNavText2' onClick={toBlog}>BROG</div>
             </div>
         </div>
     )

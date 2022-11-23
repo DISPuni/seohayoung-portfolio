@@ -1,8 +1,0 @@
-#fashionLogo {
-    width: 31rem;
-    animation: logoScale 1.5s alternate infinite ease-in;
-}
-@keyframes logoScale {
-    0% {transform: scale(.8);}
-    100% {transform: scale(1.1);}
-}

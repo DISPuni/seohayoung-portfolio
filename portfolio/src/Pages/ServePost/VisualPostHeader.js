@@ -6,6 +6,9 @@ import './ServePost.css'
 import NavHeader from '../../Components/NavHeader'
 import SecondFooter from '../../Components/SecondFooter'
 import TopBtn from '../../Components/TopBtn'
+import MobileNavHeader from '../../Components/MobileNavHeader'
+import MobileNav from '../../Components/MobileNav'
+import MobileFooter from '../../Components/MobileFooter'
 
 import visual from '../../assets/icons/visual_icon.svg'
 
@@ -19,8 +22,9 @@ function VisualPostHeader() {
         { id: 1, title: 'PUUNI', date: '22.03.22~', type: 'BX' },
         { id: 2, title: 'test1', date: '22.12.24~', type: 'BX' },
     ]
-    const [post, setPost] = useState()
-    const [notFound, setNotFound] = useState(true)
+    const [post, setPost] = useState();
+    const [notFound, setNotFound] = useState(true);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     let postId = useParams();
     let navigate = useNavigate();
@@ -42,6 +46,8 @@ function VisualPostHeader() {
     return (
         <div className='page'>
             <NavHeader isNav={true} isAbout={false} isBlog={false} />
+            <MobileNavHeader setIsModalOpen={setIsModalOpen} />
+            {isModalOpen ? <MobileNav setIsModalOpen={setIsModalOpen} /> : null}
             {!notFound ?
                 <div className='serve-post-body'>
                     <TopBtn />
@@ -56,6 +62,7 @@ function VisualPostHeader() {
                 </div>
                 :<NotFound />}
             <SecondFooter fashion={false} visual={true} media={false}/>
+            <MobileFooter />
         </div>
     )
 }

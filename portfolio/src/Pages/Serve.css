@@ -1,33 +1,88 @@
+/* mobile */
+@media (max-width: 1180px) {
+    .matter {
+        display: none;
+    }
+    .serveText {
+        font-size: 16px;
+    }
+    .filterItem {
+        margin-right: 1.5rem;
+    }
+    #mediaFilter {
+        flex-direction: column;
+    }
+    #mediaFilterAll {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+}
+/* mobile 2 */
+@media (max-width: 420px) {
+    .serveBody {
+        margin-bottom: 7.5rem;
+    }
+}
+/* tablet & desktop */
+@media (min-width: 421px) {
+    .serveBody {
+        background-image: url('../assets/serve_top_bg.png');
+        background-repeat: no-repeat;
+        margin-bottom: 10rem;
+    }
+}
+/* desktop */
+@media (min-width: 1181px) {
+    .matter {
+        display: block;
+    }
+    .serveText {
+        font-size: 32px;
+    }
+    .filterItem {
+        margin-right: 2.938rem;
+    }
+    .serveBody {
+        background-image: url('../assets/serve_top_bg.png');
+        background-repeat: no-repeat;
+        margin-bottom: 15.248rem;
+    }
+    #mediaFilter {
+        flex-direction: row;
+    }
+    #mediaFilterAll {
+        margin-right: 2.938rem;
+    }
+}
 .serveBody {
     position: relative;
-    /* z-index: -1; */
-    background-image: url('../assets/serve_top_bg.png');
-    background-repeat: no-repeat;
-    margin-bottom: 15.248rem;
 }
 #fashionIcon {
-    width: 19.228rem;
+    width: 16%;
     margin: auto;
-    margin-top: 13.363rem;
-    margin-bottom: 1.472rem;
+    margin-top: 11%;
+    margin-bottom: 1.2%;
 }
 #visualIcon {
-    width: 15.271rem;
+    width: 12.75%;
     margin: auto;
-    margin-top: 13.363rem;
-    margin-bottom: 1.472rem;
+    margin-top: 11.25%;
+    margin-bottom: 1.2%;
 }
 #mediaIcon {
-    width: 10.349rem;
+    width: 8.6%;
     margin: auto;
-    margin-top: 13.363rem;
-    margin-bottom: 1.472rem;
+    margin-top: 11.2%;
+    margin-bottom: 1.2%;
+}
+#mediaFilter {
+    display: flex;
 }
 .serveText {
-    font-size: 2rem;
     font-weight: 600;
     margin: auto;
-    margin-bottom: 3.125rem;
+    margin-bottom: 2.6%;
 }
 .filter {
     z-index: 2;
@@ -37,7 +92,6 @@
 .filterItem {
     cursor: pointer;
     font-weight: 500;
-    margin-right: 2.938rem;
 }
 .cards {
     -ms-overflow-style: none;
@@ -55,7 +109,6 @@
     max-width: 100%;
     height: 100%;
     position:absolute;
-    /* overflow-x: hidden; */
     top: 0;
     left: 0;
 }

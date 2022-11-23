@@ -6,6 +6,9 @@ import './ServePost.css'
 import NavHeader from '../../Components/NavHeader'
 import SecondFooter from '../../Components/SecondFooter'
 import TopBtn from '../../Components/TopBtn'
+import MobileNavHeader from '../../Components/MobileNavHeader'
+import MobileNav from '../../Components/MobileNav'
+import MobileFooter from '../../Components/MobileFooter'
 
 import fashion from '../../assets/icons/fashion_icon.svg'
 
@@ -21,6 +24,7 @@ function FashionPostHeader() {
     ]
     const [post, setPost] = useState()
     const [notFound, setNotFound] = useState(true)
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     let postId = useParams();
     let navigate = useNavigate();
@@ -42,6 +46,8 @@ function FashionPostHeader() {
     return (
         <div className='page'>
             <NavHeader isNav={true} isAbout={false} isBlog={false} />
+            <MobileNavHeader setIsModalOpen={setIsModalOpen} />
+            {isModalOpen ? <MobileNav setIsModalOpen={setIsModalOpen} /> : null}
             {!notFound ?
                 <div className='serve-post-body'>
                     <TopBtn />
@@ -56,6 +62,7 @@ function FashionPostHeader() {
                 </div>
                 : <NotFound />}
             <SecondFooter fashion={true} visual={false} media={false}/>
+            <MobileFooter />
         </div>
     )
 }

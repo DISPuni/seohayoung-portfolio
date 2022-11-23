@@ -1,44 +1,69 @@
+@media (max-width: 420px) {
+    .serve-back-btn {
+        font-size: 1rem;
+    }
+    .serve-filter {
+        font-size: 0.7rem;
+    }
+    .serve-post-title {
+        font-size: 1rem;
+    }
+    .serve-post-subtitle {
+        font-size: 0.7rem;
+    }
+}
+@media (min-width: 421px) {
+    .serve-back-btn {
+        font-size: 2rem;
+    }
+    .serve-filter {
+        font-size: 1.25rem;
+    }
+    .serve-post-title {
+        font-size: 2rem;
+    }
+    .serve-post-subtitle {
+        font-size: 1.25rem;
+    }
+}
 #servePostLogoFashion {
-    width: 13.099rem;
+    width: 19.4%;
     margin: auto;
-    margin-top: 9.938rem;
-    margin-bottom: 4rem;
+    margin-top: 14.5%;
+    margin-bottom: 6%;
 }
 .serve-post-body {
     background-image: url('../../assets/serve_top_bg.png');
     background-repeat: no-repeat;
+    background-size: contain;
     display: flex;
     flex-direction: column;
-    margin-bottom: 3.75rem;
+    margin-bottom: 5.5%;
 }
 .serve-post-title {
-    font-size: 2rem;
     margin: auto;
-    margin-bottom: 0.938rem;
+    margin-bottom: 1.5%;
 }
 .serve-post-subtitle {
-    font-size: 1.25rem;
     margin: auto;
-    margin-bottom: 3.75rem;
+    margin-bottom: 5.5%;
 }
 .serve-post-btn-n-filter {
     display: flex;
     justify-content: space-between;
-    margin-top: 12.188rem;
-    margin-left: 6.25rem;
-    margin-right: 6.25rem;
+    margin-top: 18%;
+    margin-left: 9%;
+    margin-right: 9%;
 }
 .serve-back-btn {
-    font-size: 2rem;
     font-weight: 600;
     cursor: pointer;
 }
 .serve-filter {
-    font-size: 1.25rem;
     font-weight: 500;
     cursor: pointer;
 }
 .serve-content-body {
     margin: auto;
-    width: 82.5rem;
+    width: 75%;
 }

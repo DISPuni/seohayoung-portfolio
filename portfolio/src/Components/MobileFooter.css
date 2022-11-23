@@ -13,6 +13,8 @@
 #mobileFooter {
     border: 1px solid #161619;
     text-align: center;
+    position: absolute;
+    bottom: 0;
 }
 #mobileFooterIcon {
     margin: auto;

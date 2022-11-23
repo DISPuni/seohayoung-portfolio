@@ -1,13 +1,13 @@
 import React from 'react'
 
-import './FashionLoading.css'
+import './ServeLoading.css'
 
 import fashionLoading from '../assets/icons/fashion_icon.svg'
 
 function FashionLoading() {
     return (
-        <div className='page flex'>
-            <img id='fashionLogo' className='margin-auto' src={fashionLoading} alt='fashion logo'/>
+        <div className='page flex serve-loading'>
+            <img id='fashionLogo' className='margin-auto serve-logo' src={fashionLoading} alt='fashion logo'/>
         </div>
     )
 }
