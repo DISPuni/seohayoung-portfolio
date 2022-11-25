@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/seohayoung-portfolio/static/css/main.3f425665.css",
+    "main.css": "/seohayoung-portfolio/static/css/main.024927a3.css",
     "main.js": "/seohayoung-portfolio/static/js/main.bfa0eab4.js",
     "static/media/intro_video.mp4": "/seohayoung-portfolio/static/media/intro_video.356c3e62c87a5ae08d56.mp4",
     "static/media/visual.gif": "/seohayoung-portfolio/static/media/visual.533c31f321d636e85d09.gif",
@@ -19,6 +19,7 @@
     "static/media/example7.jpeg": "/seohayoung-portfolio/static/media/example7.7eb2ba8346eb694373ad.jpeg",
     "static/media/example5.jpg": "/seohayoung-portfolio/static/media/example5.4091086b170999686dd9.jpg",
     "static/media/HTML5.png": "/seohayoung-portfolio/static/media/HTML5.23784160d848f734c302.png",
+    "static/media/Orbitron-VariableFont_wght.ttf": "/seohayoung-portfolio/static/media/Orbitron-VariableFont_wght.453377cb91a4554c36ce.ttf",
     "static/media/css.png": "/seohayoung-portfolio/static/media/css.60c923e2618c881c9f2d.png",
     "static/media/paint.png": "/seohayoung-portfolio/static/media/paint.bb03691f9c05b62615d3.png",
     "static/media/pill.png": "/seohayoung-portfolio/static/media/pill.3f3b49e2cb99f49eb239.png",
@@ -67,11 +68,11 @@
     "static/media/servefooter_media.svg": "/seohayoung-portfolio/static/media/servefooter_media.6b061ffe7f9bb16a745d1a4fc1cce8e3.svg",
     "static/media/servefooter_media_inactivation.svg": "/seohayoung-portfolio/static/media/servefooter_media_inactivation.852ebed16c05507037864a43f303eac1.svg",
     "static/media/collapse.svg": "/seohayoung-portfolio/static/media/collapse.e54553e8402b773f96b1b430d974379d.svg",
-    "main.3f425665.css.map": "/seohayoung-portfolio/static/css/main.3f425665.css.map",
+    "main.024927a3.css.map": "/seohayoung-portfolio/static/css/main.024927a3.css.map",
     "main.bfa0eab4.js.map": "/seohayoung-portfolio/static/js/main.bfa0eab4.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f425665.css",
+    "static/css/main.024927a3.css",
     "static/js/main.bfa0eab4.js"
   ]
 }
