@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/seohayoung-portfolio/static/css/main.dccef0ee.css",
-    "main.js": "/seohayoung-portfolio/static/js/main.a7d7fefb.js",
+    "main.css": "/seohayoung-portfolio/static/css/main.25236ba0.css",
+    "main.js": "/seohayoung-portfolio/static/js/main.896e0436.js",
     "static/media/intro_video.mp4": "/seohayoung-portfolio/static/media/intro_video.356c3e62c87a5ae08d56.mp4",
     "static/media/visual.gif": "/seohayoung-portfolio/static/media/visual.533c31f321d636e85d09.gif",
     "static/media/example2.png": "/seohayoung-portfolio/static/media/example2.56af0239210211683e0e.png",
@@ -25,8 +25,8 @@
     "static/media/pill.png": "/seohayoung-portfolio/static/media/pill.3f3b49e2cb99f49eb239.png",
     "static/media/imweb.png": "/seohayoung-portfolio/static/media/imweb.7f38b93a786958493585.png",
     "static/media/Figma.png": "/seohayoung-portfolio/static/media/Figma.65326560bc2420c43915.png",
+    "static/media/main_img_blog.svg": "/seohayoung-portfolio/static/media/main_img_blog.0c6074dfa8954d02af9022e022085cda.svg",
     "static/media/main_img_blog_hover.svg": "/seohayoung-portfolio/static/media/main_img_blog_hover.92c8a1d666f59af90d87dde87ec07da9.svg",
-    "static/media/main_img_blog.svg": "/seohayoung-portfolio/static/media/main_img_blog.52f354a01a4c9d7b27ad187d41bfd197.svg",
     "static/media/wix.png": "/seohayoung-portfolio/static/media/wix.71ad03d37e4ff735b3c1.png",
     "static/media/main_img_about_hover.svg": "/seohayoung-portfolio/static/media/main_img_about_hover.3944b8a05dcef10be2df5603d7ae7c4f.svg",
     "static/media/main_bg.svg": "/seohayoung-portfolio/static/media/main_bg.df484c32a55525ef9f9b.svg",
@@ -55,25 +55,25 @@
     "static/media/mobilever_menu.svg": "/seohayoung-portfolio/static/media/mobilever_menu.49d4a920f614f1b385fdbd1a4545e598.svg",
     "static/media/visual_logo.svg": "/seohayoung-portfolio/static/media/visual_logo.731e430858d09b9f8ed7172bdda9e951.svg",
     "index.html": "/seohayoung-portfolio/index.html",
+    "static/media/media_pill.svg": "/seohayoung-portfolio/static/media/media_pill.7b3426cc6fba84f93571615ae24231f3.svg",
     "static/media/media_logo.svg": "/seohayoung-portfolio/static/media/media_logo.7a6c4a8bc96955206d41ddb51ea4499e.svg",
-    "static/media/media_pill.svg": "/seohayoung-portfolio/static/media/media_pill.c035cb4903bfe155f1681d0aadac2016.svg",
     "static/media/main_img_pill.svg": "/seohayoung-portfolio/static/media/main_img_pill.e4171d83b5c51f1a1e6a5ab8f18df1b7.svg",
-    "static/media/fashion_pill.svg": "/seohayoung-portfolio/static/media/fashion_pill.f58cd2ab52ceb02b16b43d1bcc136a3b.svg",
+    "static/media/fashion_pill.svg": "/seohayoung-portfolio/static/media/fashion_pill.127cd85ecb24cf1fbf9aaf354d8ff01f.svg",
     "static/media/top_botton.svg": "/seohayoung-portfolio/static/media/top_botton.8ca20c13811b9bb711d2ff07b5e600be.svg",
     "static/media/arrow.svg": "/seohayoung-portfolio/static/media/arrow.e1ed168d5aa0ce0a2e50bebc7c9fa40a.svg",
     "static/media/servefooter_visual.svg": "/seohayoung-portfolio/static/media/servefooter_visual.0050b8822e5f90dccc021202a9df4148.svg",
     "static/media/servefooter_visual_inactivation.svg": "/seohayoung-portfolio/static/media/servefooter_visual_inactivation.54c886245af9b78f7de75b2c0667ba67.svg",
-    "static/media/visual_pill.svg": "/seohayoung-portfolio/static/media/visual_pill.f1f8f9e5116baae67884470c1a1ad551.svg",
+    "static/media/visual_pill.svg": "/seohayoung-portfolio/static/media/visual_pill.a5d85b7c6528520dffa31975927c3fd8.svg",
     "static/media/servefooter_fahion.svg": "/seohayoung-portfolio/static/media/servefooter_fahion.8589fb00e8c98c5dff07f0c773bdaf6d.svg",
     "static/media/servefooter_fahion_inactivation.svg": "/seohayoung-portfolio/static/media/servefooter_fahion_inactivation.c596670b3ad11ba7a9198599fbd4df04.svg",
     "static/media/servefooter_media.svg": "/seohayoung-portfolio/static/media/servefooter_media.6b061ffe7f9bb16a745d1a4fc1cce8e3.svg",
     "static/media/servefooter_media_inactivation.svg": "/seohayoung-portfolio/static/media/servefooter_media_inactivation.852ebed16c05507037864a43f303eac1.svg",
     "static/media/collapse.svg": "/seohayoung-portfolio/static/media/collapse.e54553e8402b773f96b1b430d974379d.svg",
-    "main.dccef0ee.css.map": "/seohayoung-portfolio/static/css/main.dccef0ee.css.map",
-    "main.a7d7fefb.js.map": "/seohayoung-portfolio/static/js/main.a7d7fefb.js.map"
+    "main.25236ba0.css.map": "/seohayoung-portfolio/static/css/main.25236ba0.css.map",
+    "main.896e0436.js.map": "/seohayoung-portfolio/static/js/main.896e0436.js.map"
   },
   "entrypoints": [
-    "static/css/main.dccef0ee.css",
-    "static/js/main.a7d7fefb.js"
+    "static/css/main.25236ba0.css",
+    "static/js/main.896e0436.js"
   ]
 }
