@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/seohayoung-portfolio/static/css/main.25236ba0.css",
+    "main.css": "/seohayoung-portfolio/static/css/main.28f82065.css",
     "main.js": "/seohayoung-portfolio/static/js/main.896e0436.js",
     "static/media/intro_video.mp4": "/seohayoung-portfolio/static/media/intro_video.356c3e62c87a5ae08d56.mp4",
     "static/media/visual.gif": "/seohayoung-portfolio/static/media/visual.533c31f321d636e85d09.gif",
@@ -19,7 +19,6 @@
     "static/media/example7.jpeg": "/seohayoung-portfolio/static/media/example7.7eb2ba8346eb694373ad.jpeg",
     "static/media/example5.jpg": "/seohayoung-portfolio/static/media/example5.4091086b170999686dd9.jpg",
     "static/media/HTML5.png": "/seohayoung-portfolio/static/media/HTML5.23784160d848f734c302.png",
-    "static/media/Orbitron-VariableFont_wght.ttf": "/seohayoung-portfolio/static/media/Orbitron-VariableFont_wght.453377cb91a4554c36ce.ttf",
     "static/media/css.png": "/seohayoung-portfolio/static/media/css.60c923e2618c881c9f2d.png",
     "static/media/paint.png": "/seohayoung-portfolio/static/media/paint.bb03691f9c05b62615d3.png",
     "static/media/pill.png": "/seohayoung-portfolio/static/media/pill.3f3b49e2cb99f49eb239.png",
@@ -27,6 +26,7 @@
     "static/media/Figma.png": "/seohayoung-portfolio/static/media/Figma.65326560bc2420c43915.png",
     "static/media/main_img_blog.svg": "/seohayoung-portfolio/static/media/main_img_blog.0c6074dfa8954d02af9022e022085cda.svg",
     "static/media/main_img_blog_hover.svg": "/seohayoung-portfolio/static/media/main_img_blog_hover.92c8a1d666f59af90d87dde87ec07da9.svg",
+    "static/media/Orbitron-Regular.woff": "/seohayoung-portfolio/static/media/Orbitron-Regular.f0b6254f9356e1488c30.woff",
     "static/media/wix.png": "/seohayoung-portfolio/static/media/wix.71ad03d37e4ff735b3c1.png",
     "static/media/main_img_about_hover.svg": "/seohayoung-portfolio/static/media/main_img_about_hover.3944b8a05dcef10be2df5603d7ae7c4f.svg",
     "static/media/main_bg.svg": "/seohayoung-portfolio/static/media/main_bg.df484c32a55525ef9f9b.svg",
@@ -69,11 +69,11 @@
     "static/media/servefooter_media.svg": "/seohayoung-portfolio/static/media/servefooter_media.6b061ffe7f9bb16a745d1a4fc1cce8e3.svg",
     "static/media/servefooter_media_inactivation.svg": "/seohayoung-portfolio/static/media/servefooter_media_inactivation.852ebed16c05507037864a43f303eac1.svg",
     "static/media/collapse.svg": "/seohayoung-portfolio/static/media/collapse.e54553e8402b773f96b1b430d974379d.svg",
-    "main.25236ba0.css.map": "/seohayoung-portfolio/static/css/main.25236ba0.css.map",
+    "main.28f82065.css.map": "/seohayoung-portfolio/static/css/main.28f82065.css.map",
     "main.896e0436.js.map": "/seohayoung-portfolio/static/js/main.896e0436.js.map"
   },
   "entrypoints": [
-    "static/css/main.25236ba0.css",
+    "static/css/main.28f82065.css",
     "static/js/main.896e0436.js"
   ]
 }
