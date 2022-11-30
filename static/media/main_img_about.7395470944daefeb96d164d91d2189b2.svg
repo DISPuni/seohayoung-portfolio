@@ -1,4 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="486.22" height="197.073" viewBox="0 0 486.22 197.073">
+  <style>
+  @font-face {
+  font-family: 'Orbitron';
+  font-weight: 400, 500, 600, 700, 800, 900;
+  src: url('../assets/fonts/Orbitron-VariableFont_wght.ttf') format('truetype');}
+  </style>
   <g id="그룹_312" data-name="그룹 312" transform="translate(5727.967 -3310.15)">
     <g id="패스_163" data-name="패스 163" transform="translate(-5484.857 2150.24)" fill="#494949" stroke-miterlimit="10">
       <path d="M 33.60823822021484 1355.9833984375 L -242.1099853515625 1355.9833984375 L -242.1099853515625 1343.864379882812 L -226.5950012207031 1330.849975585938 L -23.43848609924316 1166.35693359375 L 242.1105041503906 1166.35693359375 L 242.1105041503906 1178.72802734375 L 33.60823822021484 1355.9833984375 Z" stroke="none"/>

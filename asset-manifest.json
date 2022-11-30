@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/seohayoung-portfolio/static/css/main.e1c72865.css",
-    "main.js": "/seohayoung-portfolio/static/js/main.bb60eaf1.js",
+    "main.css": "/seohayoung-portfolio/static/css/main.ee5fd041.css",
+    "main.js": "/seohayoung-portfolio/static/js/main.ab2b9ba6.js",
     "static/media/intro_video.mp4": "/seohayoung-portfolio/static/media/intro_video.356c3e62c87a5ae08d56.mp4",
     "static/media/visual.gif": "/seohayoung-portfolio/static/media/visual.533c31f321d636e85d09.gif",
     "static/media/example2.png": "/seohayoung-portfolio/static/media/example2.56af0239210211683e0e.png",
@@ -24,22 +24,22 @@
     "static/media/paint.png": "/seohayoung-portfolio/static/media/paint.bb03691f9c05b62615d3.png",
     "static/media/imweb.png": "/seohayoung-portfolio/static/media/imweb.7f38b93a786958493585.png",
     "static/media/Figma.png": "/seohayoung-portfolio/static/media/Figma.65326560bc2420c43915.png",
-    "static/media/main_img_blog.svg": "/seohayoung-portfolio/static/media/main_img_blog.8a18c07ad04e496955bad2be3c06f9bb.svg",
-    "static/media/main_img_blog_hover.svg": "/seohayoung-portfolio/static/media/main_img_blog_hover.92c8a1d666f59af90d87dde87ec07da9.svg",
+    "static/media/main_img_blog_hover.svg": "/seohayoung-portfolio/static/media/main_img_blog_hover.ae2be0359417b56e2de38ebf77c83e16.svg",
+    "static/media/main_img_blog.svg": "/seohayoung-portfolio/static/media/main_img_blog.f715c6ba9df8f013045de39603210f46.svg",
     "static/media/wix.png": "/seohayoung-portfolio/static/media/wix.71ad03d37e4ff735b3c1.png",
-    "static/media/main_img_about_hover.svg": "/seohayoung-portfolio/static/media/main_img_about_hover.cc8451d4a38c15b1cd22a500b3bc676e.svg",
+    "static/media/main_img_about_hover.svg": "/seohayoung-portfolio/static/media/main_img_about_hover.4a006c62e4a20befce5d5cd33b7e357d.svg",
     "static/media/main_bg.svg": "/seohayoung-portfolio/static/media/main_bg.df484c32a55525ef9f9b.svg",
-    "static/media/main_img_about.svg": "/seohayoung-portfolio/static/media/main_img_about.9d734eccccaf568af668b87f891b0cc7.svg",
+    "static/media/main_img_about.svg": "/seohayoung-portfolio/static/media/main_img_about.7395470944daefeb96d164d91d2189b2.svg",
+    "static/media/main_img_fahion_hover.svg": "/seohayoung-portfolio/static/media/main_img_fahion_hover.70a6e0568b935f7effc8e9d9cc056686.svg",
+    "static/media/main_img_visual_hover.svg": "/seohayoung-portfolio/static/media/main_img_visual_hover.b5cc2e7c8e48f63245e7aefc60c23759.svg",
     "static/media/main_img_video_hover_off_botton.svg": "/seohayoung-portfolio/static/media/main_img_video_hover_off_botton.d4ff5ae6393b66f49b07bdd4365b0495.svg",
-    "static/media/main_img_fahion_hover.svg": "/seohayoung-portfolio/static/media/main_img_fahion_hover.ed6dd46afe9695f90ae1eac06827c84e.svg",
-    "static/media/main_img_visual_hover.svg": "/seohayoung-portfolio/static/media/main_img_visual_hover.0bf4bbff6d9f86d48081be11d5468e97.svg",
-    "static/media/main_img_media_hover.svg": "/seohayoung-portfolio/static/media/main_img_media_hover.624cf90f72145e7748e1f3341a509c60.svg",
-    "static/media/main_img_visual.svg": "/seohayoung-portfolio/static/media/main_img_visual.7ea61f84958431ffea2764a1742f0273.svg",
+    "static/media/main_img_media_hover.svg": "/seohayoung-portfolio/static/media/main_img_media_hover.e769e2aa72acb31b392e663ce976c14e.svg",
+    "static/media/main_img_visual.svg": "/seohayoung-portfolio/static/media/main_img_visual.3b2b8ab28bedec3a5a314c6259b2e5b0.svg",
+    "static/media/main_img_fahion.svg": "/seohayoung-portfolio/static/media/main_img_fahion.de927a687c337d4645708ad743b47914.svg",
+    "static/media/main_img_media.svg": "/seohayoung-portfolio/static/media/main_img_media.c8d9054bad37a50ed01e0e410d298b98.svg",
     "static/media/fashion_logo.svg": "/seohayoung-portfolio/static/media/fashion_logo.96f8f1bc662401636fd41be8cb8dc9a2.svg",
-    "static/media/main_img_fahion.svg": "/seohayoung-portfolio/static/media/main_img_fahion.66a4958bb6e17e6e1547e6e2be4869b7.svg",
     "static/media/main_img_video_auto_play.svg": "/seohayoung-portfolio/static/media/main_img_video_auto_play.e330e6ca7af9b1cbf2fa7fd667055e88.svg",
     "static/media/ae.svg": "/seohayoung-portfolio/static/media/ae.857ddb33f7157896963d537f7772fca3.svg",
-    "static/media/main_img_media.svg": "/seohayoung-portfolio/static/media/main_img_media.fc3e50e8203061c41a5df9eb42e40829.svg",
     "static/media/photoshop.svg": "/seohayoung-portfolio/static/media/photoshop.2899e23fa900b666d43ccb9c7eba1cd5.svg",
     "static/media/media_icon.svg": "/seohayoung-portfolio/static/media/media_icon.2e3d372796033838fecc1f3592575dd7.svg",
     "static/media/fashion_icon.svg": "/seohayoung-portfolio/static/media/fashion_icon.68afc76668bab02f3b68e4a51532390a.svg",
@@ -68,11 +68,11 @@
     "static/media/servefooter_media.svg": "/seohayoung-portfolio/static/media/servefooter_media.6b061ffe7f9bb16a745d1a4fc1cce8e3.svg",
     "static/media/servefooter_media_inactivation.svg": "/seohayoung-portfolio/static/media/servefooter_media_inactivation.852ebed16c05507037864a43f303eac1.svg",
     "static/media/collapse.svg": "/seohayoung-portfolio/static/media/collapse.e54553e8402b773f96b1b430d974379d.svg",
-    "main.e1c72865.css.map": "/seohayoung-portfolio/static/css/main.e1c72865.css.map",
-    "main.bb60eaf1.js.map": "/seohayoung-portfolio/static/js/main.bb60eaf1.js.map"
+    "main.ee5fd041.css.map": "/seohayoung-portfolio/static/css/main.ee5fd041.css.map",
+    "main.ab2b9ba6.js.map": "/seohayoung-portfolio/static/js/main.ab2b9ba6.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1c72865.css",
-    "static/js/main.bb60eaf1.js"
+    "static/css/main.ee5fd041.css",
+    "static/js/main.ab2b9ba6.js"
   ]
 }

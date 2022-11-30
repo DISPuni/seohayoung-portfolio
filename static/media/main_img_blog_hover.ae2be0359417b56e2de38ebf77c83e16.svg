@@ -1,4 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="287.302" height="493.637" viewBox="0 0 287.302 493.637">
+  <style>
+  @font-face {
+  font-family: 'Orbitron';
+  font-weight: 400, 500, 600, 700, 800, 900;
+  src: url('../assets/fonts/Orbitron-VariableFont_wght.ttf') format('truetype');}
+  </style>
   <g id="그룹_265" data-name="그룹 265" transform="translate(5941.5 -2476.006)">
     <g id="그룹_211" data-name="그룹 211" transform="translate(-5941.5 2574.006)">
       <g id="패스_155" data-name="패스 155" transform="translate(-494.971 -578.743)" fill="#fff" stroke-linecap="round" stroke-miterlimit="10">

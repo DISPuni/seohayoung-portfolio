@@ -1,4 +1,10 @@
 <svg id="그룹_307" data-name="그룹 307" xmlns="http://www.w3.org/2000/svg" width="272" height="418" viewBox="0 0 272 418">
+  <style>
+  @font-face {
+  font-family: 'Orbitron';
+  font-weight: 400, 500, 600, 700, 800, 900;
+  src: url('../assets/fonts/Orbitron-VariableFont_wght.ttf') format('truetype');}
+  </style>
   <rect id="사각형_101" data-name="사각형 101" width="272" height="418" fill="none"/>
   <g id="그룹_291" data-name="그룹 291">
     <g id="그룹_290" data-name="그룹 290" transform="translate(4119.67 -1653.5)">

@@ -1,4 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="272" height="418" viewBox="0 0 272 418">
+  <style>
+  @font-face {
+  font-family: 'Orbitron';
+  font-weight: 400, 500, 600, 700, 800, 900;
+  src: url('../assets/fonts/Orbitron-VariableFont_wght.ttf') format('truetype');}
+  </style>
   <defs>
     <clipPath id="clip-path">
       <rect id="사각형_112" data-name="사각형 112" width="272" height="418" fill="#fff"/>
