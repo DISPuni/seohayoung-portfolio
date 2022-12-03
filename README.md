@@ -39,7 +39,7 @@ cd {repo-name} // 로컬 프로젝트 폴더로 들어감
    
 블로그 글 추가하는 방법
 -----
-1. **`Blog.js`**
+**1.`Blog.js`**
 ```
 <div className='cards-row'>
     <div className='first-card' onClick={() => toBlogPost(1)}><Card title='#1. 광고 플랫폼에 대하여' image={example1} /></div>
@@ -71,7 +71,8 @@ import example3 from '../assets/examples/example3.jpeg'
 .
 ```
 이런 식으로 이미지를 불러와 `image={불러온 이미지 이름}` 설정해 주시면 됩니다.<br/>
-2. 포스팅 컨텐츠 추가하기
+<br/>
+**2. 포스팅 컨텐츠 추가하기**
 ```
 import React from 'react'
 
@@ -88,7 +89,8 @@ function 포스팅컴포넌트이름() {
 export default 포스팅컴포넌트이름
 ```
 안에 내용은 html로 작성하고 싶은 대로 작성해 주시면 됩니다.<br/>
-3. **`BlogPostHeader.js`**
+<br/>
+**3.`BlogPostHeader.js`**
 ```
 import Post1 from './BlogContent/Post1'
 import Post2 from './BlogContent/Post2'
@@ -117,3 +119,38 @@ useEffect(() => {
 ```
 다음으로는 실직적인 포스팅을 렌더링해 주기 위해 위 코드를 수정해 줍니다.<br/>
 간단하게 `else if`문을 아래에 복사 붙여넣기 하여 숫자만 바꿔 주시면 됩니다.<br/>
+<br/>
+
+서브 페이지 글 추가하는 방법
+-----
+**1. `Media.js`, `Fashion.js`, `Visual.js`**
+```
+import example1 from '../assets/examples/example1.jpeg'
+import example2 from '../assets/examples/example2.png'
+import example3 from '../assets/examples/example3.jpeg'
+.
+.
+.
+```
+썸네일을 위한 이미지를 불러옵니다.<br/>
+<br/>
+```
+const itemList = [
+        { id: 1, title: 'DD', type: 'UIUX', image: example1 },
+        { id: 2, title: 'test1', type: 'UIUX', image: example2 },
+        { id: 3, title: 'test2-1', type: 'Motion', image: example3 },
+        { id: 4, title: 'test2-2', type: 'Motion', image: example4 },
+        { id: 5, title: 'test3-1', type: 'Interaction', image: example5 },
+        { id: 6, title: 'test3-2', type: 'Interaction', image: example6 },
+        { id: 7, title: 'test4-1', type: 'Animation', image: example7 },
+        { id: 8, title: 'test4-2', type: 'Animation', image: example8 },
+    ]
+```
+itemList에 서브 포스팅 `id`,`title`, `type`, 불러온 이미지를 알맞게 추가해 줍니다.<br/>
+⚠️ **주의하실 점** ⚠️<br/>
+`type`의 경우 오타가 있으면 해당 아이템에 필터링 효과가 적용되지 않을 수 있으니 유의 바랍니다.<br/>
+<br/>
+**2. 서브 포스트 추가**
+<img width="254" alt="image" src="https://user-images.githubusercontent.com/87830290/205415320-b58a3a64-efec-4031-8600-322747b6c32b.png"><br/>
+위에 보시면 서브별로 제가 만들어 둔 폴더를 확인하실 수 있습니다.<br/>
+블로그에 포스팅 추가하는 것처럼 각 서브에 추가해 주시면 됩니다.
