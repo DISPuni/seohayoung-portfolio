@@ -1,50 +1,60 @@
-/* @media (max-width: 420px) {
-    #mainBlogIcon {
-        width: 10.438rem;
+/* mobile */
+@media (max-width: 420px) {
+    #mainBlogIconMobile {
+        width: 9.92rem;
     }
     #videoPlayer {
-        width: 29.255rem;
+        display: none;
+    }
+    #videoPlayer2 {
+        width: 27.82rem;
     }
     #videoSection {
-        margin-left: 9.7rem;
-        margin-top: 11.6rem;
-        height: 19.2rem;
-        width: 28.7rem;
+        margin-left: 9.89rem;
+        margin-top: 17.59rem;
+        height: 18.26rem;
+        width: 27.29rem;
+        opacity: 0;
     }
-    #mainMediaIcon, #mainFashionIcon, #mainVisualIcon {
-        width: 157.76px;
+    #mainMediaIcon, #mainFashionIcon, #mainVisualIcon, #mainBlogIcon, #about {
+        display: none;
+    }
+    #mainMediaIconMobile, #mainFashionIconMobile, #mainVisualIconMobile {
+        width: 150px;
+        height: 230.5px;
     }
     #pill {
-        width: 38.86px;
+        width: 36.95px;
     }
-    #about {
-        width: 282.00702px;
-        margin-right: 6.38rem;
-        margin-left: 10.49394rem;
+    #aboutMobile {
+        width: 268.14px;
+        margin-right: 6.07rem;
+        margin-left: 9.98rem;
     }
     #homeBody {
-        margin-top: 0;
-        background-size: contin;
+        padding-bottom: 130px;
+        background-size: cover;
+    }
+    #homeItems {
+        padding-top: 4.478%;
+        margin-top: 8%;
     }
     #draggableItem {
         display: none;
     }
-    #homeItems {
-        margin-left: 9.425rem;
-        margin-right: 0;
-        margin-top: 11.6rem;
-        margin-bottom: 116px;
-    }
     #player {
-        margin-right: 9.425rem;
+        margin-right: 8.96rem;
     }
-} */
+}
 @media (min-width: 421px) {
     #mainBlogIcon {
         width: 17.956rem;
     }
     #videoPlayer {
         width: 50.329rem;
+    }
+    #videoPlayer2 {
+        display: none;
     }
     #videoSection {
         margin-left: 16.875rem;
@@ -54,6 +64,9 @@
     }
     #mainMediaIcon, #mainFashionIcon, #mainVisualIcon {
         width: 272px;
+    }
+    #mainMediaIconMobile, #mainFashionIconMobile, #mainVisualIconMobile, #mainBlogIconMobile, #aboutMobile {
+        display: none;
     }
     #pill {
         width: 67px;
@@ -66,15 +79,16 @@
     #homeBody {
         margin-top: 50px;
         background-size: auto;
+        background-size: cover;
+    }
+    #homeItems {
+        padding-bottom: 3.6%;
+        margin-top: 9.05%;
     }
     #draggableItem {
         display: block;
     }
-    #homeItems {
-        margin-left: 7.35%;
-        margin-top: 9.05%;
-        padding-bottom: 3.6%;
-    }
+
     #player {
         margin-right: 16.25rem;
     }
@@ -86,9 +100,11 @@
 #homeBody {
     background-image: url('../assets/main/main_bg.svg');
     background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
     overflow-x: hidden;
+}
+#homeItems {
+    margin-left: 7.35%;
 }
 #draggableItem {
     top: 16%;
@@ -98,6 +114,7 @@
     width: 32%;
     text-align: center;
     cursor: move;
+    z-index: 1;
 }
 #draggableText {
     color: #161619;
@@ -136,11 +153,15 @@
     margin-top: auto;
     cursor: pointer;
 }
+#mainMediaIconMobile, #mainFashionIconMobile, #mainVisualIconMobile, #mainBlogIconMobile, #aboutMobile {
+    margin-top: auto;
+}
 #pill {
     margin-top: auto;
+    margin-bottom: 0.6%;
     margin-left: 6.365rem;
 }
-#about {
+#about, #aboutMobile {
     margin-top: auto;
     cursor: pointer;
     padding-right: 150px;

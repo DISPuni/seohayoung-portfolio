@@ -47,7 +47,7 @@ function MobileNav(props) {
                 <img id='mobileNavMedia' className='mobileNavIcon' src={media} alt="" onClick={toMedia}/>
                 <div className='mobileNavText' onClick={toMedia}>Media</div>
             </div>
-            <div id='mobileNavDivider'/>
+            <hr id='mobileNavDivider' noshade/>
             <div id='mobileNavBottomText' className='flex-col' >
                 <div id='mobileNavText2About' className='mobileNavText2' onClick={toAbout}>ABOUT</div>
                 <div className='mobileNavText2' onClick={toBlog}>BROG</div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Matter from "matter-js";
+import { useDraggable } from 'react-use-draggable-scroll';
 
 import './Serve.css'
 
@@ -9,10 +10,10 @@ import MobileNavHeader from '../Components/MobileNavHeader'
 import MobileNav from '../Components/MobileNav'
 import CircleCard from '../Components/CircleCard'
 import SecondFooter from '../Components/SecondFooter'
-import MobileFooter from '../Components/MobileFooter'
 
 import fashion from '../assets/icons/fashion_icon.svg'
 import pill from '../assets/pills/fashion_pill.svg'
+import arrow from '../assets/arrow.svg'
 
 import example1 from '../assets/examples/example1.jpeg'
 import example2 from '../assets/examples/example2.png'
@@ -24,9 +25,8 @@ import example6 from '../assets/examples/example6.jpeg'
 function Fashion() {
 
     const matterRef = useRef(null);
-
-    const [matterWidth, setMatterWidth] = useState(1680);
-    const [matterHeight, setMatterHeight] = useState(1290);
+    const scrollRef = useRef();
+    const { events } = useDraggable(scrollRef);
 
     const serveType = 'fashion'
     const itemList = [
@@ -41,63 +41,82 @@ function Fashion() {
     const [isLoading, setIsLoading] = useState(true);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [filter, setFilter] = useState('all');
-
+    
     useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            // behavior: 'smooth'
+            /* you can also use 'auto' behaviour
+               in place of 'smooth' */
+        });
         setTimeout(() => {
-            setIsLoading(false)
-        }, 1500);
+                setIsLoading(false);
+            }, 1500);
+
+        var body = document.body,
+            html = document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight,
+            html.clientHeight, html.scrollHeight, html.offsetHeight) + 80;
+
         var Engine = Matter.Engine,
             Render = Matter.Render,
-            World = Matter.World,
+            Runner = Matter.Runner,
             MouseConstraint = Matter.MouseConstraint,
             Mouse = Matter.Mouse,
+            Composite = Matter.Composite,
             Bodies = Matter.Bodies;
-        var engine = Engine.create()
+
+        var engine = Engine.create(),
+            world = engine.world;
+
         var render = Render.create({
             element: matterRef.current,
             engine: engine,
             options: {
                 width: window.innerWidth,
-                height: matterHeight,
+                height: height,
                 wireframes: false,
                 background: 'transparent',
                 wireframeBackground: 'transparent'
             }
         });
 
-        var body = document.body,
-            html = document.documentElement;
+        Render.run(render);
 
-        var height = Math.max( body.scrollHeight, body.offsetHeight, 
-                            html.clientHeight, html.scrollHeight, html.offsetHeight );
-
-        var topWall = Bodies.rectangle(window.innerWidth / 2 - 50, -50, window.innerWidth - 50, 50, { isStatic: true, render: { fillStyle: "fff" } }),
-            // bottomWall = Bodies.rectangle(window.innerWidth / 2, matterHeight, window.innerWidth, 50, { isStatic: true, render: { fillStyle: "fff" } }),
-            bottomWall = Bodies.rectangle(window.innerWidth / 2, height * 0.88, window.innerWidth, 50, { isStatic: true, render: { fillStyle: "fff" } }),
-            leftWall = Bodies.rectangle(window.innerWidth + 50, matterHeight / 2, 50, matterHeight, { isStatic: true, render: { fillStyle: "fff" } }),
-            rightWall = Bodies.rectangle(-50, matterHeight / 2, 50, matterHeight, { isStatic: true, render: { fillStyle: "fff" } })
-        const pill1 = Bodies.circle(100, 300, 32, {
+        // create runner
+        var runner = Runner.create();
+        Runner.run(runner, engine);
+            
+        const pill1 = Bodies.circle(900, 400, 29, {
             restitution: 0.5,
             render: { sprite: { texture: pill } }
         }),
-            pill2 = Bodies.circle(200, 400, 32, {
+            pill2 = Bodies.circle(600, 400, 29, {
                 restitution: 0.5,
                 render: { sprite: { texture: pill } }
             }),
-            pill3 = Bodies.circle(300, 200, 32, {
+            pill3 = Bodies.circle(700, 400, 29, {
                 restitution: 0.5,
                 render: { sprite: { texture: pill } }
             }),
-            pill4 = Bodies.circle(400, 500, 32, {
+            pill4 = Bodies.circle(800, 400, 29, {
                 restitution: 0.5,
                 render: { sprite: { texture: pill } }
             }),
-            pill5 = Bodies.circle(500, 100, 32, {
+            pill5 = Bodies.circle(1000, 400, 29, {
                 restitution: 0.5,
                 render: { sprite: { texture: pill } }
             });
 
-        World.add(engine.world, [topWall, bottomWall, leftWall, rightWall, pill1, pill2, pill3, pill4, pill5]);
+        Composite.add(world, [pill1, pill2, pill3, pill4, pill5]);
+
+        Composite.add(world, [
+            Bodies.rectangle(window.innerWidth / 2 - 50, -50, window.innerWidth - 50, 50, { isStatic: true, render: { fillStyle: "fff" } }),
+            Bodies.rectangle(window.innerWidth / 2, height, window.innerWidth, 50, { isStatic: true, render: { fillStyle: "fff" } }),
+            Bodies.rectangle(window.innerWidth + 50, height / 2, 50, height, { isStatic: true, render: { fillStyle: "fff" } }),
+            Bodies.rectangle(-50, height / 2, 50, height, { isStatic: true, render: { fillStyle: "fff" } })
+        ]);
 
         var mouse = Mouse.create(render.canvas),
             mouseConstraint = MouseConstraint.create(engine, {
@@ -113,22 +132,19 @@ function Fashion() {
         mouseConstraint.mouse.element.removeEventListener("DOMMouseScroll", mouseConstraint.mouse.mousewheel);
         render.mouse = mouse;
 
-        World.add(engine.world, mouseConstraint);
+        Composite.add(engine.world, mouseConstraint);
+
         // fit the render viewport to the scene
         Render.lookAt(render, {
             min: { x: 0, y: 0 },
-            max: { x: window.innerWidth, y: document.getElementsByClassName('serveBody')[0].scrollHeight }
+            max: { x: window.innerWidth, y: height }
         });
 
-        Matter.Runner.run(engine);
-        Render.run(render);
-
-        setMatterWidth(window.innerWidth)
-        setMatterHeight(matterHeight)
     }, [])
 
     return (
         <div className='page'>
+            {/* <ScrollLock isActive={isLocked}> */}
             <div id='fashion' className='page'>
                 {isLoading ? <FashionLoading/>:null}
                 <NavHeader isNav={true} isAbout={false} isBlog={false} />
@@ -139,22 +155,26 @@ function Fashion() {
                     <img id='fashionIcon' src={fashion} alt="" />
                     <div className='serveText'>Fashion Design</div>
                     <div className='filter flex'>
-                        <div className='filterItem' style={{ color: filter === 'all' ? '#161619' : '#7E7E86' }} onClick={() => setFilter('all')}>ALL</div>
-                        <div className='filterItem' style={{ color: filter === 'Lookbook' ? '#161619' : '#7E7E86' }} onClick={() => setFilter('Lookbook')}>Lookbook</div>
-                        <div className='filterItem' style={{ color: filter === 'Film' ? '#161619' : '#7E7E86' }} onClick={() => setFilter('Film')}>Film</div>
-                        <div className='filterItem' style={{ marginRight: 0, color: filter === 'Pictorial' ? '#161619' : '#7E7E86' }} onClick={() => setFilter('Pictorial')}>Pictorial</div>
+                        <div className='filterItem' style={{ color: filter === 'all' ? '#161619' : '#7E7E86', fontWeight: filter === 'all' ? '700':null }} onClick={() => setFilter('all')}>ALL</div>
+                        <div className='filterItem' style={{ color: filter === 'Lookbook' ? '#161619' : '#7E7E86', fontWeight: filter === 'Lookbook' ? '700':null }} onClick={() => setFilter('Lookbook')}>Lookbook</div>
+                        <div className='filterItem' style={{ color: filter === 'Film' ? '#161619' : '#7E7E86', fontWeight: filter === 'Film' ? '700':null }} onClick={() => setFilter('Film')}>Film</div>
+                        <div className='filterItem' style={{ marginRight: 0, color: filter === 'Pictorial' ? '#161619' : '#7E7E86', fontWeight: filter === 'Pictorial' ? '700':null }} onClick={() => setFilter('Pictorial')}>Pictorial</div>
                     </div>
-                    <div className='cards'>
-                        <div className='flex'>
+                    <hr className='filter-hr' />
+                    <div className='cards flex'>
+                        <div className='cards-empty-space-left' />
+                        <img className='cards-arrow' src={arrow} alt="" />
+                        <div className='flex cards-container' {...events} ref={scrollRef}>
                             {itemList.filter(item => item.type === filter || filter === 'all').map((filteredItem) => (
                                 <CircleCard serveType={serveType} id={filteredItem.id} type={filteredItem.type} title={filteredItem.title} image={filteredItem.image} />
                             ))}
                         </div>
+                        <div className='cards-empty-space-right' />
                     </div>
                 </div>
-                <SecondFooter fashion={true} visual={false} media={false} />
-                <MobileFooter/>
+                <SecondFooter fashion={true} visual={false} media={false}/>
             </div>
+            {/* </ScrollLock> */}
         </div>
     )
 }

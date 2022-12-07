@@ -49,4 +49,10 @@ img {
 .text-logo {
   width: 29.5%;
   height: auto;
+  animation: logoScale 1.5s alternate infinite ease-in;
+}
+@keyframes logoScale {
+  0% {transform: scale(.8);}
+  50% {transform: scale(1);}
+  100% {transform: scale(.8);}
 }

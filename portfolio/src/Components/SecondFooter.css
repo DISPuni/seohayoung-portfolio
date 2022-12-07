@@ -13,8 +13,8 @@
 #firstSection {
     border-top: 1px solid #43434B;
     border-bottom: 1px solid #43434B;
-    padding-top: 3.679rem;
-    padding-bottom: 3.679rem;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 #secondSectionText {
     font-family: 'Sans-serif';
@@ -29,7 +29,7 @@
     cursor: pointer;
 }
 .footer-icon {
-    height: 3.018rem;
+    height: 48px;
     vertical-align: middle;
 }
 .second-footer-text {

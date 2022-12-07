@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-// import './Blog.css'
-import './Blog copy.css'
+import './Blog.css'
 
 import blog from '../assets/icons/blog.svg'
 

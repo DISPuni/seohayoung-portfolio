@@ -171,7 +171,7 @@ function About() {
                             <li className='about-marquee-item'><img className='tool' src={jsLogo} alt="js logo" /></li>
                         </ul>
                     </div>
-                    <SecondFooter/>
+                    <SecondFooter isAbout={true}/>
                     <MobileFooter/>
                 </div>
             }

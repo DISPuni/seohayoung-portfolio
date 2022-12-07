@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Matter from "matter-js";
+import { useDraggable } from 'react-use-draggable-scroll';
 
 import './Serve.css'
 
@@ -9,10 +10,10 @@ import MobileNavHeader from '../Components/MobileNavHeader'
 import MobileNav from '../Components/MobileNav'
 import CircleCard from '../Components/CircleCard'
 import SecondFooter from '../Components/SecondFooter'
-import MobileFooter from '../Components/MobileFooter'
 
 import media from '../assets/icons/media_icon.svg'
 import pill from '../assets/pills/media_pill.svg'
+import arrow from '../assets/arrow.svg'
 
 import example1 from '../assets/examples/example1.jpeg'
 import example2 from '../assets/examples/example2.png'
@@ -26,6 +27,8 @@ import example8 from '../assets/examples/example8.jpeg'
 function Media() {
 
     const matterRef = useRef(null);
+    const scrollRef = useRef();
+    const { events } = useDraggable(scrollRef);
 
     const [matterWidth, setMatterWidth] = useState(1680);
     const [matterHeight, setMatterHeight] = useState(1290);
@@ -47,9 +50,18 @@ function Media() {
     const [filter, setFilter] = useState('all')
 
     useEffect(() => {
+        window.scrollTo({
+            top: 0,
+        });
         setTimeout(() => {
             setIsLoading(false)
         }, 1500);
+
+        var body = document.body,
+        html = document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight,
+            html.clientHeight, html.scrollHeight, html.offsetHeight) - 30;
 
         var Engine = Matter.Engine,
             Render = Matter.Render,
@@ -57,50 +69,46 @@ function Media() {
             MouseConstraint = Matter.MouseConstraint,
             Mouse = Matter.Mouse,
             Bodies = Matter.Bodies;
+
         var engine = Engine.create()
+
         var render = Render.create({
             element: matterRef.current,
             engine: engine,
             options: {
                 width: window.innerWidth,
-                height: matterHeight,
+                height: height,
                 wireframes: false,
                 background: 'transparent',
                 wireframeBackground: 'transparent'
             }
         });
 
-        var body = document.body,
-        html = document.documentElement;
-
-        var height = Math.max(body.scrollHeight, body.offsetHeight, 
-                        html.clientHeight, html.scrollHeight, html.offsetHeight );
-
         var topWall = Bodies.rectangle(window.innerWidth / 2 - 50, -50, window.innerWidth - 50, 50, { isStatic: true, render: { fillStyle: "fff" } }),
-            bottomWall = Bodies.rectangle(window.innerWidth / 2, height * 0.901, window.innerWidth, 50, { isStatic: true, render: { fillStyle: "fff" } }),
-            leftWall = Bodies.rectangle(window.innerWidth + 50, matterHeight / 2, 50, matterHeight, { isStatic: true, render: { fillStyle: "fff" } }),
-            rightWall = Bodies.rectangle(-50, matterHeight / 2, 50, matterHeight, { isStatic: true, render: { fillStyle: "fff" } })
-        const pill1 = Bodies.rectangle(200, 400, 114.94, 43.521, {
+            bottomWall = Bodies.rectangle(window.innerWidth / 2, height, window.innerWidth, 50, { isStatic: true, render: { fillStyle: "fff" } }),
+            leftWall = Bodies.rectangle(window.innerWidth + 50, height / 2, 50, height, { isStatic: true, render: { fillStyle: "fff" } }),
+            rightWall = Bodies.rectangle(-50, height / 2, 50, height, { isStatic: true, render: { fillStyle: "fff" } })
+        const pill1 = Bodies.rectangle(650, 400, 115, 43.5, {
             restitution: 0.5,
             chamfer: 1000,
             render: { sprite: { texture: pill } }
         }),
-            pill2 = Bodies.rectangle(200, 400, 114.94, 43.521, {
+            pill2 = Bodies.rectangle(600, 400, 115, 43.5, {
                 restitution: 0.5,
                 chamfer: 1000,
                 render: { sprite: { texture: pill } }
             }),
-            pill3 = Bodies.rectangle(200, 400, 114.94, 43.521, {
+            pill3 = Bodies.rectangle(950, 400, 115, 43.5, {
                 restitution: 0.5,
                 chamfer: 1000,
                 render: { sprite: { texture: pill } }
             }),
-            pill4 = Bodies.rectangle(200, 400, 114.94, 43.521, {
+            pill4 = Bodies.rectangle(1000, 400, 115, 43.5, {
                 restitution: 0.5,
                 chamfer: 1000,
                 render: { sprite: { texture: pill } }
             }),
-            pill5 = Bodies.rectangle(200, 400, 114.94, 43.521, {
+            pill5 = Bodies.rectangle(900, 400, 115, 43.5, {
                 restitution: 0.5,
                 chamfer: 1000,
                 render: { sprite: { texture: pill } }
@@ -126,14 +134,12 @@ function Media() {
         // fit the render viewport to the scene
         Render.lookAt(render, {
             min: { x: 0, y: 0 },
-            max: { x: window.innerWidth, y: document.getElementsByClassName('serveBody')[0].scrollHeight }
+            max: { x: window.innerWidth, y: height }
         });
 
         Matter.Runner.run(engine);
         Render.run(render);
 
-        setMatterWidth(window.innerWidth)
-        setMatterHeight(matterHeight)
     }, [])
 
     return (
@@ -147,25 +153,27 @@ function Media() {
                     <div className='matter' ref={matterRef} />
                     <img src={media} alt="" id="mediaIcon" />
                     <div className="serveText">MEDIA DESIGN</div>
-                    <div id='mediaFilter' className="filter">
-                        <div id='mediaFilterAll' style={{ color: filter === 'all' ? '#161619' : '#7E7E86' }} onClick={() => setFilter('all')}>ALL</div>
-                        <div className='flex'>
-                            <div className='filterItem' style={{ color: filter === 'UIUX' ? '#161619' : '#7E7E86' }} onClick={() => setFilter('UIUX')}>UIUX</div>
-                            <div className='filterItem' style={{ color: filter === 'Motion' ? '#161619' : '#7E7E86' }} onClick={() => setFilter('Motion')}>Motion</div>
-                            <div className='filterItem' style={{ color: filter === 'Interaction' ? '#161619' : '#7E7E86' }} onClick={() => setFilter('Interaction')}>Interaction</div>
-                            <div className='filterItem' style={{ marginRight: 0, color: filter === 'Animation' ? '#161619' : '#7E7E86' }} onClick={() => setFilter('Animation')}>Animation</div>
-                        </div>
+                    <div id='mediaFilter' className="filter flex">
+                        <div id='mediaFilterAll' className='filterItem' style={{ color: filter === 'all' ? '#161619' : '#7E7E86', fontWeight: filter === 'all' ? '700' : null }} onClick={() => setFilter('all')}>ALL</div>
+                        <div className='filterItem' style={{ color: filter === 'UIUX' ? '#161619' : '#7E7E86', fontWeight: filter === 'UIUX' ? '700' : null }} onClick={() => setFilter('UIUX')}>UIUX</div>
+                        <div className='filterItem' style={{ color: filter === 'Motion' ? '#161619' : '#7E7E86', fontWeight: filter === 'Motion' ? '700' : null }} onClick={() => setFilter('Motion')}>Motion</div>
+                        <div className='filterItem' style={{ color: filter === 'Interaction' ? '#161619' : '#7E7E86', fontWeight: filter === 'Interaction' ? '700' : null }} onClick={() => setFilter('Interaction')}>Interaction</div>
+                        <div className='filterItem' style={{ marginRight: '40px', color: filter === 'Animation' ? '#161619' : '#7E7E86', fontWeight: filter === 'Animation' ? '700' : null }} onClick={() => setFilter('Animation')}>Animation</div>
                     </div>
-                    <div className='cards'>
-                        <div className='flex'>
+                    <hr className='filter-hr' />
+                    <div className='cards flex'>
+                    <div className='cards-empty-space-left' />
+                        <img className='cards-arrow' src={arrow} alt="" />
+                        <div className='cards-empty-space' />
+                        <div className='flex cards-container' {...events} ref={scrollRef}>
                             {itemList.filter(item => item.type === filter || filter === 'all').map(filteredItem => (
                                 <CircleCard serveType={serveType} id={filteredItem.id} type={filteredItem.type} title={filteredItem.title} image={filteredItem.image} />
                             ))}
                         </div>
+                        <div className='cards-empty-space-right' />
                     </div>
                 </div>
                 <SecondFooter fashion={false} visual={false} media={true} />
-                <MobileFooter />
             </div>
         </div>
     )

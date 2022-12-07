@@ -11,16 +11,19 @@ function CircleCard(props) {
     }
 
     return (
-        <div id='circleCard' onClick={() => toServePost(props.serveType, props.id)}>
-            <img id='cardImg' src={props.image} alt="" />
-            <div className='circle-overlay'>
-                <div className='circle-upper flex'>
-                    <div className='circle-text' style={{ marginBottom:'2.7rem', fontWeight:600 }}>{props.type}</div>
-                </div>
-                <div className='circle-bottom flex'>
-                    <div className='circle-text' style={{ marginTop:'2.7rem' }}>{props.title}</div>
+        <div id='circleCard' className='flex' onClick={() => toServePost(props.serveType, props.id)}>
+            <div>
+                <img id='cardImg' src={props.image} alt="" />
+                <div className='circle-overlay'>
+                    <div className='circle-upper flex'>
+                        <div className='circle-text' style={{ marginBottom: '2.7rem', fontWeight: 600 }}>{props.type}</div>
+                    </div>
+                    <div className='circle-bottom flex'>
+                        <div className='circle-text' style={{ marginTop: '2.7rem' }}>{props.title}</div>
+                    </div>
                 </div>
             </div>
+            <div className='card-margin' />
         </div>
     )
 }

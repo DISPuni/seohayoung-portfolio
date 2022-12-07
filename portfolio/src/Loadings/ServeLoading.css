@@ -6,6 +6,9 @@
     #visualLogo {
         width: 350px;
     }
+    #fashionLogo {
+        width: 350px;
+    }
 }
 /* desktop */
 @media (min-width: 421px) {
@@ -24,13 +27,4 @@
     top: 0;
     left: 0;
     background-color: white;
-}
-#fashionLogo {
-    animation: logoScale 1.5s alternate infinite ease-in;
-    width: 25.7%;
-}
-
-@keyframes logoScale {
-    0% {transform: scale(.8);}
-    100% {transform: scale(1.1);}
 }

@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom'
 
 import './SecondFooter.css'
 
+import Footer from './Footer'
+
 import footerFashion from '../assets/footerIcon/servefooter_fahion.svg'
 import inactivatedFashion from '../assets/footerIcon/servefooter_fahion_inactivation.svg'
 import footerMedia from '../assets/footerIcon/servefooter_media.svg'
@@ -39,9 +41,10 @@ function SecondFooter(props) {
                     <div className="second-footer-text">Media</div>
                 </div>
             </div>
-            <div id='secondSection'>
+            { props.isAbout ? <div id='secondSection'>
                 <div id='secondSectionText'>It’s not special, but there’s anything without it.</div>
-            </div>
+            </div>: <Footer/>}
+            
         </div>
     )
 }
