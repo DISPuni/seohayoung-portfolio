@@ -12,7 +12,8 @@
     #mediaFilterAll {
         padding-left: 40px;
     }
-    #visualIcon {
+    #visualIcon, #fashionIcon, #mediaIcon {
+        height: 55px;
         margin-top: 110px;
         margin-bottom: 8px;
     }
@@ -31,7 +32,8 @@
     .serveBody {
         margin-bottom: 350px;
     }
-    #visualIcon {
+    #visualIcon, #fashionIcon, #mediaIcon {
+        height: 55px;
         margin-top: 110px;
         margin-bottom: 8px;
     }
@@ -114,7 +116,18 @@
         margin-bottom: 15.248rem;
     }
     #visualIcon {
+        width: 12.75%;
         margin-top: 11.25%;
+        margin-bottom: 1.2%;
+    }
+    #fashionIcon {
+        width: 16%;
+        margin-top: 11%;
+        margin-bottom: 1.2%;
+    }
+    #mediaIcon {
+        width: 8.6%;
+        margin-top: 11%;
         margin-bottom: 1.2%;
     }
     .filter {
@@ -125,22 +138,16 @@
     position: relative;
 }
 #fashionIcon {
-    width: 16%;
-    margin: auto;
-    margin-top: 11%;
-    margin-bottom: 1.2%;
+    margin-left: auto;
+    margin-right: auto;
 }
 #visualIcon {
-    width: 12.75%;
     margin-left: auto;
     margin-right: auto;
 }
 #mediaIcon {
-    width: 8.6%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 11.2%;
-    margin-bottom: 1.2%;
 }
 .serveText {
     font-weight: 600;

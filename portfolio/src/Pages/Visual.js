@@ -43,6 +43,16 @@ export default function Visual() {
     const [filter, setFilter] = useState('all')
 
     useEffect(() => {
+        const reloadCount = sessionStorage.getItem('reloadCount');
+        if (reloadCount < 2) {
+            sessionStorage.setItem('reloadCount', String(reloadCount + 1));
+            window.location.reload(false);
+        } else {
+            sessionStorage.removeItem('reloadCount');
+        }
+    }, [])
+
+    useEffect(() => {
         window.scrollTo({
             top: 0,
         });
@@ -54,7 +64,7 @@ export default function Visual() {
         html = document.documentElement;
 
         var height = Math.max(body.scrollHeight, body.offsetHeight,
-            html.clientHeight, html.scrollHeight, html.offsetHeight);
+            html.clientHeight, html.scrollHeight, html.offsetHeight) - 190;
 
         var Engine = Matter.Engine,
             Render = Matter.Render,
@@ -81,6 +91,7 @@ export default function Visual() {
             bottomWall = Bodies.rectangle(window.innerWidth / 2, height, window.innerWidth, 50, { isStatic: true, render: { fillStyle: "fff" } }),
             leftWall = Bodies.rectangle(window.innerWidth + 50, height / 2, 50, height, { isStatic: true, render: { fillStyle: "fff" } }),
             rightWall = Bodies.rectangle(-50, height / 2, 50, height, { isStatic: true, render: { fillStyle: "fff" } })
+
         const pill1 = Bodies.rectangle(650, 400, 90, 45, {
             restitution: 0.5,
             chamfer: 1000,
@@ -124,7 +135,6 @@ export default function Visual() {
         render.mouse = mouse;
 
         World.add(engine.world, mouseConstraint);
-        // fit the render viewport to the scene
         Render.lookAt(render, {
             min: { x: 0, y: 0 },
             max: { x: window.innerWidth, y: height }

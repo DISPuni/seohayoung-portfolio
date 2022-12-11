@@ -41,34 +41,39 @@ function Fashion() {
     const [isLoading, setIsLoading] = useState(true);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [filter, setFilter] = useState('all');
-    
+
+    useEffect(() => {
+        const reloadCount = sessionStorage.getItem('reloadCount');
+        if (reloadCount < 2) {
+            sessionStorage.setItem('reloadCount', String(reloadCount + 1));
+            window.location.reload(false);
+        } else {
+            sessionStorage.removeItem('reloadCount');
+        }
+    }, [])
+
     useEffect(() => {
         window.scrollTo({
             top: 0,
-            // behavior: 'smooth'
-            /* you can also use 'auto' behaviour
-               in place of 'smooth' */
-        });
+        })
         setTimeout(() => {
-                setIsLoading(false);
-            }, 1500);
+            setIsLoading(false);
+        }, 1500);
 
         var body = document.body,
             html = document.documentElement;
 
-        var height = Math.max(body.scrollHeight, body.offsetHeight,
-            html.clientHeight, html.scrollHeight, html.offsetHeight) + 80;
+            var height = Math.max(body.scrollHeight, body.offsetHeight,
+                html.clientHeight, html.scrollHeight, html.offsetHeight) - 190;
 
-        var Engine = Matter.Engine,
+            var Engine = Matter.Engine,
             Render = Matter.Render,
-            Runner = Matter.Runner,
+            World = Matter.World,
             MouseConstraint = Matter.MouseConstraint,
             Mouse = Matter.Mouse,
-            Composite = Matter.Composite,
             Bodies = Matter.Bodies;
 
-        var engine = Engine.create(),
-            world = engine.world;
+        var engine = Engine.create()
 
         var render = Render.create({
             element: matterRef.current,
@@ -82,18 +87,18 @@ function Fashion() {
             }
         });
 
-        Render.run(render);
+        var topWall = Bodies.rectangle(window.innerWidth / 2 - 50, -50, window.innerWidth - 50, 50, { isStatic: true, render: { fillStyle: "fff" } }),
+            bottomWall = Bodies.rectangle(window.innerWidth / 2, height, window.innerWidth, 50, { isStatic: true, render: { fillStyle: "fff" } }),
+            leftWall = Bodies.rectangle(window.innerWidth + 50, height / 2, 50, height, { isStatic: true, render: { fillStyle: "fff" } }),
+            rightWall = Bodies.rectangle(-50, height / 2, 50, height, { isStatic: true, render: { fillStyle: "fff" } })
 
-        // create runner
-        var runner = Runner.create();
-        Runner.run(runner, engine);
-            
         const pill1 = Bodies.circle(900, 400, 29, {
             restitution: 0.5,
             render: { sprite: { texture: pill } }
         }),
             pill2 = Bodies.circle(600, 400, 29, {
                 restitution: 0.5,
+                chamfer: 1000,
                 render: { sprite: { texture: pill } }
             }),
             pill3 = Bodies.circle(700, 400, 29, {
@@ -108,15 +113,8 @@ function Fashion() {
                 restitution: 0.5,
                 render: { sprite: { texture: pill } }
             });
-
-        Composite.add(world, [pill1, pill2, pill3, pill4, pill5]);
-
-        Composite.add(world, [
-            Bodies.rectangle(window.innerWidth / 2 - 50, -50, window.innerWidth - 50, 50, { isStatic: true, render: { fillStyle: "fff" } }),
-            Bodies.rectangle(window.innerWidth / 2, height, window.innerWidth, 50, { isStatic: true, render: { fillStyle: "fff" } }),
-            Bodies.rectangle(window.innerWidth + 50, height / 2, 50, height, { isStatic: true, render: { fillStyle: "fff" } }),
-            Bodies.rectangle(-50, height / 2, 50, height, { isStatic: true, render: { fillStyle: "fff" } })
-        ]);
+        
+            World.add(engine.world, [topWall, bottomWall, leftWall, rightWall, pill1, pill2, pill3, pill4, pill5]);
 
         var mouse = Mouse.create(render.canvas),
             mouseConstraint = MouseConstraint.create(engine, {
@@ -132,49 +130,48 @@ function Fashion() {
         mouseConstraint.mouse.element.removeEventListener("DOMMouseScroll", mouseConstraint.mouse.mousewheel);
         render.mouse = mouse;
 
-        Composite.add(engine.world, mouseConstraint);
-
-        // fit the render viewport to the scene
+        World.add(engine.world, mouseConstraint);
         Render.lookAt(render, {
             min: { x: 0, y: 0 },
             max: { x: window.innerWidth, y: height }
         });
 
+        Matter.Runner.run(engine);
+        Render.run(render);
+
     }, [])
 
     return (
         <div className='page'>
-            {/* <ScrollLock isActive={isLocked}> */}
-            <div id='fashion' className='page'>
-                {isLoading ? <FashionLoading/>:null}
-                <NavHeader isNav={true} isAbout={false} isBlog={false} />
-                <MobileNavHeader setIsModalOpen={setIsModalOpen} />
-                {isModalOpen ? <MobileNav setIsModalOpen={setIsModalOpen} /> :null}
-                <div className='serveBody flex-col'>
-                    <div className='matter' ref={matterRef} />
-                    <img id='fashionIcon' src={fashion} alt="" />
-                    <div className='serveText'>Fashion Design</div>
-                    <div className='filter flex'>
-                        <div className='filterItem' style={{ color: filter === 'all' ? '#161619' : '#7E7E86', fontWeight: filter === 'all' ? '700':null }} onClick={() => setFilter('all')}>ALL</div>
-                        <div className='filterItem' style={{ color: filter === 'Lookbook' ? '#161619' : '#7E7E86', fontWeight: filter === 'Lookbook' ? '700':null }} onClick={() => setFilter('Lookbook')}>Lookbook</div>
-                        <div className='filterItem' style={{ color: filter === 'Film' ? '#161619' : '#7E7E86', fontWeight: filter === 'Film' ? '700':null }} onClick={() => setFilter('Film')}>Film</div>
-                        <div className='filterItem' style={{ marginRight: 0, color: filter === 'Pictorial' ? '#161619' : '#7E7E86', fontWeight: filter === 'Pictorial' ? '700':null }} onClick={() => setFilter('Pictorial')}>Pictorial</div>
-                    </div>
-                    <hr className='filter-hr' />
-                    <div className='cards flex'>
-                        <div className='cards-empty-space-left' />
-                        <img className='cards-arrow' src={arrow} alt="" />
-                        <div className='flex cards-container' {...events} ref={scrollRef}>
-                            {itemList.filter(item => item.type === filter || filter === 'all').map((filteredItem) => (
-                                <CircleCard serveType={serveType} id={filteredItem.id} type={filteredItem.type} title={filteredItem.title} image={filteredItem.image} />
-                            ))}
+            {isLoading ? <FashionLoading /> : null}
+                <div id='fashion' className='page'>
+                    <NavHeader isNav={true} isAbout={false} isBlog={false} />
+                    <MobileNavHeader setIsModalOpen={setIsModalOpen} />
+                    {isModalOpen ? <MobileNav setIsModalOpen={setIsModalOpen} /> : null}
+                    <div className='serveBody flex-col'>
+                        <div className='matter' ref={matterRef} />
+                        <img id='fashionIcon' src={fashion} alt="" />
+                        <div className='serveText'>Fashion Design</div>
+                        <div className='filter flex'>
+                            <div className='filterItem' style={{ color: filter === 'all' ? '#161619' : '#7E7E86', fontWeight: filter === 'all' ? '700' : null }} onClick={() => setFilter('all')}>ALL</div>
+                            <div className='filterItem' style={{ color: filter === 'Lookbook' ? '#161619' : '#7E7E86', fontWeight: filter === 'Lookbook' ? '700' : null }} onClick={() => setFilter('Lookbook')}>Lookbook</div>
+                            <div className='filterItem' style={{ color: filter === 'Film' ? '#161619' : '#7E7E86', fontWeight: filter === 'Film' ? '700' : null }} onClick={() => setFilter('Film')}>Film</div>
+                            <div className='filterItem' style={{ marginRight: 0, color: filter === 'Pictorial' ? '#161619' : '#7E7E86', fontWeight: filter === 'Pictorial' ? '700' : null }} onClick={() => setFilter('Pictorial')}>Pictorial</div>
                         </div>
-                        <div className='cards-empty-space-right' />
+                        <hr className='filter-hr' />
+                        <div className='cards flex'>
+                            <div className='cards-empty-space-left' />
+                            <img className='cards-arrow' src={arrow} alt="" />
+                            <div className='flex cards-container' {...events} ref={scrollRef}>
+                                {itemList.filter(item => item.type === filter || filter === 'all').map((filteredItem) => (
+                                    <CircleCard serveType={serveType} id={filteredItem.id} type={filteredItem.type} title={filteredItem.title} image={filteredItem.image} />
+                                ))}
+                            </div>
+                            <div className='cards-empty-space-right' />
+                        </div>
                     </div>
+                    <SecondFooter fashion={true} visual={false} media={false} />
                 </div>
-                <SecondFooter fashion={true} visual={false} media={false}/>
-            </div>
-            {/* </ScrollLock> */}
         </div>
     )
 }

@@ -30,9 +30,6 @@ function Media() {
     const scrollRef = useRef();
     const { events } = useDraggable(scrollRef);
 
-    const [matterWidth, setMatterWidth] = useState(1680);
-    const [matterHeight, setMatterHeight] = useState(1290);
-
     const serveType = 'media'
     const itemList = [
         { id: 1, title: 'DD', type: 'UIUX', image: example1 },
@@ -50,6 +47,16 @@ function Media() {
     const [filter, setFilter] = useState('all')
 
     useEffect(() => {
+        const reloadCount = sessionStorage.getItem('reloadCount');
+        if (reloadCount < 2) {
+            sessionStorage.setItem('reloadCount', String(reloadCount + 1));
+            window.location.reload(false);
+        } else {
+            sessionStorage.removeItem('reloadCount');
+        }
+    }, [])
+
+    useEffect(() => {
         window.scrollTo({
             top: 0,
         });
@@ -61,7 +68,7 @@ function Media() {
         html = document.documentElement;
 
         var height = Math.max(body.scrollHeight, body.offsetHeight,
-            html.clientHeight, html.scrollHeight, html.offsetHeight) - 30;
+            html.clientHeight, html.scrollHeight, html.offsetHeight) - 190;
 
         var Engine = Matter.Engine,
             Render = Matter.Render,
@@ -88,6 +95,7 @@ function Media() {
             bottomWall = Bodies.rectangle(window.innerWidth / 2, height, window.innerWidth, 50, { isStatic: true, render: { fillStyle: "fff" } }),
             leftWall = Bodies.rectangle(window.innerWidth + 50, height / 2, 50, height, { isStatic: true, render: { fillStyle: "fff" } }),
             rightWall = Bodies.rectangle(-50, height / 2, 50, height, { isStatic: true, render: { fillStyle: "fff" } })
+            
         const pill1 = Bodies.rectangle(650, 400, 115, 43.5, {
             restitution: 0.5,
             chamfer: 1000,
