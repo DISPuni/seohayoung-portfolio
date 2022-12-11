@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/seohayoung-portfolio/static/css/main.801ec4df.css",
+    "main.css": "/seohayoung-portfolio/static/css/main.52160072.css",
     "main.js": "/seohayoung-portfolio/static/js/main.c07984e1.js",
     "static/media/intro_video.mp4": "/seohayoung-portfolio/static/media/intro_video.356c3e62c87a5ae08d56.mp4",
     "static/media/visual.gif": "/seohayoung-portfolio/static/media/visual.533c31f321d636e85d09.gif",
@@ -73,11 +73,11 @@
     "static/media/servefooter_media.svg": "/seohayoung-portfolio/static/media/servefooter_media.6b061ffe7f9bb16a745d1a4fc1cce8e3.svg",
     "static/media/servefooter_media_inactivation.svg": "/seohayoung-portfolio/static/media/servefooter_media_inactivation.852ebed16c05507037864a43f303eac1.svg",
     "static/media/collapse.svg": "/seohayoung-portfolio/static/media/collapse.e54553e8402b773f96b1b430d974379d.svg",
-    "main.801ec4df.css.map": "/seohayoung-portfolio/static/css/main.801ec4df.css.map",
+    "main.52160072.css.map": "/seohayoung-portfolio/static/css/main.52160072.css.map",
     "main.c07984e1.js.map": "/seohayoung-portfolio/static/js/main.c07984e1.js.map"
   },
   "entrypoints": [
-    "static/css/main.801ec4df.css",
+    "static/css/main.52160072.css",
     "static/js/main.c07984e1.js"
   ]
 }
