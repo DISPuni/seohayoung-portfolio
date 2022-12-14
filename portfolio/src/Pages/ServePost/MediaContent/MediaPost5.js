@@ -2,10 +2,11 @@ import React, { useRef } from 'react'
 
 import '../ServePost.css'
 
-import shimshim0 from '../../../assets/media/interaction_shimshim/shimshim_000.mp4'
-import shimshim1 from '../../../assets/media/interaction_shimshim/shimshim_001.png'
+import todaywho0 from '../../../assets/media/uiux_todaywho/todaywho_000.mp4'
+import todaywho1 from '../../../assets/media/uiux_todaywho/todaywho_001.png'
+import todaywho2 from '../../../assets/media/uiux_todaywho/todaywho_002.png'
 
-function MediaPost2() {
+function MediaPost5() {
 
     const videoRef = useRef(null);
 
@@ -22,11 +23,12 @@ function MediaPost2() {
     return (
         <div className='serve-content-body'>
             <video className='content-video' controls autoPlay ref={videoRef} onClick={() => videoPause()}>
-                <source src={shimshim0} type="video/mp4" />
+                <source src={todaywho0} type="video/mp4" />
             </video>
-            <img className='content-img' src={shimshim1} alt="" />
+            <img className='content-img' src={todaywho1} alt="" />
+            <img className='content-img' src={todaywho2} alt="" />
         </div>
     )
 }
 
-export default MediaPost2
+export default MediaPost5

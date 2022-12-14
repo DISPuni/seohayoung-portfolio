@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Matter from "matter-js";
-import { useDraggable } from 'react-use-draggable-scroll';
 
 import './Serve.css'
 
@@ -25,8 +24,6 @@ import example6 from '../assets/examples/example6.jpeg'
 function Fashion() {
 
     const matterRef = useRef(null);
-    const scrollRef = useRef();
-    const { events } = useDraggable(scrollRef);
 
     const serveType = 'fashion'
     const itemList = [
@@ -63,10 +60,10 @@ function Fashion() {
         var body = document.body,
             html = document.documentElement;
 
-            var height = Math.max(body.scrollHeight, body.offsetHeight,
-                html.clientHeight, html.scrollHeight, html.offsetHeight) - 190;
+        var height = Math.max(body.scrollHeight, body.offsetHeight,
+            html.clientHeight, html.scrollHeight, html.offsetHeight) - 190;
 
-            var Engine = Matter.Engine,
+        var Engine = Matter.Engine,
             Render = Matter.Render,
             World = Matter.World,
             MouseConstraint = Matter.MouseConstraint,
@@ -113,8 +110,8 @@ function Fashion() {
                 restitution: 0.5,
                 render: { sprite: { texture: pill } }
             });
-        
-            World.add(engine.world, [topWall, bottomWall, leftWall, rightWall, pill1, pill2, pill3, pill4, pill5]);
+
+        World.add(engine.world, [topWall, bottomWall, leftWall, rightWall, pill1, pill2, pill3, pill4, pill5]);
 
         var mouse = Mouse.create(render.canvas),
             mouseConstraint = MouseConstraint.create(engine, {
@@ -144,34 +141,36 @@ function Fashion() {
     return (
         <div className='page'>
             {isLoading ? <FashionLoading /> : null}
-                <div id='fashion' className='page'>
-                    <NavHeader isNav={true} isAbout={false} isBlog={false} />
-                    <MobileNavHeader setIsModalOpen={setIsModalOpen} />
-                    {isModalOpen ? <MobileNav setIsModalOpen={setIsModalOpen} /> : null}
-                    <div className='serveBody flex-col'>
-                        <div className='matter' ref={matterRef} />
-                        <img id='fashionIcon' src={fashion} alt="" />
-                        <div className='serveText'>Fashion Design</div>
-                        <div className='filter flex'>
-                            <div className='filterItem' style={{ color: filter === 'all' ? '#161619' : '#7E7E86', fontWeight: filter === 'all' ? '700' : null }} onClick={() => setFilter('all')}>ALL</div>
-                            <div className='filterItem' style={{ color: filter === 'Lookbook' ? '#161619' : '#7E7E86', fontWeight: filter === 'Lookbook' ? '700' : null }} onClick={() => setFilter('Lookbook')}>Lookbook</div>
-                            <div className='filterItem' style={{ color: filter === 'Film' ? '#161619' : '#7E7E86', fontWeight: filter === 'Film' ? '700' : null }} onClick={() => setFilter('Film')}>Film</div>
-                            <div className='filterItem' style={{ marginRight: 0, color: filter === 'Pictorial' ? '#161619' : '#7E7E86', fontWeight: filter === 'Pictorial' ? '700' : null }} onClick={() => setFilter('Pictorial')}>Pictorial</div>
-                        </div>
-                        <hr className='filter-hr' />
-                        <div className='cards flex'>
-                            <div className='cards-empty-space-left' />
-                            <img className='cards-arrow' src={arrow} alt="" />
-                            <div className='flex cards-container' {...events} ref={scrollRef}>
-                                {itemList.filter(item => item.type === filter || filter === 'all').map((filteredItem) => (
+            <div id='fashion' className='page'>
+                <NavHeader isNav={true} isAbout={false} isBlog={false} />
+                <MobileNavHeader setIsModalOpen={setIsModalOpen} />
+                {isModalOpen ? <MobileNav setIsModalOpen={setIsModalOpen} /> : null}
+                <div className='serveBody flex-col'>
+                    <div className='matter' ref={matterRef} />
+                    <img id='fashionIcon' src={fashion} alt="" />
+                    <div className='serveText'>Fashion Design</div>
+                    <div className='filter flex'>
+                        <div className='filterItem' style={{ color: filter === 'all' ? '#161619' : '#7E7E86', fontWeight: filter === 'all' ? '700' : null }} onClick={() => setFilter('all')}>ALL</div>
+                        <div className='filterItem' style={{ color: filter === 'Lookbook' ? '#161619' : '#7E7E86', fontWeight: filter === 'Lookbook' ? '700' : null }} onClick={() => setFilter('Lookbook')}>Lookbook</div>
+                        <div className='filterItem' style={{ color: filter === 'Film' ? '#161619' : '#7E7E86', fontWeight: filter === 'Film' ? '700' : null }} onClick={() => setFilter('Film')}>Film</div>
+                        <div className='filterItem' style={{ marginRight: 0, color: filter === 'Pictorial' ? '#161619' : '#7E7E86', fontWeight: filter === 'Pictorial' ? '700' : null }} onClick={() => setFilter('Pictorial')}>Pictorial</div>
+                    </div>
+                    <hr className='filter-hr' />
+                    <div className='cards flex'>
+                        <div className='cards-empty-space-left' />
+                        <img className='cards-arrow' src={arrow} alt="" />
+                        <div className='flex cards-container'>
+                            {itemList.filter(item => item.type === filter || filter === 'all').map((filteredItem) => (
+                                <div className='flex'>
                                     <CircleCard serveType={serveType} id={filteredItem.id} type={filteredItem.type} title={filteredItem.title} image={filteredItem.image} />
-                                ))}
-                            </div>
-                            <div className='cards-empty-space-right' />
+                                    <div style={{ width: '5rem' }} />
+                                </div>
+                            ))}
                         </div>
                     </div>
-                    <SecondFooter fashion={true} visual={false} media={false} />
                 </div>
+                <SecondFooter fashion={true} visual={false} media={false} />
+            </div>
         </div>
     )
 }
