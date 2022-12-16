@@ -121,7 +121,7 @@ useEffect(() => {
 간단하게 `else if`문을 아래에 복사 붙여넣기 하여 숫자만 바꿔 주시면 됩니다.<br/>
 <br/>
 
-서브 페이지 글 추가하는 방법
+서브 페이지 추가하는 방법
 -----
 **1. `Media.js`, `Fashion.js`, `Visual.js`**
 ```
@@ -153,4 +153,51 @@ itemList에 서브 포스팅 `id`,`title`, `type`, 불러온 이미지를 알맞
 **2. 서브 포스트 추가**<br/>
 <img width="254" alt="image" src="https://user-images.githubusercontent.com/87830290/205415320-b58a3a64-efec-4031-8600-322747b6c32b.png"><br/>
 위에 보시면 서브별로 제가 만들어 둔 폴더를 확인하실 수 있습니다.<br/>
-블로그에 포스팅 추가하는 것처럼 각 서브에 추가해 주시면 됩니다.
+블로그에 포스팅 추가하는 것처럼 각 서브에 추가해 주시면 됩니다.<br/>
+<br/>
+**3. 서브 페이지 내용에 이미지 및 영상 추가**<br/>
+새로 만든 포스트 파일 (e.g., `MediaPost5.js`)에 아래 내용을 그래도 복사해서 붙여 넣습니다.
+```
+import React from 'react'
+
+import '../ServePost.css'
+
+function Untitled() {
+  return (
+    <div className='serve-content-body'>
+       // 코드 추가할 위치
+    </div>
+  )
+}
+
+export default Untitled
+```
+그리고 생성하는 서브 포스트 타입(Fashion, Visual, Media) 그리고 번호에 맞추어 `Untitled` 두 곳을 파일 이름과 똑같이 맞춰 주세요. (확장자는 붙이지 않으셔도 됩니다.)<br/>
+이제 코드 추가할 위치라고 써 있는 부분에 이미지랑 비디오를 추가해 주시면 됩니다.<br/>
+- 이미지의 경우<br/>
+`import '../ServePost.css'` 밑에 이미지를 import 해 줍니다.
+```
+import todaywho1 from '../../../assets/media/uiux_todaywho/todaywho_001.png'
+// import 다음은 이미지를 이름 지정
+// from 다음은 경로 지정 (이때 보시는 것처럼 작은 따옴표 안에 경로를 지정해 주셔야 합니다.)
+```
+그리고 코드 추가할 위치에
+```
+<img className='content-img' src={imageName} alt="" />
+// imageName은 import 하실 때 지정한 이름을 넣어 주시면 됩니다.
+```
+- 영상의 경우<br/>
+아래 코드를 복사해 원하시는 위치에 붙여넣어 줍니다.
+```
+<iframe
+    className='responsive-iframe'
+    src={`https://www.youtube.com/embed/_gfihwT4RTs`}
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+    title="Embedded youtube"
+/>
+```
+그리고 링크가 들어가는 코드 라인에 맨 마지막 영상 링크 아이디(위 코드에서는 `_gfihwT4RTs`)만 가지고 계신 유튜브 주소 아이디로 변경 후 저장해 줍니다.<br/>
+예를 들어 가지고 계산 유튜브 영상 주소가 https://youtu.be/u1gb4znNeRE라면 `u1gb4znNeRE`만 복사해서 해당 위치에 붙여넣기 해 주시면 됩니다.<br/>
+<br/>
+설명 중 이해가 안 되는 게 있으실 경우 이미 존재하는 `MediaPost`나 `VisualPost` 파일을 참고하는 걸 추천 드립니다!
