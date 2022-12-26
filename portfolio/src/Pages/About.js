@@ -104,11 +104,11 @@ function About() {
                             </div>
                             <div className='flex about-timeline'>
                                 <div className='collapse-title'>Project</div>
-                                <Accordion years={['2021.12 ~ 2022.09 | 10M', '2021.07 ~ 2021.10 | 4M', '2022.05 ~ 2022.08 | 3M']} organizations={['Exhibition WWW', 'Design Crew OOBB 2nd pyeonteilba', 'Design Crew OOBB 1st hotel shimshim']} descriptions={['Deractor', 'PM & Editorial design', '3rd team']} />
+                                <Accordion years={['2021.12 ~ 2022.09 | 10M', '2021.07 ~ 2021.10 | 4M', '2022.05 ~ 2022.08 | 3M']} organizations={['Exhibition WWW', 'Design Crew OOBB 2nd pyeonteilba', 'Design Crew OOBB 1st hotel shimshim']} descriptions={['Diractor', 'PM & Editorial design', '3rd team']} />
                             </div>
                             <div className='flex about-timeline'>
                                 <div className='collapse-title'>Award</div>
-                                <Accordion years={['2021.12 ~ 2022.09 | 10M', '2021.07 ~ 2021.10 | 4M', '2022.05 ~ 2022.08 | 3M']} organizations={['Exhibition WWW', 'Design Crew OOBB 2nd pyeonteilba', 'Design Crew OOBB 1st hotel shimshim']} descriptions={['Deractor', 'PM & Editorial design', 'OOBB Founder & team leader']} />
+                                <Accordion years={['2021.12 ~ 2022.09 | 10M', '2021.07 ~ 2021.10 | 4M', '2022.05 ~ 2022.08 | 3M']} organizations={['Exhibition WWW', 'Design Crew OOBB 2nd pyeonteilba', 'Design Crew OOBB 1st hotel shimshim']} descriptions={['Diractor', 'PM & Editorial design', 'OOBB Founder & team leader']} />
                             </div>
                         </div>
                     </div>
