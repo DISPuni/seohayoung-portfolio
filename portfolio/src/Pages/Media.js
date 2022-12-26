@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Matter from "matter-js";
-import { useDraggable } from 'react-use-draggable-scroll';
 
 import './Serve.css'
 
@@ -15,31 +14,23 @@ import media from '../assets/icons/media_icon.svg'
 import pill from '../assets/pills/media_pill.svg'
 import arrow from '../assets/arrow.svg'
 
-import example1 from '../assets/examples/example1.jpeg'
-import example2 from '../assets/examples/example2.png'
-import example3 from '../assets/examples/example3.jpeg'
-import example4 from '../assets/examples/example4.jpeg'
-import example5 from '../assets/examples/example5.jpg'
-import example6 from '../assets/examples/example6.jpeg'
-import example7 from '../assets/examples/example7.jpeg'
-import example8 from '../assets/examples/example8.jpeg'
+import pop from '../assets/media/animation_pop/pop_thumbnail.png'
+import shimshim from '../assets/media/interaction_shimshim/shimshim_thumbnail.png'
+import souvenir from '../assets/media/motion_souvenir/souvenir_thumbnail.png'
+import famsupport from '../assets/media/uiux_famsupport/famsupport_thumbnail.png'
+import todaywho from '../assets/media/uiux_todaywho/todaywho_thumbnail.png'
 
 function Media() {
 
     const matterRef = useRef(null);
-    const scrollRef = useRef();
-    const { events } = useDraggable(scrollRef);
 
     const serveType = 'media'
     const itemList = [
-        { id: 1, title: 'DD', type: 'UIUX', image: example1 },
-        { id: 2, title: 'test1', type: 'UIUX', image: example2 },
-        { id: 3, title: 'test2-1', type: 'Motion', image: example3 },
-        { id: 4, title: 'test2-2', type: 'Motion', image: example4 },
-        { id: 5, title: 'test3-1', type: 'Interaction', image: example5 },
-        { id: 6, title: 'test3-2', type: 'Interaction', image: example6 },
-        { id: 7, title: 'test4-1', type: 'Animation', image: example7 },
-        { id: 8, title: 'test4-2', type: 'Animation', image: example8 },
+        { id: 1, title: 'Pop', type: 'Animation', image: pop },
+        { id: 2, title: 'Shimshim', type: 'Interaction', image: shimshim },
+        { id: 3, title: 'Souvenir', type: 'Motion', image: souvenir },
+        { id: 4, title: 'Famsupport', type: 'UIUX', image: famsupport },
+        { id: 5, title: 'Today Who', type: 'UIUX', image: todaywho },
     ]
 
     const [isLoading, setIsLoading] = useState(true)
@@ -173,12 +164,14 @@ function Media() {
                     <div className='cards-empty-space-left' />
                         <img className='cards-arrow' src={arrow} alt="" />
                         <div className='cards-empty-space' />
-                        <div className='flex cards-container' {...events} ref={scrollRef}>
+                        <div className='flex cards-container'>
                             {itemList.filter(item => item.type === filter || filter === 'all').map(filteredItem => (
-                                <CircleCard serveType={serveType} id={filteredItem.id} type={filteredItem.type} title={filteredItem.title} image={filteredItem.image} />
+                                <div className='flex'>
+                                    <CircleCard serveType={serveType} id={filteredItem.id} type={filteredItem.type} title={filteredItem.title} image={filteredItem.image} />
+                                    <div style={{ width: '5rem' }} />
+                                </div>
                             ))}
                         </div>
-                        <div className='cards-empty-space-right' />
                     </div>
                 </div>
                 <SecondFooter fashion={false} visual={false} media={true} />

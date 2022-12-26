@@ -12,7 +12,7 @@ function CircleCard(props) {
 
     return (
         <div id='circleCard' className='flex' onClick={() => toServePost(props.serveType, props.id)}>
-            <div>
+            <div className='card-content'>
                 <img id='cardImg' src={props.image} alt="" />
                 <div className='circle-overlay'>
                     <div className='circle-upper flex'>
@@ -23,7 +23,6 @@ function CircleCard(props) {
                     </div>
                 </div>
             </div>
-            <div className='card-margin' />
         </div>
     )
 }

@@ -14,13 +14,15 @@ import visual from '../../assets/icons/visual_icon.svg'
 
 import VisualPost1 from './VisualContent/VisualPost1'
 import VisualPost2 from './VisualContent/VisualPost2'
+import VisualPost3 from './VisualContent/VisualPost3'
 import NotFound from '../NotFound'
 
 function VisualPostHeader() {
 
     const postInfo = [
-        { id: 1, title: 'PUUNI', date: '22.03.22~', type: 'BX' },
-        { id: 2, title: 'test1', date: '22.12.24~', type: 'BX' },
+        { id: 1, title: 'Anigom', date: '22.03.22~', type: 'BX' },
+        { id: 2, title: 'Camping', date: '22.12.24~', type: 'Graphic' },
+        { id: 2, title: 'Jua Poster', date: '22.12.24~', type: 'Editorial' },
     ]
     const [post, setPost] = useState();
     const [notFound, setNotFound] = useState(true);
@@ -40,6 +42,10 @@ function VisualPostHeader() {
         else if (postId.id === '2') {
             setNotFound(false)
             setPost(<VisualPost2 />)
+        }
+        else if (postId.id === '3') {
+            setNotFound(false)
+            setPost(<VisualPost3 />)
         }
     }, [])
 

@@ -6,10 +6,7 @@
 }
 
 #circleCard {
-    cursor: pointer;
     position: relative;
-    padding-right: 3.55rem;
-    /* margin-left: 3.55rem; */
 }
 #cardImg {
     width: 15.271rem;
@@ -22,6 +19,7 @@
     border-radius: 7.6355rem 7.6355rem 0 0;
     background-color: white;
     border: 1px solid #000000;
+    cursor: pointer;
 }
 .circle-bottom {
     width: 15.271rem;
@@ -31,6 +29,7 @@
     border-bottom: 1px solid #000000;
     border-left: 1px solid #000000;
     border-right: 1px solid #000000;
+    cursor: pointer; 
 }
 .circle-text {
     font-family: 'Open Sans', sans-serif;
@@ -45,7 +44,7 @@
     right: 0;
     opacity: 0;
 }
-#circleCard:hover .circle-overlay {
+.card-content:hover .circle-overlay:hover {
     opacity: 1;
 }
 .card-margin {

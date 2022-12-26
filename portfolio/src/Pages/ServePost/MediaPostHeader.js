@@ -14,13 +14,19 @@ import media from '../../assets/icons/media_icon.svg'
 
 import MediaPost1 from './MediaContent/MediaPost1'
 import MediaPost2 from './MediaContent/MediaPost2'
+import MediaPost3 from './MediaContent/MediaPost3'
+import MediaPost4 from './MediaContent/MediaPost4'
+import MediaPost5 from './MediaContent/MediaPost5'
 import NotFound from '../NotFound'
 
 function MediaPostHeadser() {
 
     const postInfo = [
-        { id: 1, title: 'DD', date: '22.03.22~', type: 'UIUX' },
-        { id: 2, title: 'test1', date: '22.12.24~', type: 'UIUX' },
+        { id: 1, title: 'Pop', date: '22.03.22~', type: 'Animation' },
+        { id: 2, title: 'Shimshim', date: '22.12.24~', type: 'Interaction' },
+        { id: 3, title: 'Souvenir', date: '22.12.24~', type: 'Motion' },
+        { id: 4, title: 'Famsupport', date: '22.12.24~', type: 'UIUX' },
+        { id: 5, title: 'Today Who', date: '22.12.24~', type: 'UIUX' },
     ]
     const [post, setPost] = useState()
     const [notFound, setNotFound] = useState(true)
@@ -40,6 +46,18 @@ function MediaPostHeadser() {
         else if (postId.id === '2') {
             setNotFound(false)
             setPost(<MediaPost2 />)
+        }
+        else if (postId.id === '3') {
+            setNotFound(false)
+            setPost(<MediaPost3 />)
+        }
+        else if (postId.id === '4') {
+            setNotFound(false)
+            setPost(<MediaPost4 />)
+        }
+        else if (postId.id === '5') {
+            setNotFound(false)
+            setPost(<MediaPost5 />)
         }
     }, [])
 

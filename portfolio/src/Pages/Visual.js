@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Matter from "matter-js";
-import { useDraggable } from 'react-use-draggable-scroll';
 
 import './Serve.css'
 
@@ -15,27 +14,19 @@ import visual from '../assets/icons/visual_icon.svg'
 import pill from '../assets/pills/visual_pill.svg'
 import arrow from '../assets/arrow.svg'
 
-import example1 from '../assets/examples/example1.jpeg'
-import example2 from '../assets/examples/example2.png'
-import example3 from '../assets/examples/example3.jpeg'
-import example4 from '../assets/examples/example4.jpeg'
-import example5 from '../assets/examples/example5.jpg'
-import example6 from '../assets/examples/example6.jpeg'
+import anigom from '../assets/visual/bx_anigom/anigom_thumbnail.jpg'
+import camping from '../assets/visual/graphic_camping/camping_thumbnail.jpg'
+import jua from '../assets/visual/editorial_jua_poster/jua_poster_thumbnail.jpg'
 
 export default function Visual() {
 
     const matterRef = useRef(null);
-    const scrollRef = useRef();
-    const { events } = useDraggable(scrollRef);
 
     const serveType = 'visual'
     const itemList = [
-        { id: 1, title: 'PUUNI', type: 'BX', image: example1 },
-        { id: 2, title: 'test1', type: 'BX', image: example2 },
-        { id: 3, title: 'test2-1', type: 'Graphic', image: example3 },
-        { id: 4, title: 'test2-2', type: 'Graphic', image: example4 },
-        { id: 5, title: 'test3-1', type: 'Editorial', image: example5 },
-        { id: 6, title: 'test3-2', type: 'Editorial', image: example6 },
+        { id: 1, title: 'Anigom', type: 'BX', image: anigom },
+        { id: 2, title: 'Camping', type: 'Graphic', image: camping },
+        { id: 3, title: 'Jua Poster', type: 'Editorial', image: jua},
     ]
 
     const [isLoading, setIsLoading] = useState(true)
@@ -165,12 +156,14 @@ export default function Visual() {
                     <div className='cards flex'>
                         <img className='cards-arrow' src={arrow} alt="" />
                         <div className='cards-empty-space-left' />
-                        <div className='flex cards-container' {...events} ref={scrollRef}>
+                        <div className='flex cards-container'>
                             {itemList.filter(item => item.type === filter || filter === 'all').map(filteredItem => (
-                                <CircleCard serveType={serveType} id={filteredItem.id} type={filteredItem.type} title={filteredItem.title} image={filteredItem.image} />
+                                <div className='flex'>
+                                    <CircleCard serveType={serveType} id={filteredItem.id} type={filteredItem.type} title={filteredItem.title} image={filteredItem.image} />
+                                    <div style={{ width: '5rem' }} />
+                                </div>
                             ))}
                         </div>
-                        <div className='cards-empty-space-right' />
                     </div>
                 </div>
                 <SecondFooter fashion={false} visual={true} media={false} />

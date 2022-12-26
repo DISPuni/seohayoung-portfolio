@@ -26,7 +26,7 @@
     "deploy": "gh-pages -d build",
     "predeploy": "yarn build"
   },
-  "homepage": "https://onmay16.github.io/seohayoung-portfolio/",
+  "homepage": "https://disppills.com",
   "eslintConfig": {
     "extends": [
       "react-app",
