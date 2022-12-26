@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.faa8df02.css",
-    "main.js": "/static/js/main.393e29de.js",
+    "main.js": "/static/js/main.592596a5.js",
     "static/media/intro_video.mp4": "/static/media/intro_video.356c3e62c87a5ae08d56.mp4",
     "static/media/shimshim_001.png": "/static/media/shimshim_001.3a711c1e882cc4966d4c.png",
     "static/media/camping_000.jpg": "/static/media/camping_000.e4e088a5ff86c4fa8a38.jpg",
@@ -46,11 +46,11 @@
     "static/media/Figma.png": "/static/media/Figma.65326560bc2420c43915.png",
     "static/media/main_m_img_visual.png": "/static/media/main_m_img_visual.f4fa64fb4e0fdf9962b0.png",
     "static/media/main_m_img_fashion.png": "/static/media/main_m_img_fashion.8ca012b1d9b06cf2cdd1.png",
-    "static/media/main_img_blog_hover.svg": "/static/media/main_img_blog_hover.ae2be0359417b56e2de38ebf77c83e16.svg",
-    "static/media/main_img_blog.svg": "/static/media/main_img_blog.f715c6ba9df8f013045de39603210f46.svg",
     "static/media/main_m_img_media.png": "/static/media/main_m_img_media.9de2c8c291444734336e.png",
+    "static/media/main_img_blog_hover.svg": "/static/media/main_img_blog_hover.3b76a159143b6c5655b74ea7878e9dfa.svg",
+    "static/media/main_img_blog.svg": "/static/media/main_img_blog.020b37faa03a0a581605838e6ae653f5.svg",
     "static/media/wix.png": "/static/media/wix.71ad03d37e4ff735b3c1.png",
-    "static/media/main_img_blog.png": "/static/media/main_img_blog.0b878e15f0bccca16589.png",
+    "static/media/main_img_blog.png": "/static/media/main_img_blog.4d4d325bd61375687e3a.png",
     "static/media/main_img_about_hover.svg": "/static/media/main_img_about_hover.4a006c62e4a20befce5d5cd33b7e357d.svg",
     "static/media/main_bg.svg": "/static/media/main_bg.df484c32a55525ef9f9b.svg",
     "static/media/main_img_about.svg": "/static/media/main_img_about.7395470944daefeb96d164d91d2189b2.svg",
@@ -93,10 +93,10 @@
     "static/media/servefooter_media_inactivation.svg": "/static/media/servefooter_media_inactivation.852ebed16c05507037864a43f303eac1.svg",
     "static/media/collapse.svg": "/static/media/collapse.e54553e8402b773f96b1b430d974379d.svg",
     "main.faa8df02.css.map": "/static/css/main.faa8df02.css.map",
-    "main.393e29de.js.map": "/static/js/main.393e29de.js.map"
+    "main.592596a5.js.map": "/static/js/main.592596a5.js.map"
   },
   "entrypoints": [
     "static/css/main.faa8df02.css",
-    "static/js/main.393e29de.js"
+    "static/js/main.592596a5.js"
   ]
 }
