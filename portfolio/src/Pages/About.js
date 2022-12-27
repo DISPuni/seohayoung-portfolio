@@ -104,11 +104,11 @@ function About() {
                             </div>
                             <div className='flex about-timeline'>
                                 <div className='collapse-title'>Project</div>
-                                <Accordion years={['2021.12 ~ 2022.09 | 10M', '2021.07 ~ 2021.10 | 4M', '2022.05 ~ 2022.08 | 3M']} organizations={['Exhibition WWW', 'Design Crew OOBB 2nd pyeonteilba', 'Design Crew OOBB 1st hotel shimshim']} descriptions={['Diractor', 'PM & Editorial design', '3rd team']} />
+                                <Accordion years={['2021.12 ~ 2022.12 | 1Y', '2022.08 ~ 2022.11 | 3M', '2022.05 ~ 2022.08 | 3M', '2022.07 ~ 2022.08 | 1M', '2022.03 ~ 2022.08 | 5M', '2021.07 ~ 2022.06 | 11M', '2021.04 ~ 2022.04 | 1Y']} organizations={['Exhibition WWW', 'Design Crew OOBB 2nd pyeonteilba', 'Fastcampus UIUX KDT company project', 'SPARTA bootcamp chang', 'SPARTA Design membership', 'Design Crew OOBB 1st hotel shimshim', 'Student Fashion Association OFF']} descriptions={['Diractor', 'PM & Editorial design', 'OOBB Founder & team leader', 'UIUX design', '1st team', 'OOBB Founder & team leader', '27th Planner team']} />
                             </div>
                             <div className='flex about-timeline'>
                                 <div className='collapse-title'>Award</div>
-                                <Accordion years={['2021.12 ~ 2022.09 | 10M', '2021.07 ~ 2021.10 | 4M', '2022.05 ~ 2022.08 | 3M']} organizations={['Exhibition WWW', 'Design Crew OOBB 2nd pyeonteilba', 'Design Crew OOBB 1st hotel shimshim']} descriptions={['Diractor', 'PM & Editorial design', 'OOBB Founder & team leader']} />
+                                <Accordion years={['2021.12.31', '2021.12.06', '2021.07.30']} organizations={['Dedign for the future', 'it award challenge', 'Communication design association of korea']} descriptions={['Special Prize autodesk prize', 'Bronze frize', 'Special prize']} />
                             </div>
                         </div>
                     </div>
