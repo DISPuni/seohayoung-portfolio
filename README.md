@@ -201,3 +201,40 @@ import todaywho1 from '../../../assets/media/uiux_todaywho/todaywho_001.png'
 예를 들어 가지고 계산 유튜브 영상 주소가 https://youtu.be/u1gb4znNeRE라면 `u1gb4znNeRE`만 복사해서 해당 위치에 붙여넣기 해 주시면 됩니다.<br/>
 <br/>
 설명 중 이해가 안 되는 게 있으실 경우 이미 존재하는 `MediaPost`나 `VisualPost` 파일을 참고하는 걸 추천 드립니다!
+
+<br/>
+**4.`MediaPostHeader.js`, `VisualPostHeader.js`, `FashionPostHeader.js`**
+```
+import MediaPost1 from './MediaContent/MediaPost1'
+import MediaPost2 from './MediaContent/MediaPost2'
+```
+블로그와 마찬가지로 포스팅은 헤더와 컨텐츠로 나뉘어져 있습니다.<br/>
+해당 파일에서 헤더 자체는 수정 하능하며, 컨텐츠의 경우 따로 파일을 만들어 불러와 주는 방식입니다.<br/>
+위와 같이 컨텐츠를 저장한 경로에서 컨텐츠를 불러와줍니다.<br/>
+```
+const postInfo = [
+    { id: 1, title: 'Pop', date: '22.03.22~', type: 'Animation' },
+    { id: 2, title: 'Shimshim', date: '22.12.24~', type: 'Interaction' },
+    { id: 3, title: 'Souvenir', date: '22.12.24~', type: 'Motion' },
+    { id: 4, title: 'Famsupport', date: '22.12.24~', type: 'UIUX' },
+    { id: 5, title: 'Today Who', date: '22.12.24~', type: 'UIUX' },
+]
+```
+먼저 `postInfo`에 `id`, `title`,`date` 그리고 `type`을 추가해 줍니다.<br/>
+`id`는 `Media.js`에 추가해 준 것과 동일하게 설정해 줍니다.<br/>
+<br/>
+```
+useEffect(() => {
+        if (postId.id === '1') {
+            setNotFound(false)
+            setPost(<MediaPost1 />)
+        }
+        else if (postId.id === '2') {
+            setNotFound(false)
+            setPost(<MediaPost2 />)
+        }
+    }, [])
+```
+다음으로는 실직적인 포스팅을 렌더링해 주기 위해 위 코드를 수정해 줍니다.<br/>
+간단하게 `else if`문을 아래에 복사 붙여넣기 하여 숫자만 바꿔 주시면 됩니다.<br/>
+<br/>
