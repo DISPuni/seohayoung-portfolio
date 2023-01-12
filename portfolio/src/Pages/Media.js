@@ -14,11 +14,19 @@ import media from '../assets/icons/media_icon.svg'
 import pill from '../assets/pills/media_pill.svg'
 import arrow from '../assets/arrow.svg'
 
+<<<<<<< HEAD
+=======
+import geumyeonmode from '../assets/media/uiux_geumyeonmode/geumyeonmode_thumbnail.png'
+import todaywho from '../assets/media/uiux_todaywho/todaywho_thumbnail.png'
+>>>>>>> f1b4eb35fa6965e6a4c6de61e3393c94a4c03677
 import pop from '../assets/media/animation_pop/pop_thumbnail.png'
 import shimshim from '../assets/media/interaction_shimshim/shimshim_thumbnail.png'
 import souvenir from '../assets/media/motion_souvenir/souvenir_thumbnail.png'
 import famsupport from '../assets/media/uiux_famsupport/famsupport_thumbnail.png'
+<<<<<<< HEAD
 import todaywho from '../assets/media/uiux_todaywho/todaywho_thumbnail.png'
+=======
+>>>>>>> f1b4eb35fa6965e6a4c6de61e3393c94a4c03677
 
 function Media() {
 
@@ -26,11 +34,20 @@ function Media() {
 
     const serveType = 'media'
     const itemList = [
+<<<<<<< HEAD
         { id: 1, title: 'Pop', type: 'Animation', image: pop },
         { id: 2, title: 'Shimshim', type: 'Interaction', image: shimshim },
         { id: 3, title: 'Souvenir', type: 'Motion', image: souvenir },
         { id: 4, title: 'Famsupport', type: 'UIUX', image: famsupport },
         { id: 5, title: 'Today Who', type: 'UIUX', image: todaywho },
+=======
+        { id: 6, title: 'geumyeonmode', type: 'UIUX', image: geumyeonmode },
+        { id: 5, title: 'Today Who', type: 'UIUX', image: todaywho },
+        { id: 1, title: 'Pop', type: 'Animation', image: pop },
+        { id: 2, title: 'Shimshim', type: 'Interaction', image: shimshim },
+        { id: 4, title: 'Famsupport', type: 'UIUX', image: famsupport },
+        { id: 3, title: 'Souvenir', type: 'Motion', image: souvenir },
+>>>>>>> f1b4eb35fa6965e6a4c6de61e3393c94a4c03677
     ]
 
     const [isLoading, setIsLoading] = useState(true)
