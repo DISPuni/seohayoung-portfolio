@@ -17,16 +17,18 @@ import MediaPost2 from './MediaContent/MediaPost2'
 import MediaPost3 from './MediaContent/MediaPost3'
 import MediaPost4 from './MediaContent/MediaPost4'
 import MediaPost5 from './MediaContent/MediaPost5'
+import MediaPost6 from './MediaContent/MediaPost6'
 import NotFound from '../NotFound'
 
 function MediaPostHeadser() {
 
     const postInfo = [
-        { id: 1, title: 'Pop', date: '22.03.22~', type: 'Animation' },
-        { id: 2, title: 'Shimshim', date: '22.12.24~', type: 'Interaction' },
-        { id: 3, title: 'Souvenir', date: '22.12.24~', type: 'Motion' },
-        { id: 4, title: 'Famsupport', date: '22.12.24~', type: 'UIUX' },
-        { id: 5, title: 'Today Who', date: '22.12.24~', type: 'UIUX' },
+        { id: 1, title: 'Pop', date: '20.09.12 ~ 21.05.28', type: 'Animation' },
+        { id: 2, title: 'Shimshim', date: '21.06.15 ~ 22.03.19', type: 'Interaction' },
+        { id: 3, title: 'Souvenir', date: '20.05.19 ~ 20.07.04', type: 'Motion' },
+        { id: 4, title: 'Famsupport', date: '20.09.10 ~ 21.05.28', type: 'UIUX' },
+        { id: 5, title: 'Today Who', date: '21.08.30 ~ 21.09.27', type: 'UIUX' },
+        { id: 6, title: 'geumyeonmode', date: '22.05.28 ~ 22.08.13', type: 'UIUX' },
     ]
     const [post, setPost] = useState()
     const [notFound, setNotFound] = useState(true)
@@ -59,6 +61,12 @@ function MediaPostHeadser() {
             setNotFound(false)
             setPost(<MediaPost5 />)
         }
+
+        else if (postId.id === '6') {
+            setNotFound(false)
+            setPost(<MediaPost6 />)
+        }
+
     }, [])
 
     return (
