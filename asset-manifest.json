@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.33813c67.css",
-    "main.js": "/static/js/main.7d47a07b.js",
+    "main.css": "/static/css/main.20e24e59.css",
+    "main.js": "/static/js/main.f9b4ceeb.js",
     "static/media/intro_video.mp4": "/static/media/intro_video.356c3e62c87a5ae08d56.mp4",
     "static/media/shimshim_001.png": "/static/media/shimshim_001.3a711c1e882cc4966d4c.png",
     "static/media/camping_000.jpg": "/static/media/camping_000.e4e088a5ff86c4fa8a38.jpg",
@@ -95,11 +95,11 @@
     "static/media/servefooter_media.svg": "/static/media/servefooter_media.6b061ffe7f9bb16a745d1a4fc1cce8e3.svg",
     "static/media/servefooter_media_inactivation.svg": "/static/media/servefooter_media_inactivation.852ebed16c05507037864a43f303eac1.svg",
     "static/media/collapse.svg": "/static/media/collapse.e54553e8402b773f96b1b430d974379d.svg",
-    "main.33813c67.css.map": "/static/css/main.33813c67.css.map",
-    "main.7d47a07b.js.map": "/static/js/main.7d47a07b.js.map"
+    "main.20e24e59.css.map": "/static/css/main.20e24e59.css.map",
+    "main.f9b4ceeb.js.map": "/static/js/main.f9b4ceeb.js.map"
   },
   "entrypoints": [
-    "static/css/main.33813c67.css",
-    "static/js/main.7d47a07b.js"
+    "static/css/main.20e24e59.css",
+    "static/js/main.f9b4ceeb.js"
   ]
 }
