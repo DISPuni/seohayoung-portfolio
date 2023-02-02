@@ -22,6 +22,8 @@
     .blog-post-subtitle {
         font-size: 15px;
     }
+
+   
 }
 .back-btn {
     margin-left: 7%;
@@ -50,4 +52,18 @@
 .blog-content-body {
     margin: auto;
     width: 75%;
+}
+
+.blog_title {
+font-size: 20px;
+}
+
+.blog_subtitle{
+font-size: 18px;
+}
+
+.article{
+    line-height: 30px;
+    word-spacing: -2px;
+    font-size: 16px;
 }
