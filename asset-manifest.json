@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c45c8c58.css",
-    "main.js": "/static/js/main.43da10fe.js",
+    "main.css": "/static/css/main.339fd9ff.css",
+    "main.js": "/static/js/main.e7e43bce.js",
     "static/media/intro_video.mp4": "/static/media/intro_video.356c3e62c87a5ae08d56.mp4",
     "static/media/shimshim_001.png": "/static/media/shimshim_001.3a711c1e882cc4966d4c.png",
     "static/media/camping_000.jpg": "/static/media/camping_000.e4e088a5ff86c4fa8a38.jpg",
@@ -65,10 +65,10 @@
     "static/media/main_img_fahion.svg": "/static/media/main_img_fahion.de927a687c337d4645708ad743b47914.svg",
     "static/media/main_img_media.svg": "/static/media/main_img_media.c8d9054bad37a50ed01e0e410d298b98.svg",
     "static/media/fashion_logo.svg": "/static/media/fashion_logo.96f8f1bc662401636fd41be8cb8dc9a2.svg",
-    "static/media/main_img_video_auto_play.svg": "/static/media/main_img_video_auto_play.e330e6ca7af9b1cbf2fa7fd667055e88.svg",
     "static/media/ae.svg": "/static/media/ae.857ddb33f7157896963d537f7772fca3.svg",
     "static/media/photoshop.svg": "/static/media/photoshop.2899e23fa900b666d43ccb9c7eba1cd5.svg",
     "static/media/media_icon.svg": "/static/media/media_icon.2e3d372796033838fecc1f3592575dd7.svg",
+    "static/media/main_img_video_auto_play.svg": "/static/media/main_img_video_auto_play.00d1100ec349ff3fed930db1c4014be9.svg",
     "static/media/fashion_icon.svg": "/static/media/fashion_icon.68afc76668bab02f3b68e4a51532390a.svg",
     "static/media/blog.svg": "/static/media/blog.6e710e87c323945c7c741f234526ecac.svg",
     "static/media/visual_icon.svg": "/static/media/visual_icon.074e807dc7571be14d4abde0d0ac964e.svg",
@@ -95,11 +95,11 @@
     "static/media/servefooter_media.svg": "/static/media/servefooter_media.6b061ffe7f9bb16a745d1a4fc1cce8e3.svg",
     "static/media/servefooter_media_inactivation.svg": "/static/media/servefooter_media_inactivation.852ebed16c05507037864a43f303eac1.svg",
     "static/media/collapse.svg": "/static/media/collapse.e54553e8402b773f96b1b430d974379d.svg",
-    "main.c45c8c58.css.map": "/static/css/main.c45c8c58.css.map",
-    "main.43da10fe.js.map": "/static/js/main.43da10fe.js.map"
+    "main.339fd9ff.css.map": "/static/css/main.339fd9ff.css.map",
+    "main.e7e43bce.js.map": "/static/js/main.e7e43bce.js.map"
   },
   "entrypoints": [
-    "static/css/main.c45c8c58.css",
-    "static/js/main.43da10fe.js"
+    "static/css/main.339fd9ff.css",
+    "static/js/main.e7e43bce.js"
   ]
 }
