@@ -6,17 +6,15 @@
         font-size: 0.7rem;
     }
     .serve-post-title {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .serve-post-subtitle {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     .serve-content-body {
         margin: auto;
         width: 100%;
     }
-
-
 }
 @media (min-width: 421px) {
     .serve-back-btn {
@@ -30,6 +28,10 @@
     }
     .serve-post-subtitle {
         font-size: 1.25rem;
+    }
+    .serve-content-body {
+        margin: auto;
+        width: 75%;
     }
 }
 #servePostLogoFashion {
@@ -69,11 +71,9 @@
     font-weight: 500;
     cursor: pointer;
 }
-.serve-content-body {
-    margin: auto;
-    width: 75%;
-}
 .content-img {
+    margin-top: 0px;
+    margin-bottom: 0px;
     width: 100%;
 }
 .content-video {
