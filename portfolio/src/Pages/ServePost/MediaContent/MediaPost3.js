@@ -24,8 +24,4 @@ function MediaPost3() {
     )
 }
 
-<<<<<<< HEAD
 export default MediaPost3
-=======
-export default MediaPost3
->>>>>>> f1b4eb35fa6965e6a4c6de61e3393c94a4c03677
