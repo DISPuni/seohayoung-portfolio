@@ -20,8 +20,8 @@ function BlogPostTemplate() {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const postTitle = [
-        { id:1, title:'#1. 광고 플랫폼에 대하여' , subtitle:'subtitle' },
-        { id:2, title:'#2' , subtitle:'subtitle' },
+        { id:1, title:'#1. DISP Site history' , subtitle:'사이트의 존재 이유' },
+        { id:2, title:'#2. 쓰지않는 금연어플들' , subtitle:'고쳐서 정리하기' },
     ]
     const [post, setPost] = useState()
 
