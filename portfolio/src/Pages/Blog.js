@@ -48,17 +48,18 @@ function Blog() {
                     <div id="blogBody" className='flex-col'>
                         <img id='blogLogo' src={blog} alt="blog logo" />
                         <div className='flex-col'>
-                            <div className='cards-row'>
-                                <div className='first-card' onClick={() => toBlogPost(1)}><Card title='#1. 광고 플랫폼에 대하여' image={example1} /></div>
-                                <div className="second-card" onClick={() => toBlogPost(2)}><Card title='#2' image={example2} /></div>
-                            </div>
-                            <div className='cards-row'>
+                        
+                            {/* <div className='cards-row'>
                                 <div className="first-card"><Card title='#3' image={example3} /></div>
                                 <div className="second-card"><Card title='#4' image={example4} /></div>
                             </div>
                             <div className='cards-row'>
                                 <div className="first-card"><Card title='#5' image={example5} /></div>
                                 <div className="second-card"><Card title='#6' image={example6} /></div>
+                            </div> */}
+                            <div className='cards-row'>
+                                <div className='first-card' onClick={() => toBlogPost(2)}><Card title='#2. 쓰지않는 금연어플들' image={example2} /></div>
+                                <div className="second-card" onClick={() => toBlogPost(1)}><Card title='#1. DISP Site history' image={example1} /></div>
                             </div>
                         </div>
                     </div>
