@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0b6f4da7.css",
-    "main.js": "/static/js/main.3434852f.js",
+    "main.css": "/static/css/main.f70bf801.css",
+    "main.js": "/static/js/main.ceb2d369.js",
     "static/media/intro_video.mp4": "/static/media/intro_video.356c3e62c87a5ae08d56.mp4",
     "static/media/shimshim_001.png": "/static/media/shimshim_001.3a711c1e882cc4966d4c.png",
     "static/media/freedom_005.png": "/static/media/freedom_005.cba8734588856b516247.png",
@@ -30,7 +30,6 @@
     "static/media/souvenir_002.png": "/static/media/souvenir_002.e56cbe3b743a77feb300.png",
     "static/media/todaywho_001.png": "/static/media/todaywho_001.a9c5559b2219af1f7e8e.png",
     "static/media/counselor_003.jpg": "/static/media/counselor_003.fb39538e05712f9e60bc.jpg",
-    "static/media/geumyeonmode_001.png": "/static/media/geumyeonmode_001.5d2029b12a66eb08048f.png",
     "static/media/counselor_004_2.png": "/static/media/counselor_004_2.3301d25bf0ee9fd6ffdf.png",
     "static/media/anigom_000.png": "/static/media/anigom_000.f5692131ff72f676201c.png",
     "static/media/media.gif": "/static/media/media.925f6d1b697045f15be6.gif",
@@ -39,7 +38,9 @@
     "static/media/ozel_001.png": "/static/media/ozel_001.2a2b2098bb9bf46b15ba.png",
     "static/media/quench_001.png": "/static/media/quench_001.80a50a1da2d746e4bd07.png",
     "static/media/souvenir_001.png": "/static/media/souvenir_001.f4b5e9a77a3b6f0d0712.png",
+    "static/media/geumyeonmode_001.png": "/static/media/geumyeonmode_001.d25d441d5563622745e6.png",
     "static/media/shimshim_thumbnail.png": "/static/media/shimshim_thumbnail.347fc9de88132bfd9a0b.png",
+    "static/media/geumyeonmode_001_1.png": "/static/media/geumyeonmode_001_1.d40397b8becd267ba949.png",
     "static/media/souvenir_thumbnail.png": "/static/media/souvenir_thumbnail.9818ea4f03f451ea3e91.png",
     "static/media/example1.png": "/static/media/example1.e3101abde1924362cfec.png",
     "static/media/loading.gif": "/static/media/loading.de2e665b75ab537ca147.gif",
@@ -131,11 +132,11 @@
     "static/media/servefooter_media.svg": "/static/media/servefooter_media.6b061ffe7f9bb16a745d1a4fc1cce8e3.svg",
     "static/media/servefooter_media_inactivation.svg": "/static/media/servefooter_media_inactivation.852ebed16c05507037864a43f303eac1.svg",
     "static/media/collapse.svg": "/static/media/collapse.e54553e8402b773f96b1b430d974379d.svg",
-    "main.0b6f4da7.css.map": "/static/css/main.0b6f4da7.css.map",
-    "main.3434852f.js.map": "/static/js/main.3434852f.js.map"
+    "main.f70bf801.css.map": "/static/css/main.f70bf801.css.map",
+    "main.ceb2d369.js.map": "/static/js/main.ceb2d369.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b6f4da7.css",
-    "static/js/main.3434852f.js"
+    "static/css/main.f70bf801.css",
+    "static/js/main.ceb2d369.js"
   ]
 }
