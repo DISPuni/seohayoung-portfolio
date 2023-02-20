@@ -1,0 +1,30 @@
+/* mobile */
+@media (max-width: 420px) {
+    #mediaLogo {
+        width: 350px
+    }
+    #visualLogo {
+        width: 350px;
+    }
+    #fashionLogo {
+        width: 350px;
+    }
+}
+/* desktop */
+@media (min-width: 421px) {
+    #mediaLogo {
+        
+    }
+    #visualLogo {
+        
+    }
+}
+.serve-loading {
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+}

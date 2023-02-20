@@ -1,0 +1,20 @@
+/* mobile */
+@media (max-width: 820px) {
+    .topBtn {
+        width: 35px;
+        right: 25px;
+        bottom: 25px;
+    }
+}
+/* desktop */
+@media (min-width: 821px) {
+    .topBtn {
+        right: 6.25rem;
+        bottom: 7.438rem;
+    }
+}
+.topBtn {
+    position: fixed;
+    cursor: pointer;
+    z-index: 1;
+}
