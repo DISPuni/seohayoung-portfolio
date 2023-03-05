@@ -1,9 +1,13 @@
 @media (max-width: 420px) {
     .serve-back-btn {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        margin-left: 5%;
+        margin-top: 20%;
     }
     .serve-filter {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
+        margin-right: 5%;
+        margin-top: 20%;
     }
     .serve-post-title {
         font-size: 1rem;
@@ -17,11 +21,16 @@
     }
 }
 @media (min-width: 421px) {
+
     .serve-back-btn {
-        font-size: 2rem;
+        font-size: 1.25rem;
+        margin-top: 18%;
+        margin-left: 6%;
     }
     .serve-filter {
         font-size: 1.25rem;
+        margin-right: 6%;
+        margin-top: 18%;
     }
     .serve-post-title {
         font-size: 2rem;
@@ -56,20 +65,24 @@
     margin: auto;
     margin-bottom: 5.5%;
 }
-.serve-post-btn-n-filter {
+/* .serve-post-btn-n-filter {
     display: flex;
     justify-content: space-between;
     margin-top: 18%;
     margin-left: 9%;
     margin-right: 9%;
-}
+} */
 .serve-back-btn {
     font-weight: 600;
     cursor: pointer;
+    position: fixed;
+    display: flex;
 }
 .serve-filter {
     font-weight: 500;
     cursor: pointer;
+    display: flex;
+    flex-direction: row-reverse;
 }
 .content-img {
     margin-top: 0px;
