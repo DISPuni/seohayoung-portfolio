@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Draggable from 'react-draggable'
+import useScrollOnEdges from 'react-scroll-on-edges'
 
 import './Home.css'
 import '../Components/MobileNav.css'
@@ -34,11 +35,12 @@ import video from '../assets/intro_video.mp4'
 function Home() {
 
     const videoRef = useRef(null);
+    const getEdgeScrollingProps = useScrollOnEdges()
 
-    const [blogSrc, setBlogSrc] = useState(blog);
     const [mediaSrc, setMediaSrc] = useState(media);
     const [fashionSrc, setFashionSrc] = useState(fashion);
     const [visualSrc, setVisualSrc] = useState(visual);
+    const [blogSrc, setBlogSrc] = useState(blog);
     const [aboutSrc, setAboutSrc] = useState(about);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -69,49 +71,43 @@ function Home() {
         }
     }
 
-    function handleModal() {
-        console.log('before: ', isModalOpen)
-        setIsModalOpen(isModalOpen)
-        console.log('after: ', isModalOpen)
-    }
-    function showModal() {
-        setIsModalOpen(true)
-    }
-
     return (
-        <div id='home' className='page flex-col'>
-            <NavHeader isNav={false} isAbout={false} isBlog={false} />
-            <MobileNavHeader setIsModalOpen={setIsModalOpen}/>
-            {isModalOpen ? <MobileNav setIsModalOpen={setIsModalOpen}/>:null}
-            <div id='homeBody'>
-                <Draggable>
-                    <div id='draggableItem'>
-                        <p id='draggableText'>Choose the one you want and click</p>
-                        <div id='draggableShadow' />
+        <div {...getEdgeScrollingProps()}>
+
+            <div id='home' className='page flex-col'>
+                <NavHeader isNav={false} isAbout={false} isBlog={false} />
+                <MobileNavHeader setIsModalOpen={setIsModalOpen} />
+                {isModalOpen ? <MobileNav setIsModalOpen={setIsModalOpen} /> : null}
+                <div id='homeBody'>
+                    <Draggable>
+                        <div id='draggableItem'>
+                            <p id='draggableText'>Choose the one you want and click</p>
+                            <div id='draggableShadow' />
+                        </div>
+                    </Draggable>
+                    <div id='homeItems' className='flex'>
+                        <div id='player'>
+                            <img id='videoPlayer' src={videoPlayer} alt="video player" />
+                            {/* <img id='videoPlayer2' src={videoPlayer2} alt="video player" /> */}
+                            <video id='videoSection' autoPlay loop muted ref={videoRef} onClick={() => videoPause()}>
+                                <source src={video} type="video/mp4" />
+                            </video>
+                        </div>
+                        <img id='mainMediaIcon' src={mediaSrc} alt="media design icon" onMouseOver={() => setMediaSrc(mediaHover)} onMouseLeave={() => setMediaSrc(media)} onClick={toMedia} />
+                        <img id='mainMediaIconMobile' src={mediaMobile} alt="" onClick={toMedia} />
+                        <img id='mainFashionIcon' src={fashionSrc} alt="fashion design icon" onMouseOver={() => setFashionSrc(fashionHover)} onMouseLeave={() => setFashionSrc(fashion)} onClick={toFashion} />
+                        <img id='mainFashionIconMobile' src={fashionMobile} alt="" onClick={toFashion} />
+                        <img id='mainVisualIcon' src={visualSrc} alt="visual design icon" onMouseOver={() => setVisualSrc(visualHover)} onMouseLeave={() => setVisualSrc(visual)} onClick={toVisual} />
+                        <img id='mainVisualIconMobile' src={visualMobile} alt="" onClick={toVisual} />
+                        <img id='pill' src={pill} alt="main pill img" />
+                        <img id='mainBlogIcon' src={blogSrc} alt="blog icon" onMouseOver={() => setBlogSrc(blogHover)} onMouseLeave={() => setBlogSrc(blog)} onClick={() => toBlog()} />
+                        <img src={blogMobile} alt="" id="mainBlogIconMobile" onClick={() => toBlog()} />
+                        <img id='about' src={aboutSrc} alt="main about img" onMouseOver={() => setAboutSrc(aboutHover)} onMouseLeave={() => setAboutSrc(about)} onClick={toAbout} />
+                        <img src={aboutMobile} alt="" id="aboutMobile" onClick={toAbout} />
                     </div>
-                </Draggable>
-                <div id='homeItems' className='flex'>
-                    <div id='player'>
-                        <img id='videoPlayer' src={videoPlayer} alt="video player"/>
-                        <img id='videoPlayer2' src={videoPlayer2} alt="video player"/>
-                        <video id='videoSection'autoPlay loop muted ref={videoRef} onClick={() => videoPause()}>
-                            <source src={video} type="video/mp4"/>
-                        </video>
-                    </div>
-                    <img id='mainBlogIcon' src={blogSrc} alt="blog icon" onMouseOver={() => setBlogSrc(blogHover)} onMouseLeave={() => setBlogSrc(blog)} onClick={() => toBlog()}/>
-                    <img src={blogMobile} alt="" id="mainBlogIconMobile" onClick={() => toBlog()}/>
-                    <img id='mainMediaIcon' src={mediaSrc} alt="media design icon" onMouseOver={() => setMediaSrc(mediaHover)} onMouseLeave={() => setMediaSrc(media)} onClick={toMedia}/>
-                    <img id='mainMediaIconMobile' src={mediaMobile} alt="" onClick={toMedia}/>
-                    <img id='mainFashionIcon' src={fashionSrc} alt="fashion design icon" onMouseOver={() => setFashionSrc(fashionHover)} onMouseLeave={() => setFashionSrc(fashion)} onClick={toFashion}/>
-                    <img id='mainFashionIconMobile' src={fashionMobile} alt="" onClick={toFashion}/>
-                    <img id='mainVisualIcon' src={visualSrc} alt="visual design icon" onMouseOver={() => setVisualSrc(visualHover)} onMouseLeave={() => setVisualSrc(visual)} onClick={toVisual}/>
-                    <img id='mainVisualIconMobile' src={visualMobile} alt=""onClick={toVisual} />
-                    <img id='pill' src={pill} alt="main pill img"/>
-                    <img id='about' src={aboutSrc} alt="main about img" onMouseOver={() => setAboutSrc(aboutHover)} onMouseLeave={() => setAboutSrc(about)} onClick={toAbout}/>
-                    <img src={aboutMobile} alt="" id="aboutMobile" onClick={toAbout}/>
                 </div>
+                <Footer />
             </div>
-            <Footer/>
         </div>
     )
 }
