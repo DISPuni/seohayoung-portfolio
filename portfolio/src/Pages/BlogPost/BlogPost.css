@@ -1,9 +1,14 @@
 /* mobile */
 @media (max-width: 420px) {
     .back-btn {
-        margin-top: 15%;
-        font-size: 20px;
-        font-weight: 500;
+        font-size: 0.9rem;
+        margin-left: 5%;
+        margin-top: 20%;
+    }
+    .serve-filter {
+        font-size: 0.9rem;
+        margin-right: 5%;
+        margin-top: 20%;
     }
    
     .blog-post-title {
@@ -22,9 +27,14 @@
 /* tablet & desktop */
 @media (min-width: 421px) {
     .back-btn {
-        margin-top: 12.5%;
-        font-size: 2rem;
-        font-weight: 600;
+        font-size: 1.25rem;
+        margin-top: 18%;
+        margin-left: 6%;
+    }
+    .serve-filter {
+        font-size: 1.25rem;
+        margin-right: 6%;
+        margin-top: 18%;
     }
     .blog-post-title {
         font-size: 2rem;
@@ -49,6 +59,15 @@
     margin-left: 7%;
     cursor: pointer;
     z-index: 0;
+    font-weight: 600;
+    position: fixed;
+    display: flex;
+}
+.serve-filter {
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row-reverse;
 }
 .blog-post-body {
     display: flex;
