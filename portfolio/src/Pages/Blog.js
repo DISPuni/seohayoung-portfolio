@@ -12,10 +12,10 @@ import Card from '../Components/Card'
 import SecondFooter from '../Components/SecondFooter'
 import MobileFooter from '../Components/MobileFooter'
 
-import example1 from '../assets/examples/example1.jpeg'
-import example2 from '../assets/examples/example2.png'
-import example3 from '../assets/examples/example3.jpeg'
-import example4 from '../assets/examples/example4.jpeg'
+import main1 from '../assets/blog/main1.png'
+import main2 from '../assets/blog/main2.png'
+import main3 from '../assets/blog/main3.jpg'
+import main4 from '../assets/blog/main4.png'
 import example5 from '../assets/examples/example5.jpg'
 import example6 from '../assets/examples/example6.jpeg'
 
@@ -35,6 +35,11 @@ function Blog() {
         }, 1500);
     }, [])
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+      
+
     return (
         <div className='page'>
             {isLoading ?
@@ -49,17 +54,18 @@ function Blog() {
                         <img id='blogLogo' src={blog} alt="blog logo" />
                         <div className='flex-col'>
                         
+                            
                             {/* <div className='cards-row'>
-                                <div className="first-card"><Card title='#3' image={example3} /></div>
-                                <div className="second-card"><Card title='#4' image={example4} /></div>
-                            </div>
-                            <div className='cards-row'>
                                 <div className="first-card"><Card title='#5' image={example5} /></div>
                                 <div className="second-card"><Card title='#6' image={example6} /></div>
                             </div> */}
                             <div className='cards-row'>
-                                <div className='first-card' onClick={() => toBlogPost(2)}><Card title='#2. 쓰지않는 금연어플들' image={example2} /></div>
-                                <div className="second-card" onClick={() => toBlogPost(1)}><Card title='#1. DISP Site history' image={example1} /></div>
+                                <div className="first-card" onClick={() => toBlogPost(4)}><Card title='#4. 패스트캠퍼스 + PLUS X SHARE X 실무마스터 패키지' image={main4} /></div>
+                                <div className="second-card" onClick={() => toBlogPost(3)}><Card title='#3. 디자인과 인공지능' image={main3} /></div>
+                            </div>
+                            <div className='cards-row'>
+                                <div className='first-card' onClick={() => toBlogPost(2)}><Card title='#2. 쓰지않는 금연어플들' image={main2} /></div>
+                                <div className="second-card" onClick={() => toBlogPost(1)}><Card title='#1. DISP Site history' image={main1} /></div>
                             </div>
                         </div>
                     </div>
