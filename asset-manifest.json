@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5d193d2a.css",
-    "main.js": "/static/js/main.6a1a4fec.js",
+    "main.js": "/static/js/main.f3a84b72.js",
     "static/media/intro_video.mp4": "/static/media/intro_video.356c3e62c87a5ae08d56.mp4",
     "static/media/shimshim_001.png": "/static/media/shimshim_001.3a711c1e882cc4966d4c.png",
     "static/media/freedom_005.png": "/static/media/freedom_005.cba8734588856b516247.png",
@@ -21,7 +21,7 @@
     "static/media/Pyeonteilbar_002.png": "/static/media/Pyeonteilbar_002.10a812c0226862f53207.png",
     "static/media/counselor_005.jpg": "/static/media/counselor_005.18e2b72175af73cce9ae.jpg",
     "static/media/oneul_001.png": "/static/media/oneul_001.7b305db1fe002d11b9d8.png",
-    "static/media/puni_006.png": "/static/media/puni_006.e29ae1c90c8639562328.png",
+    "static/media/puni_006.png": "/static/media/puni_006.1e68e6ff52734b78e1db.png",
     "static/media/famsupport_002.png": "/static/media/famsupport_002.7c4367a9af2fe759ed2d.png",
     "static/media/counselor_004.gif": "/static/media/counselor_004.87dd1d741d676624184e.gif",
     "static/media/pop_001.png": "/static/media/pop_001.f225904c634f0579d900.png",
@@ -184,10 +184,10 @@
     "static/media/ChevronArrow.svg": "/static/media/ChevronArrow.01b662dcf9c7bb9944cccae886eeeee9.svg",
     "static/media/collapse.svg": "/static/media/collapse.e54553e8402b773f96b1b430d974379d.svg",
     "main.5d193d2a.css.map": "/static/css/main.5d193d2a.css.map",
-    "main.6a1a4fec.js.map": "/static/js/main.6a1a4fec.js.map"
+    "main.f3a84b72.js.map": "/static/js/main.f3a84b72.js.map"
   },
   "entrypoints": [
     "static/css/main.5d193d2a.css",
-    "static/js/main.6a1a4fec.js"
+    "static/js/main.f3a84b72.js"
   ]
 }
