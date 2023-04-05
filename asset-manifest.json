@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cc0f4c44.css",
-    "main.js": "/static/js/main.1fdee780.js",
+    "main.js": "/static/js/main.ee2bd82b.js",
     "static/media/intro_video.mp4": "/static/media/intro_video.356c3e62c87a5ae08d56.mp4",
     "static/media/shimshim_001.png": "/static/media/shimshim_001.3a711c1e882cc4966d4c.png",
     "static/media/freedom_005.png": "/static/media/freedom_005.cba8734588856b516247.png",
@@ -74,8 +74,8 @@
     "static/media/media.gif": "/static/media/media.925f6d1b697045f15be6.gif",
     "static/media/freedom_002.png": "/static/media/freedom_002.02aa5b27747f51355ac4.png",
     "static/media/olivTV_004.png": "/static/media/olivTV_004.5a2ea10ff8b70653228c.png",
-    "static/media/oylive_000.png": "/static/media/oylive_000.8172a9549f5a755d3f5e.png",
     "static/media/olivTV_001.png": "/static/media/olivTV_001.57af285d8bd0e902fe6f.png",
+    "static/media/oylive_000.png": "/static/media/oylive_000.89947722f8733007e3d7.png",
     "static/media/Q_thumbnail.png": "/static/media/Q_thumbnail.6ec36d7d9c38f1c28d89.png",
     "static/media/ozel_001.png": "/static/media/ozel_001.2a2b2098bb9bf46b15ba.png",
     "static/media/quench_001.png": "/static/media/quench_001.80a50a1da2d746e4bd07.png",
@@ -214,10 +214,10 @@
     "static/media/ChevronArrow.svg": "/static/media/ChevronArrow.01b662dcf9c7bb9944cccae886eeeee9.svg",
     "static/media/collapse.svg": "/static/media/collapse.e54553e8402b773f96b1b430d974379d.svg",
     "main.cc0f4c44.css.map": "/static/css/main.cc0f4c44.css.map",
-    "main.1fdee780.js.map": "/static/js/main.1fdee780.js.map"
+    "main.ee2bd82b.js.map": "/static/js/main.ee2bd82b.js.map"
   },
   "entrypoints": [
     "static/css/main.cc0f4c44.css",
-    "static/js/main.1fdee780.js"
+    "static/js/main.ee2bd82b.js"
   ]
 }
