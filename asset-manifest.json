@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f5dd04a8.css",
-    "main.js": "/static/js/main.7e5efaf0.js",
+    "main.js": "/static/js/main.960b7df6.js",
     "static/media/intro_video.mp4": "/static/media/intro_video.356c3e62c87a5ae08d56.mp4",
     "static/media/shimshim_001.png": "/static/media/shimshim_001.3a711c1e882cc4966d4c.png",
     "static/media/link_001.png": "/static/media/link_001.9bcc16c904b8ae580f59.png",
@@ -31,8 +31,10 @@
     "static/media/ozel_004.png": "/static/media/ozel_004.05654be2c1801c873a4a.png",
     "static/media/oneul_002.png": "/static/media/oneul_002.973405bba8a3ad7215a1.png",
     "static/media/Pyeonteilbar_002.png": "/static/media/Pyeonteilbar_002.10a812c0226862f53207.png",
+    "static/media/watoon_000.gif": "/static/media/watoon_000.402024ce85b80e2bf029.gif",
     "static/media/momentum_000.png": "/static/media/momentum_000.3a1d17389f0744603eab.png",
     "static/media/whitenight_000.png": "/static/media/whitenight_000.7f989046dba0be10254a.png",
+    "static/media/watoon_002.png": "/static/media/watoon_002.605f62c8695551800563.png",
     "static/media/counselor_005.jpg": "/static/media/counselor_005.18e2b72175af73cce9ae.jpg",
     "static/media/oneul_001.png": "/static/media/oneul_001.7b305db1fe002d11b9d8.png",
     "static/media/puni_006.png": "/static/media/puni_006.1e68e6ff52734b78e1db.png",
@@ -50,6 +52,7 @@
     "static/media/oneul_005.png": "/static/media/oneul_005.28b5b60c12ce0156d72d.png",
     "static/media/sibf_002.png": "/static/media/sibf_002.f7974b05c16b454b403d.png",
     "static/media/geumyeonmode_000.png": "/static/media/geumyeonmode_000.57ab6fe1a3ad00710555.png",
+    "static/media/watoon_001.png": "/static/media/watoon_001.ab8a54489d9fc7d1deae.png",
     "static/media/oneul_004.png": "/static/media/oneul_004.06f4277d4e17587c2cfa.png",
     "static/media/aroma_005.png": "/static/media/aroma_005.395ad13d8f59c4bf2f17.png",
     "static/media/www_004.png": "/static/media/www_004.5df5f002ead7ad5a06c9.png",
@@ -254,10 +257,10 @@
     "static/media/ChevronArrow.svg": "/static/media/ChevronArrow.01b662dcf9c7bb9944cccae886eeeee9.svg",
     "static/media/collapse.svg": "/static/media/collapse.e54553e8402b773f96b1b430d974379d.svg",
     "main.f5dd04a8.css.map": "/static/css/main.f5dd04a8.css.map",
-    "main.7e5efaf0.js.map": "/static/js/main.7e5efaf0.js.map"
+    "main.960b7df6.js.map": "/static/js/main.960b7df6.js.map"
   },
   "entrypoints": [
     "static/css/main.f5dd04a8.css",
-    "static/js/main.7e5efaf0.js"
+    "static/js/main.960b7df6.js"
   ]
 }
