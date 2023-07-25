@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="248" height="248" viewBox="0 0 248 248">
+  <defs>
+    <clipPath id="clip-fashion_icon">
+      <rect width="248" height="248"/>
+    </clipPath>
+  </defs>
+  <g id="fashion_icon" clip-path="url(#clip-fashion_icon)">
+    <path id="패스_215" data-name="패스 215" d="M805.942,261.138a124,124,0,0,0-124,124,124,124,0,0,0-124-124,124,124,0,0,0,124-124A124,124,0,0,0,805.942,261.138Z" transform="translate(-557.942 -137.138)" fill="#db3633"/>
+    <path id="패스_216" data-name="패스 216" d="M739.946,337.965l13.936,7.736L735.3,366.367l24.388,6.968,22.066,6.968L735.3,386.178s13.936,18.286,17.42,14.916c2.506-2.425,24.839-.39,37.18.4,4.817.308,8.112.426,8.112.016,0-1.463-23.227,10.15-23.227,10.15H710.433" transform="translate(-603.191 -196.366)" fill="none" stroke="#161619" stroke-miterlimit="10" stroke-width="2"/>
+    <g id="그룹_389" data-name="그룹 389" transform="translate(68.364 89.416)">
+      <g id="타원_4" data-name="타원 4" transform="translate(0)" fill="#fff" stroke="#161619" stroke-miterlimit="10" stroke-width="2">
+        <ellipse cx="26.737" cy="26.737" rx="26.737" ry="26.737" stroke="none"/>
+        <ellipse cx="26.737" cy="26.737" rx="25.737" ry="25.737" fill="none"/>
+      </g>
+      <line id="선_25" data-name="선 25" x1="37.812" y2="37.812" transform="translate(7.831 7.831)" fill="#fff" stroke="#161619" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <text id="fashion_icon-2" data-name="fashion_icon" transform="translate(-26 -26)" fill="#707070" font-size="20" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo"><tspan x="0" y="18">fashion_icon</tspan></text>
+  </g>
+</svg>
