@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.6b9783d1.css",
-    "main.js": "/static/js/main.9e037138.js",
+    "main.js": "/static/js/main.57234cfb.js",
     "static/media/intro_video.mp4": "/static/media/intro_video.356c3e62c87a5ae08d56.mp4",
     "static/media/shimshim_001.png": "/static/media/shimshim_001.3a711c1e882cc4966d4c.png",
+    "static/media/pure_003.png": "/static/media/pure_003.2e2cf9bfac93e75f44c9.png",
     "static/media/link_001.png": "/static/media/link_001.9bcc16c904b8ae580f59.png",
     "static/media/neomoda_tex_001.png": "/static/media/neomoda_tex_001.3362244a08beefcac1cc.png",
     "static/media/link_003.png": "/static/media/link_003.9d5be84d335074cbc7dc.png",
@@ -13,6 +14,7 @@
     "static/media/freedom_003.png": "/static/media/freedom_003.062719c9c666593a298c.png",
     "static/media/link_002.png": "/static/media/link_002.74ac2f8d53876d73e683.png",
     "static/media/link_004.png": "/static/media/link_004.b11d873449e4b31bc228.png",
+    "static/media/fregmentopia_002.png": "/static/media/fregmentopia_002.65242fab32e5c02876cb.png",
     "static/media/camping_000.jpg": "/static/media/camping_000.e4e088a5ff86c4fa8a38.jpg",
     "static/media/freedom_004.png": "/static/media/freedom_004.e19a5da1ed402af44ad3.png",
     "static/media/neomoda_tex_002.png": "/static/media/neomoda_tex_002.2e5737949b52c04310e4.png",
@@ -23,11 +25,11 @@
     "static/media/rescue_001.png": "/static/media/rescue_001.0cb626d3f710f1fc9d8e.png",
     "static/media/whitenight_001.png": "/static/media/whitenight_001.30e518cb6f96b4df3c83.png",
     "static/media/link_000.png": "/static/media/link_000.b278f3ce21c5538a282f.png",
+    "static/media/pure_004.png": "/static/media/pure_004.d4bbdd9ae22f3c6f5a6a.png",
     "static/media/momentum_002.png": "/static/media/momentum_002.bfc50f6863db153075b9.png",
     "static/media/camping_thumbnail.jpg": "/static/media/camping_thumbnail.c1a5371559e0608afadf.jpg",
     "static/media/oneul_003.png": "/static/media/oneul_003.ce8977c6a857f04c2e6d.png",
     "static/media/fregmentopia_001.png": "/static/media/fregmentopia_001.435ad370ccb0c8dc52d4.png",
-    "static/media/fregmentopia_002.png": "/static/media/fregmentopia_002.b904630ca6a118cf214f.png",
     "static/media/whitenight_003.png": "/static/media/whitenight_003.8f21a49b90f52acb7a24.png",
     "static/media/www_007.png": "/static/media/www_007.d55e59e9130ed17d7112.png",
     "static/media/ozel_004.png": "/static/media/ozel_004.05654be2c1801c873a4a.png",
@@ -59,6 +61,7 @@
     "static/media/oneul_004.png": "/static/media/oneul_004.06f4277d4e17587c2cfa.png",
     "static/media/aroma_005.png": "/static/media/aroma_005.395ad13d8f59c4bf2f17.png",
     "static/media/www_004.png": "/static/media/www_004.5df5f002ead7ad5a06c9.png",
+    "static/media/pure_000.png": "/static/media/pure_000.291fb4a864d884da77ee.png",
     "static/media/aroma_001.png": "/static/media/aroma_001.4dbbb53e5d9e36cd323e.png",
     "static/media/oneul_000.png": "/static/media/oneul_000.280e73e23397edba4a1e.png",
     "static/media/freedom_thumbnail.png": "/static/media/freedom_thumbnail.b9f0d718c418d493054b.png",
@@ -97,6 +100,7 @@
     "static/media/puni_005.png": "/static/media/puni_005.f958b02d55d49d0b21cb.png",
     "static/media/fregmentopia_thumbnail.png": "/static/media/fregmentopia_thumbnail.7c2ecf69444ccb895180.png",
     "static/media/oylive_011.png": "/static/media/oylive_011.bb5053f57cd04c6d4361.png",
+    "static/media/pure_001.png": "/static/media/pure_001.f1d95afb543f6f153012.png",
     "static/media/counselor_004_2.png": "/static/media/counselor_004_2.3301d25bf0ee9fd6ffdf.png",
     "static/media/media.gif": "/static/media/media.925f6d1b697045f15be6.gif",
     "static/media/freedom_002.png": "/static/media/freedom_002.02aa5b27747f51355ac4.png",
@@ -113,6 +117,7 @@
     "static/media/olivTV_000.png": "/static/media/olivTV_000.74009aed833f71669a4a.png",
     "static/media/main2.jpg": "/static/media/main2.05e57de3e0c22e17ea10.jpg",
     "static/media/Pyeonteilbar_thumbnail.png": "/static/media/Pyeonteilbar_thumbnail.043ab22e46787393c13f.png",
+    "static/media/pure_thumbnail.png": "/static/media/pure_thumbnail.81ec806f7dfa05d18038.png",
     "static/media/rescue_000.png": "/static/media/rescue_000.e94f09b02bd8043fd01a.png",
     "static/media/olivTV_002.png": "/static/media/olivTV_002.aad5e7cb20338c456ce7.png",
     "static/media/neomoda_tex_thumbnail.png": "/static/media/neomoda_tex_thumbnail.fe3f706557557efcf26e.png",
@@ -145,6 +150,7 @@
     "static/media/loading.gif": "/static/media/loading.de2e665b75ab537ca147.gif",
     "static/media/pop_thumbnail.png": "/static/media/pop_thumbnail.57697e359e38c653441f.png",
     "static/media/puni_004.png": "/static/media/puni_004.805aaea0816ee8552e10.png",
+    "static/media/pure_002.png": "/static/media/pure_002.dab1d083b7fff488db92.png",
     "static/media/9.png": "/static/media/9.5bfe8a99fa01f6fdebe6.png",
     "static/media/14.png": "/static/media/14.ca2dc2dfdc8510d7af17.png",
     "static/media/dasan_thumbnail.png": "/static/media/dasan_thumbnail.18dc7275fbf1d4af0f76.png",
@@ -262,10 +268,10 @@
     "static/media/ChevronArrow.svg": "/static/media/ChevronArrow.01b662dcf9c7bb9944cccae886eeeee9.svg",
     "static/media/collapse.svg": "/static/media/collapse.e54553e8402b773f96b1b430d974379d.svg",
     "main.6b9783d1.css.map": "/static/css/main.6b9783d1.css.map",
-    "main.9e037138.js.map": "/static/js/main.9e037138.js.map"
+    "main.57234cfb.js.map": "/static/js/main.57234cfb.js.map"
   },
   "entrypoints": [
     "static/css/main.6b9783d1.css",
-    "static/js/main.9e037138.js"
+    "static/js/main.57234cfb.js"
   ]
 }
