@@ -1,0 +1,91 @@
+/* mobile */
+@media (max-width: 420px) {
+    #mobileNavHeader {
+        display: flex;
+    }
+}
+/* desktop */
+@media (min-width: 421px) {
+    #mobileNavHeader {
+        display: none;
+    }
+    /* #mobileNavHeader {
+        display: flex;
+    } */
+}
+#mobileNavHeader {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    margin-top: 15px;
+}
+#mobileNavHomeLogo {
+    width: 54px;
+    height: 20px;
+    margin: auto;
+    margin-left: 20px;
+}
+#mobileNavHamburger {
+    margin: auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+/* -------------------- */
+#mobileNav {
+    width: 100vw;
+    height: 100vh;
+    /* justify-content: space-between; */
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 3;
+    background-color: white;
+    overflow: scroll;
+}
+#mobileNavCloseBtn {
+    right: 20px;
+    top: 15px;
+    width: 45px;
+    cursor: pointer;
+    position: absolute;
+}
+#iconTextSet1 {
+    margin-top: 100px;
+}
+#mobileNavVisual {
+    width: 16%;
+}
+#mobileNavFashion {
+    width: 20%;
+}
+#mobileNavMedia {
+    width: 14%;
+}
+.mobileNavIcon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.mobileNavText, .mobileNavText2  {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: 700;
+}
+.mobileNavText {
+    margin-bottom: 46px;
+}
+#mobileNavDivider {
+    border: 0.5px solid #707070;
+    width: 100%;
+}
+#mobileNavBottomText {
+    margin-bottom: 66px;
+    justify-content: space-between;
+}
+#mobileNavText2About {
+    margin-top: 66px;
+    margin-bottom: 46px;
+}
