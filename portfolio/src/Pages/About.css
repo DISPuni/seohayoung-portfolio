@@ -337,3 +337,13 @@ th, td {
     margin-top: auto;
     margin-bottom: auto;
 }
+
+a{
+    text-decoration: none; 
+    color:#000000;
+}
+
+a:hover{
+    text-decoration: none; 
+    color:#00B5E5;
+}
