@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="248" height="248" viewBox="0 0 248 248">
+  <defs>
+    <clipPath id="clip-visual_icon">
+      <rect width="248" height="248"/>
+    </clipPath>
+  </defs>
+  <g id="visual_icon" clip-path="url(#clip-visual_icon)">
+    <path id="패스_217" data-name="패스 217" d="M1181.469,215.546c-9.944-9.945-26.663-11.288-45.853-5.436.115-10.355-2.74-19.134-8.908-25.3-20.522-20.522-69.9-4.415-110.293,35.976s-56.5,89.771-35.976,110.293c9.945,9.944,26.664,11.288,45.853,5.435-.115,10.356,2.74,19.135,8.908,25.3,20.522,20.522,69.9,4.415,110.293-35.976S1201.991,236.068,1181.469,215.546Z" transform="translate(-956.954 -149.311)" fill="#ecdf19"/>
+    <path id="패스_218" data-name="패스 218" d="M1024.017,322.031c61.744,56.759,154.189,53.566,154.189,53.566" transform="translate(-969.653 -184.664)" fill="none" stroke="#161619" stroke-miterlimit="10" stroke-width="2"/>
+    <g id="그룹_390" data-name="그룹 390" transform="translate(70.526 70.525)">
+      <g id="타원_10" data-name="타원 10" transform="translate(0 0)" fill="#fff" stroke="#161619" stroke-miterlimit="10" stroke-width="2">
+        <ellipse cx="26.737" cy="26.737" rx="26.737" ry="26.737" stroke="none"/>
+        <ellipse cx="26.737" cy="26.737" rx="25.737" ry="25.737" fill="none"/>
+      </g>
+      <line id="선_30" data-name="선 30" x1="53.475" transform="translate(0 26.737)" fill="#fff" stroke="#161619" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <text id="visual_icon-2" data-name="visual_icon" transform="translate(-26 -26)" fill="#707070" font-size="20" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo"><tspan x="0" y="18">visual_icon</tspan></text>
+  </g>
+</svg>

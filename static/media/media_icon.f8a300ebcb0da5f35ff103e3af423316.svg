@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="248" height="248" viewBox="0 0 248 248">
+  <defs>
+    <clipPath id="clip-media_icon">
+      <rect width="248" height="248"/>
+    </clipPath>
+  </defs>
+  <g id="media_icon" clip-path="url(#clip-media_icon)">
+    <g id="그룹_388" data-name="그룹 388" transform="translate(25.688 17.631)">
+      <path id="패스_13" data-name="패스 13" d="M407.536,253.477a79.952,79.952,0,0,0-79.952-79.951h0a79.951,79.951,0,0,0-79.952,79.951V386.264h159.9Z" transform="translate(-231.141 -173.526)" fill="#00b5e5"/>
+      <g id="그룹_17" data-name="그룹 17" transform="translate(71.024 35.177)">
+        <g id="타원_3" data-name="타원 3" transform="translate(0 0)" fill="#fff" stroke="#161619" stroke-miterlimit="10" stroke-width="2">
+          <ellipse cx="26.737" cy="26.737" rx="26.737" ry="26.737" stroke="none"/>
+          <ellipse cx="26.737" cy="26.737" rx="25.737" ry="25.737" fill="none"/>
+        </g>
+        <line id="선_24" data-name="선 24" y2="53.475" transform="translate(26.737 0)" fill="#fff" stroke="#161619" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <path id="패스_17" data-name="패스 17" d="M408.642,398.207s-10.584-38.435,57.931-106.95" transform="translate(-269.95 -202.007)" fill="none" stroke="#161619" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="패스_18" data-name="패스 18" d="M325.1,332.992s-33.571-60.159-83.7-112.52" transform="translate(-229.633 -184.883)" fill="none" stroke="#161619" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="패스_19" data-name="패스 19" d="M225.879,442.752s79.18-25,168.821,0" transform="translate(-225.879 -235.968)" fill="none" stroke="#161619" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <text id="media_icon-2" data-name="media_icon" transform="translate(-26 -26)" fill="#707070" font-size="20" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo"><tspan x="0" y="18">media_icon</tspan></text>
+    <text id="media_icon-3" data-name="media_icon" transform="translate(-26 -26)" fill="#707070" font-size="20" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo"><tspan x="0" y="18">media_icon</tspan></text>
+  </g>
+</svg>
