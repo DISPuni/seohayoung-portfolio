@@ -125,8 +125,8 @@ function About() {
                             <div className='flex about-timeline'>
                                 <div className='collapse-title'>Career</div>
                                 <Accordion years={['-','2021~2022', '2021.07 ~ 2021.10','2020~2021', '2020']} 
-                                organizations={['-','CJ 올리브영','아모레퍼시픽', '유비크코리아', '현대기획사']} 
-                                descriptions={['그래픽디자이너','미디어커머스팀 웹디자이너', '카운셀러 TF팀 | 계약직', '웹디자이너', '기획팀 | 주임']} />
+                                organizations={['-','CJ 올리브영','아모레퍼시픽', '-', '-']} 
+                                descriptions={['그래픽디자이너','미디어커머스팀 웹디자이너', '카운셀러 TF팀 | 계약직', '-', '-]} />
                                {/* '그래픽디자이너''Studio Kio'2024.06~ */}
                             </div>
                             <div className='flex about-timeline'>
